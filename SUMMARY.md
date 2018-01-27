@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [Big O](chapter1.md)
-* 2
-* Math
+* [1.Big O](chapter1.md)
+* [2.Math](math.md)
 

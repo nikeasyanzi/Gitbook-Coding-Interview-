@@ -1,3 +1,8 @@
-# First Chapter
+# 1.Big O
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+
+
+\#\# 1 What is Big O \(1\)
+
+\#\# 2 What is Big O \(2\)
+
