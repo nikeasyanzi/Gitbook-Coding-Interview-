@@ -2,8 +2,6 @@
 
 \[toe\]
 
-
-
 ## 27 Validate Binary Search Tree
 
 ```c
