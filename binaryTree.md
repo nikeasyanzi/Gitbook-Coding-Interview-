@@ -40,8 +40,6 @@ narrowing down the range between curr-&gt;key+1 ~ int\_MAX  and int\_MIN ~ curr-
 
 ## 28 Maximum Depth of Binary Tree
 
-
-
 ```c
 int getDepth(struct TreeNode* curr, int depth, int final)
 {
@@ -68,6 +66,34 @@ int maxDepth(struct TreeNode* root)
     return result;
 }
 ```
+
+
+
+int maxDepth\(struct TreeNode\* root\){
+
+    int maxright;
+
+    int maxleft;
+
+    if\(root==NULL\)
+
+        return 0;
+
+    maxright=maxDepth\(root-&gt;right\);
+
+    maxleft=maxDepth\(root-&gt;left\);
+
+    printf\("%d  %d %d", root-&gt;val, maxright,maxleft\);
+
+    return \(maxright&gt;maxleft\)?\(maxright +1\): \(maxleft+1\);
+
+}
+
+
+
+
+
+
 
 [https://leetcode.com/submissions/detail/140867659/](https://leetcode.com/submissions/detail/140867659/)
 
