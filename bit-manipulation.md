@@ -1,7 +1,5 @@
 # 7.Bit Manipulation
 
-
-
 ## 38 Single Number
 
 這題其實就是用XOR
@@ -12,10 +10,11 @@ giving a set of numbers a,b,c,d,e, ... ,x,y,z while z is the one which appears o
 
 it can be expressed as follows:
 
-a ^b.... ^x ^y ^z ^a ^b ... ^x ^y
-=a ^a ^b ^b ... ^x ^x ^y ^y ^z
-=0 ^0 ... ^0 ^ z
+a ^b.... ^x ^y ^z ^a ^b ... ^x ^y  
+=a ^a ^b ^b ... ^x ^x ^y ^y ^z  
+=0 ^0 ... ^0 ^ z  
 =z
+
 
 
 ## 39 Single Number \|\|
@@ -50,19 +49,15 @@ a ^b.... ^x ^y ^z ^a ^b ... ^x ^y
 >
 > two = ~three
 
-https://www.jianshu.com/p/758e799614b2
+[https://www.jianshu.com/p/758e799614b2](https://www.jianshu.com/p/758e799614b2)
 
-
-
-## 39 Single Number \|\|\| 
+## 39 Single Number \|\|\|
 
 這題其實事Single Number的進階  還沒時間看
 
 [https://segmentfault.com/a/1190000004886431](https://segmentfault.com/a/1190000004886431 "leetcode 算法解析（一）：260. Single Number III")
 
-http://fisherlei.blogspot.com/2015/10/leetcode-single-number-iii-solution.html
-
-
+[http://fisherlei.blogspot.com/2015/10/leetcode-single-number-iii-solution.html](http://fisherlei.blogspot.com/2015/10/leetcode-single-number-iii-solution.html)
 
 這邊我補充一下其他相關  bit manipulation的應用
 
