@@ -1,5 +1,7 @@
 # 5.Binary Tree
 
+\[toc\]
+
 ## 27 Validate Binary Search Tree
 
 ```c
@@ -38,6 +40,60 @@ narrowing down the range between curr-&gt;key+1 ~ int\_MAX  and int\_MIN ~ curr-
 [https://leetcode.com/submissions/detail/140847741/](https://leetcode.com/submissions/detail/140847741/)
 
 ## 28 Maximum Depth of Binary Tree
+
+
+
+''' =c
+
+int getDepth\(struct TreeNode\* curr, int depth, int final\){
+
+    if\(curr == NULL\)
+
+    {
+
+        if\(depth &gt; final\) {
+
+        final=depth;    
+
+        }
+
+     return final;
+
+    }
+
+    depth++;
+
+    final=getDepth\(curr-&gt;left, depth,final\);
+
+    final=getDepth\(curr-&gt;right,depth,final\);
+
+    printf\("val=%d, depth=%d, final=%d\n",curr-&gt;val, depth,final\);
+
+    return final;
+
+}
+
+
+
+int maxDepth\(struct TreeNode\* root\) {
+
+    int result;
+
+    result=getDepth\(root,0,0\);
+
+    return result;
+
+}
+
+'''
+
+
+
+https://leetcode.com/submissions/detail/140867659/
+
+
+
+
 
 ## 29 Minimum Depth of Binary Tree
 
