@@ -6,6 +6,16 @@
 
 這題其實就是用XOR
 
+The characteristic of XOR operation is when x ^ x =0,  x ^ ~x =1
+
+giving a set of numbers a,b,c,d,e, ... ,x,y,z while z is the one which appears onces and others appear twices
+
+it can be expressed as follows:
+
+a ^b.... ^x ^y ^z ^a ^b ... ^x ^y
+=a ^a ^b ^b ... ^x ^x ^y ^y ^z
+=0 ^0 ... ^0 ^ z
+=z
 
 
 ## 39 Single Number \|\|

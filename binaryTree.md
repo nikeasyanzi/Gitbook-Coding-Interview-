@@ -1,17 +1,52 @@
 # 5.Binary Tree
 
-\#\# 27 Validate Binary Search Tree
+## 27 Validate Binary Search Tree
 
-\#\# 28 Maximum Depth of Binary Tree
+	``` c=
+bool isBST(struct TreeNode * curr, struct TreeNode* left, struct TreeNode* right)
+{
 
-\#\# 29 Minimum Depth of Binary Tree
+	//printf("val=%d\n", curr->val);
+	// Base condition
+	if (curr == NULL) return true;
 
-\#\# 30 Balanced Binary Tree
+	// if left node exist that check it has
+	// correct data or not
 
-\#\# 31 Convert Sorted Array to Balanced Binary Search Tree
+	if (left != NULL && curr->val <= left->val) return false;
 
-\#\# 32 Convert Sorted List to Balanced Binary Search Tree
+	// if right node exist that check it has
+	// correct data or not
+	if (right != NULL && curr->val >= right->val) return false;
 
-\#\# 33 Binary Tree Maximum Path Sum
+	// check recursively for every node.
+	return isBST(curr->left, left, curr) &&
+		isBST(curr->right, curr, right);
 
-\#\# 34 Binary Tree Upside Down
+}
+
+bool isValidBST(struct TreeNode* root) {
+	return isBST(root,NULL,NULL);
+
+}
+	
+```
+
+the problem is tricky, be careful with test case [1,1]  [2,1,3,NULL,NULL,5]	
+
+narrowing down the range between curr->key+1 ~ int_MAX  and int_MIN ~ curr->key+1 leads to a lethal bug, the program goes wrong when there are two INT_MIN or INT_MAX
+
+https://leetcode.com/submissions/detail/140847741/
+
+
+## 28 Maximum Depth of Binary Tree
+## 29 Minimum Depth of Binary Tree
+## 30 Balanced Binary Tree
+## 31 Convert Sorted Array to Balanced Binary Search Tree
+## 32 Convert Sorted List to Balanced Binary Search Tree
+## 33 Binary Tree Maximum Path Sum
+## 34 Binary Tree Upside Down
+
+
+
+
