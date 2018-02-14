@@ -5,5 +5,6 @@
 * [2.Math](math.md)
 * [3.Array/String](arraystring.md)
 * [4.LinkedList](LinkedList.md)
+* [5.BinaryTree](BinaryTree.md)
 * [7.Bit Manipulation](bit-manipulation.md)
 
