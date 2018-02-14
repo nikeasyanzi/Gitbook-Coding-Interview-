@@ -48,7 +48,6 @@ int getDepth\(struct TreeNode\* curr, int depth, int final\){
 if\(curr == NULL\\)
 
 ```c
-
 {
 
     if\(depth &gt; final\) {
