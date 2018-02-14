@@ -1,35 +1,34 @@
 # 5.Binary Tree
 
-\[toc\]
-
 ## 27 Validate Binary Search Tree
 
 ```c
 bool isBST(struct TreeNode * curr, struct TreeNode* left, struct TreeNode* right)
 {
 
-    //printf("val=%d\n", curr->val);
-    // Base condition
-    if (curr == NULL) return true;
+//printf("val=%d\n", curr->val);
+// Base condition
+    if (curr == NULL)
+        return true;
+// if left node exist that check it has
+// correct data or not
 
-    // if left node exist that check it has
-    // correct data or not
+    if (left != NULL && curr->val <= left->val)
+        return false;
 
-    if (left != NULL && curr->val <= left->val) return false;
+// if right node exist that check it has
+// correct data or not
+    if (right != NULL && curr->val >= right->val)
+        return false;
 
-    // if right node exist that check it has
-    // correct data or not
-    if (right != NULL && curr->val >= right->val) return false;
-
-    // check recursively for every node.
+// check recursively for every node.
     return isBST(curr->left, left, curr) &&
-        isBST(curr->right, curr, right);
-
+           isBST(curr->right, curr, right);
 }
 
-bool isValidBST(struct TreeNode* root) {
+bool isValidBST(struct TreeNode* root)
+{
     return isBST(root,NULL,NULL);
-
 }
 ```
 
@@ -41,31 +40,34 @@ narrowing down the range between curr-&gt;key+1 ~ int\_MAX  and int\_MIN ~ curr-
 
 ## 28 Maximum Depth of Binary Tree
 
-\`\`\`c
 
-int getDepth\(struct TreeNode\* curr, int depth, int final\){
 
-if\(curr == NULL\){if\(depth &gt; final\) {    final=depth;        }
+```c
+int getDepth(struct TreeNode* curr, int depth, int final)
+{
+    if(curr == NULL)
+    {
+        if(depth > final)
+        {
+            final=depth;
+        }
+        return final;
+    }
+    depth++;
 
-```markdown
- return final;
+    final=getDepth(curr-&gt; left, depth,final);
+    final=getDepth(curr-&gt; right,depth,final);
+    printf("val=%d, depth=%d, final=%d\n",curr-&gt; val, depth,final);
+    return final;
 }
-depth++;
 
-final=getDepth(curr-&gt;left, depth,final);
-final=getDepth(curr-&gt;right,depth,final);
-printf("val=%d, depth=%d, final=%d\n",curr-&gt;val, depth,final);
-return final;
-}
-
-int maxDepth(struct TreeNode* root) {
-int result;
-result=getDepth\(root,0,0\);
-return result;
+int maxDepth(struct TreeNode* root)
+{
+    int result;
+    result=getDepth\(root,0,0\);
+    return result;
 }
 ```
-
-
 
 [https://leetcode.com/submissions/detail/140867659/](https://leetcode.com/submissions/detail/140867659/)
 
