@@ -2,7 +2,7 @@
 
 ## 27 Validate Binary Search Tree
 
-	``` c=
+``` c
 bool isBST(struct TreeNode * curr, struct TreeNode* left, struct TreeNode* right)
 {
 
