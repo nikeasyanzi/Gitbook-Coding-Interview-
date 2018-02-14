@@ -1,7 +1,5 @@
 # 5.Binary Tree
 
-\[toe\]
-
 ## 27 Validate Binary Search Tree
 
 ```c
@@ -64,38 +62,26 @@ int getDepth(struct TreeNode* curr, int depth, int final)
 int maxDepth(struct TreeNode* root)
 {
     int result;
-    result=getDepth\(root,0,0\);
+    result=getDepth(root,0,0);
     return result;
 }
 ```
 
+這是另一個解法   原理差不多
 
-
-int maxDepth\(struct TreeNode\* root\){
-
+```c
+int maxDepth(struct TreeNode* root)
+{
     int maxright;
-
     int maxleft;
-
-    if\(root==NULL\)
-
+    if(root==NULL)
         return 0;
-
-    maxright=maxDepth\(root-&gt;right\);
-
-    maxleft=maxDepth\(root-&gt;left\);
-
-    printf\("%d  %d %d", root-&gt;val, maxright,maxleft\);
-
-    return \(maxright&gt;maxleft\)?\(maxright +1\): \(maxleft+1\);
-
+    maxright=maxDepth(root->right);
+    maxleft=maxDepth(root->left);
+    printf("%d  %d %d", root->val, maxright,maxleft);
+    return (maxright>maxleft)?(maxright +1): (maxleft+1);
 }
-
-
-
-
-
-
+```
 
 [https://leetcode.com/submissions/detail/140867659/](https://leetcode.com/submissions/detail/140867659/)
 
