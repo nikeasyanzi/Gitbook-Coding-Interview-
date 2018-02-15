@@ -69,8 +69,6 @@ int maxDepth(struct TreeNode* root)
 
 [https://leetcode.com/submissions/detail/140867659/](https://leetcode.com/submissions/detail/140867659/)
 
-
-
 這是另一個解法   原理差不多
 
 ```c
@@ -87,11 +85,87 @@ int maxDepth(struct TreeNode* root)
 }
 ```
 
-
-
-但這題非遞迴的話   其實要用BFS 來解  
+但這題非遞迴的話   其實要用BFS 來解
 
 ## 29 Minimum Depth of Binary Tree
+
+int getDepth\(struct TreeNode\* curr\)
+
+{
+
+    int depth;
+
+    int left;
+
+    int right;
+
+    if\(curr==NULL\)
+
+    {
+
+        return 0;
+
+    }
+
+    
+
+    if\(curr!=NULL && curr-&gt;right ==NULL && curr-&gt;left==NULL\)
+
+    {
+
+        return 1;
+
+    }
+
+    if\(  curr-&gt;right !=NULL && curr-&gt;left!=NULL \)
+
+    {
+
+        left=getDepth\(curr-&gt;left\);
+
+        right=getDepth\(curr-&gt;right\);
+
+        depth= left&lt;right?left:right;
+
+    }
+
+    
+
+    if\( curr-&gt;right ==NULL && curr-&gt;left!=NULL\)
+
+    {
+
+        depth=getDepth\(curr-&gt;left\);
+
+    }
+
+    
+
+    if\( curr-&gt;right !=NULL && curr-&gt;left==NULL\)
+
+    {
+
+        depth=getDepth\(curr-&gt;right\);
+
+    }
+
+    return depth+1;
+
+}
+
+
+
+int minDepth\(struct TreeNode\* root\)
+
+{
+
+    return getDepth\(root\);
+
+}
+
+
+
+
 
 ## 30 Balanced Binary Tree
 
