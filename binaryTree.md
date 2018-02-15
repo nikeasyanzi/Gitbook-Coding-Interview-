@@ -129,7 +129,6 @@ int minDepth(struct TreeNode* root)
 }
 ```
 ### explaination
-Minimum Depth of Binary Tree 和Minimum depth of binary tree 的 概念很像
 
 1. 計算深度的方法可以top down  or bottom up
 
@@ -147,6 +146,13 @@ Minimum Depth of Binary Tree 和Minimum depth of binary tree 的 概念很像
    
 3. the curr depth can be updated by consider the depth of left subtree and the depth of right subtree.
 
+4. Maximum Depth of Binary Tree 和Minimum depth of binary tree 的差別
+
+   1. Max depth 從root node 計算起 較方便
+
+   2. Min depth 從leaf node算起比較方便
+
+   3. 比較一下兩者演算法,可以發現Minimum depth的算法須額外分辨只有左或右子樹的狀況, 否則只有空子樹的深度被回傳 
 
 ## 30 Balanced Binary Tree
 
