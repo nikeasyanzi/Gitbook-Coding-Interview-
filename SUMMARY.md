@@ -7,6 +7,7 @@
 * [4.LinkedList](LinkedList.md)
 * [5.Binary Tree](binaryTree.md)
 * [6.Binary Search](binarysearch.md)
+* [8.Misc](8misc.md)
 * [7.Bit Manipulation](bit-manipulation.md)
-* [Useful Links](useful-links.md)
+* [8.Misc](8misc.md)
 
