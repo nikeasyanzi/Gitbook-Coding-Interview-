@@ -89,84 +89,61 @@ int maxDepth(struct TreeNode* root)
 
 ## 29 Minimum Depth of Binary Tree
 
-int getDepth\(struct TreeNode\* curr\)
-
+```c
+int getDepth(struct TreeNode* curr)
 {
-
     int depth;
-
     int left;
-
     int right;
-
-    if\(curr==NULL\)
-
+    if(curr==NULL)
     {
-
         return 0;
-
     }
-
     
-
-    if\(curr!=NULL && curr-&gt;right ==NULL && curr-&gt;left==NULL\)
-
+    if(curr!=NULL && curr->right ==NULL && curr->left==NULL)
     {
-
         return 1;
-
     }
-
-    if\(  curr-&gt;right !=NULL && curr-&gt;left!=NULL \)
-
+    if(  curr->right !=NULL && curr->left!=NULL )
     {
-
-        left=getDepth\(curr-&gt;left\);
-
-        right=getDepth\(curr-&gt;right\);
-
-        depth= left&lt;right?left:right;
-
+        left=getDepth(curr->left);
+        right=getDepth(curr->right);
+        depth= left<right?left:right;
     }
-
     
-
-    if\( curr-&gt;right ==NULL && curr-&gt;left!=NULL\)
-
+    if( curr->right ==NULL && curr->left!=NULL)
     {
-
-        depth=getDepth\(curr-&gt;left\);
-
+        depth=getDepth(curr->left);
     }
-
     
-
-    if\( curr-&gt;right !=NULL && curr-&gt;left==NULL\)
-
+    if( curr->right !=NULL && curr->left==NULL)
     {
-
-        depth=getDepth\(curr-&gt;right\);
-
+        depth=getDepth(curr->right);
     }
-
     return depth+1;
-
 }
 
-
-
-int minDepth\(struct TreeNode\* root\)
-
+int minDepth(struct TreeNode* root)
 {
-
-    return getDepth\(root\);
-
+    return getDepth(root);
 }
+```
 
 
 
 
 
+Minimum Depth of Binary Tree 和Minimum depth of binary tree 的 概念很像    
+
+1.
+
+1. 計算深度的方法可以top down  or bottom up
+
+   1. top down
+
+   2. bottom up ownasdadsasdasasadsds dow
+
+2. 
 ## 30 Balanced Binary Tree
 
 ## 31 Convert Sorted Array to Balanced Binary Search Tree
