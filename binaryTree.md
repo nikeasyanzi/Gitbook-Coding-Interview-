@@ -99,7 +99,7 @@ int getDepth(struct TreeNode* curr)
     {
         return 0;
     }
-    
+
     if(curr!=NULL && curr->right ==NULL && curr->left==NULL)
     {
         return 1;
@@ -110,12 +110,12 @@ int getDepth(struct TreeNode* curr)
         right=getDepth(curr->right);
         depth= left<right?left:right;
     }
-    
+
     if( curr->right ==NULL && curr->left!=NULL)
     {
         depth=getDepth(curr->left);
     }
-    
+
     if( curr->right !=NULL && curr->left==NULL)
     {
         depth=getDepth(curr->right);
@@ -129,11 +129,7 @@ int minDepth(struct TreeNode* root)
 }
 ```
 
-
-
-
-
-Minimum Depth of Binary Tree 和Minimum depth of binary tree 的 概念很像    
+Minimum Depth of Binary Tree 和Minimum depth of binary tree 的 概念很像
 
 1.
 
@@ -143,7 +139,12 @@ Minimum Depth of Binary Tree 和Minimum depth of binary tree 的 概念很像
 
    2. bottom up ownasdadsasdasasadsds dow
 
-2. 
+1. 考慮node的狀態
+
+
+
+3.基本上就是 
+
 ## 30 Balanced Binary Tree
 
 ## 31 Convert Sorted Array to Balanced Binary Search Tree
