@@ -1,4 +1,25 @@
+---
+- toc
+[toe]
+---
+
 # 5.Binary Tree
+
+[toc]
+
+[toe]
+
+---
+
+---
+
+---
+1. [Example](#27 Validate Binary Search Tree)
+2. [Example2](#example2)
+3. [Third Example](#third-example)
+
+
+
 
 ## 27 Validate Binary Search Tree
 
@@ -128,25 +149,26 @@ int minDepth(struct TreeNode* root)
     return getDepth(root);
 }
 ```
+
 ### explaination
+
 Minimum Depth of Binary Tree 和Minimum depth of binary tree 的 概念很像
 
 1. 計算深度的方法可以top down  or bottom up
 
-   1. top-down: we consider the depth of root as 1, and gradually increase the depth when visiting the successors.   
+   1. top-down: we consider the depth of root as 1, and gradually increase the depth when visiting the successors.
 
    2. bottom-up: we consider the depth of leaf as 1 and gradually increase the depth when visiting the predecessors
 
 2. 考慮node的狀態
-   
-   1. null node
-   
-   2. node with two child nodes
-   
-   3. node with either right or left child node
-   
-3. the curr depth can be updated by consider the depth of left subtree and the depth of right subtree.
 
+   1. null node
+
+   2. node with two child nodes
+
+   3. node with either right or left child node
+
+3. the curr depth can be updated by consider the depth of left subtree and the depth of right subtree.
 
 ## 30 Balanced Binary Tree
 
