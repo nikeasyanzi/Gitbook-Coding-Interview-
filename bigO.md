@@ -1,8 +1,8 @@
 # 1.Big O
 
-[What is Big O](#What is Big O)
+[What is Big O (1)](#What is Big O)
 
-[What is Big](#What is Big)
+[What is Big O (2)](#What is Big)
 
 
 # Table of contents
@@ -26,42 +26,5 @@ The second paragraph text
 
 ##What is Big O
 
-asdasdsad
+##What is Big O 2
 
-
-asdasdsad
-
-
-asdsad
-
-asdsad
-
-
-asdsad
-asdasd
-
-
-asdsad
-asdasd
-asddsa
-
-asdsad
-
-asdasd
-
-
-asdasd
-
-asdsad
-
-
-asdasd
-
-asd
-asdsad
-
-asdsa
-##What is Big
-
-## paragrap=h2
-asdsadsda
