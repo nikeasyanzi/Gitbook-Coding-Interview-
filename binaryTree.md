@@ -1,5 +1,10 @@
 # 5.Binary Tree
 
+1. [Example](#27 Validate Binary Search Tree)
+2. [Example2](#28 Maximum Depth of Binary Tree)
+3. [Third Example](#third-example)
+
+
 ## 27 Validate Binary Search Tree
 
 ```c
@@ -34,7 +39,7 @@ bool isValidBST(struct TreeNode* root)
 
 the problem is tricky, be careful with test case \[1,1\]  \[2,1,3,NULL,NULL,5\]
 
-narrowing down the range between curr-&gt;key+1 ~ int\_MAX  and int\_MIN ~ curr-&gt;key+1 leads to a lethal bug, the program goes wrong when there are two INT\_MIN or INT\_MAX
+narrowing down the range between curr->key+1 ~ int\_MAX  and int\_MIN ~ curr->key+1 leads to a lethal bug, the program goes wrong when there are two INT\_MIN or INT\_MAX
 
 [https://leetcode.com/submissions/detail/140847741/](https://leetcode.com/submissions/detail/140847741/)
 
@@ -128,23 +133,26 @@ int minDepth(struct TreeNode* root)
     return getDepth(root);
 }
 ```
+
 ### explaination
+
+Minimum Depth of Binary Tree 和Minimum depth of binary tree 的 概念很像
 
 1. 計算深度的方法可以top down  or bottom up
 
-   1. top-down: we consider the depth of root as 1, and gradually increase the depth when visiting the successors.   
+   1. top-down: we consider the depth of root as 1, and gradually increase the depth when visiting the successors.
 
    2. bottom-up: we consider the depth of leaf as 1 and gradually increase the depth when visiting the predecessors
 
 2. 考慮node的狀態
-   
+
    1. null node
-   
+
    2. node with two child nodes
-   
+
    3. node with either right or left child node
-   
-3. the curr depth can be updated by consider the depth of left subtree and the depth of right subtree.
+
+3. The curr depth can be updated by consider the depth of left subtree and the depth of right subtree.
 
 4. Maximum Depth of Binary Tree 和Minimum depth of binary tree 的差別
 
