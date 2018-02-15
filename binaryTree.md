@@ -53,8 +53,8 @@ int getDepth(struct TreeNode* curr, int depth, int final)
     }
     depth++;
 
-    final=getDepth(curr-&gt; left, depth,final);
-    final=getDepth(curr-&gt; right,depth,final);
+    final=getDepth(curr->left, depth,final);
+    final=getDepth(curr->right,depth,final);
     printf("val=%d, depth=%d, final=%d\n",curr-&gt; val, depth,final);
     return final;
 }
@@ -66,6 +66,10 @@ int maxDepth(struct TreeNode* root)
     return result;
 }
 ```
+
+[https://leetcode.com/submissions/detail/140867659/](https://leetcode.com/submissions/detail/140867659/)
+
+
 
 這是另一個解法   原理差不多
 
@@ -83,7 +87,9 @@ int maxDepth(struct TreeNode* root)
 }
 ```
 
-[https://leetcode.com/submissions/detail/140867659/](https://leetcode.com/submissions/detail/140867659/)
+
+
+但這題非遞迴的話   其實要用BFS 來解  
 
 ## 29 Minimum Depth of Binary Tree
 
