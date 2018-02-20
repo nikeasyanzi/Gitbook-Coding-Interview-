@@ -8,6 +8,26 @@
 
 \#\# 9 Valid Palindrome
 
+不可以用char   要用數字 %10   看可不可以回去
+
+
+
+ex. 123321 
+
+
+
+digit= val%10 \* 10+ digit
+
+val=val/10
+
+
+
+但要考慮結尾為0的case:
+
+12210  -&gt;   012210
+
+
+
 \#\# 10 STRSTR\(\)
 
 \#\# 11 Reverse words in a string
@@ -31,6 +51,4 @@
 \#\# 20 Read N Characters Given Read4
 
 \#\# 21 Read N Characters Given Read4 – Call multiple times
-
-
 

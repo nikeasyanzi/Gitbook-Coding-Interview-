@@ -1,8 +1,5 @@
 # 5.Binary Tree
 
-1. [Example](#27 Validate Binary Search Tree)
-2. [Example2](#28 Maximum Depth of Binary Tree)
-3. [Third Example](#third-example)
 
 
 ## 27 Validate Binary Search Tree
@@ -37,9 +34,12 @@ bool isValidBST(struct TreeNode* root)
 }
 ```
 
-the problem is tricky, be careful with test case \[1,1\]  \[2,1,3,NULL,NULL,5\]
+### Explanation
 
-narrowing down the range between curr->key+1 ~ int\_MAX  and int\_MIN ~ curr->key+1 leads to a lethal bug, the program goes wrong when there are two INT\_MIN or INT\_MAX
+  
+The problem is tricky, be careful with test cases \[1,1\] and  \[2,1,3,NULL,NULL,5\]
+
+Narrowing down the range between curr-&gt;key+1 ~ int\_MAX  and int\_MIN ~ curr-&gt;key+1 leads to a lethal bug, the program goes wrong when there are two INT\_MIN or INT\_MAX. 
 
 [https://leetcode.com/submissions/detail/140847741/](https://leetcode.com/submissions/detail/140847741/)
 
@@ -134,7 +134,7 @@ int minDepth(struct TreeNode* root)
 }
 ```
 
-### explaination
+### Explanation
 
 Minimum Depth of Binary Tree 和Minimum depth of binary tree 的 概念很像
 
@@ -160,7 +160,7 @@ Minimum Depth of Binary Tree 和Minimum depth of binary tree 的 概念很像
 
    2. Min depth 從leaf node算起比較方便
 
-   3. 比較一下兩者演算法,可以發現Minimum depth的算法須額外分辨只有左或右子樹的狀況, 否則只有空子樹的深度被回傳 
+   3. 比較一下兩者演算法,可以發現Minimum depth的算法須額外分辨只有左或右子樹的狀況, 否則只有空子樹的深度被回傳
 
 ## 30 Balanced Binary Tree
 
