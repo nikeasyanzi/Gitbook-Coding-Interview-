@@ -1,27 +1,31 @@
 # Summary
 
-## [Introduction](README.md)
 
-## [1.Big O](bigO.md)
+* [Introduction](README.md)
+* [21123](21123.md)
 
-## [2.Math](math.md)
+## 1.Big O
 
-## [3.Array/String](arraystring.md)
+## 2.Math
 
-## [4.LinkedList](LinkedList.md)
+## 3.Array/String
 
-## [5.Binary Tree](binaryTree.md)
+## 4.LinkedList
 
-## [6.Binary Search](binarysearch.md)
+## 5.Binary Tree
 
-## [7.Bit Manipulation](bit-manipulation.md)
+## 6.Binary Search
 
-## [8.Misc](misc.md)
+## 7.Bit Manipulation
 
-## [9.Stack](stack.md)
+## 8.Misc
 
-## [10.Dynamic Programming](dynamic-programming.md)
+## 9.Stack
 
-## [Userful Links](useful-links.md)
+## 10.Dynamic Programming
+
+## Userful Links
+## Introduction
+
 
 
