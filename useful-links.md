@@ -7,15 +7,16 @@ Some websites providing useful information
 2. Grandyang [http://www.cnblogs.com/grandyang/category/625406.htm](http://www.cnblogs.com/grandyang/category/625406.htm)
 
 3. 待補
+
 4. 4567
 
 [http://blog.csdn.net/column/details/leetcode-summary.html](http://blog.csdn.net/column/details/leetcode-summary.html)
 
-
-
-http://www.code123.cc/docs/leetcode-notes/math\_and\_bit\_manipulation/single\_number\_ii.html[![](http://www.cnblogs.com/Skins/custom/images/logo.gif "返回主页")](http://www.cnblogs.com/grandyang/)
+[http://www.code123.cc/docs/leetcode-notes/math\_and\_bit\_manipulation/single\_number\_ii.html\[!\[\]\(http://www.cnblogs.com/Skins/custom/images/logo.gif](http://www.code123.cc/docs/leetcode-notes/math_and_bit_manipulation/single_number_ii.html[![]%28http://www.cnblogs.com/Skins/custom/images/logo.gif) "返回主页"\)\]\([http://www.cnblogs.com/grandyang/](http://www.cnblogs.com/grandyang/)\)
 
 [![](http://www.cnblogs.com/Skins/custom/images/logo.gif "返回主页")](http://www.cnblogs.com/grandyang/)
+
+http://bangbingsyb.blogspot.tw/2014/11/leetcode-binary-tree-maximum-path-sum.html
 
 
 
