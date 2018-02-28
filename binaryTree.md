@@ -71,10 +71,14 @@ int maxDepth(struct TreeNode* root)
     return result;
 }
 ```
-
+This is A top down approach, the level is increased and passed down to the child node.
+ 
 [https://leetcode.com/submissions/detail/140867659/](https://leetcode.com/submissions/detail/140867659/)
 
-這是另一個解法   原理差不多
+這是另一個解法   原理差不多 但這是bottom up的解法  意即 
+返回上一層caller時才把depth+1
+
+
 
 ```c
 int maxDepth(struct TreeNode* root)
