@@ -86,5 +86,47 @@ Q.為什麼 回傳right +1 就會是原本應該要被Insert的位子?
 
 ##36 Find Minimum in sorted rotated array
 
+```c
+int findMin(int* nums, int numsSize)
+{
+
+    int left=0;
+    int right=numsSize-1;
+
+    int mid;
+    if(nums[left]<nums[right])
+        return nums[left];
+
+    while(left<right)
+    {
+        mid= (right-left)/2 + left;
+
+        if(nums[mid]>nums[right])   // the min is at right half
+        {
+            left=mid;
+            if(nums[mid]>nums[mid+1])   
+            {
+                return mid+1;          //the min is at right and the element mid+1 (at right) is smaller , so we hit the boundary 
+            }
+        }
+        if(nums[mid]<nums[right])     //the min is at left
+        {
+            right=mid;
+            if(nums[mid]<nums[mid-1])
+            {
+                return mid;         //the min is at left and the element mid-1 (at left) is larger , so we hit the boundary, mid is what we want
+            }
+        }
+    }
+    return 0;//dummy
+}
+
+```
+測資:
+int nums[7]= {4,5,6,7, 0, 1,2};
+int numsz[9]= {9,10,11,0,1,2,3,4,5};
+int num[2]= {2,1};
+
+
 ##37 Find Minimum in sorted rotated array 2
 
