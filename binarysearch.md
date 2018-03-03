@@ -139,8 +139,26 @@ int num[2]= {2,1};
     
     那終止條件 我們就可以在 計算新的mid  與決定決定下一個搜尋的方向時檢查
     
-    1.如果min 在右半邊 那剛好mid < mid+1 表示mid+1 為最小  (可用測資1驗證)
+    1.如果min 在右半邊 那剛好mid < mid+1 表示mid+1 為最小  
+    (可用測資1驗證)
+    1st iteration:
+        left=0, right=6 mid=3
+        nums[3] > nums[6] 
+            left=3;
+            檢查mins[3]>mins[4] // hit!!
+        
+        
     2.如果min 在左半邊 剛好mid>mid-1 表示 mid-1為最小 (可用測資2驗證)
+    1st iteration
+        left=0, right=5 mid=2
+        nums[2] < nums[5]
+        
+    2st iteration
+        left=0, right=2 mid=1
+        mums[1]<  nums[2] 
+            right=1;
+            檢查nums[1] < nums[0]    //hit
+        
 
 ##37 Find Minimum in sorted rotated array 2
 
