@@ -124,9 +124,23 @@ int findMin(int* nums, int numsSize)
 ```
 測資:
 int nums[7]= {4,5,6,7, 0, 1,2};
-int numsz[9]= {9,10,11,0,1,2,3,4,5};
+int numsz[6]= {5,0,1,2,3,4};
 int num[2]= {2,1};
 
+
+所以我們考慮
+
+1.一開始先檢查 是不是真的為sorted rotated array  
+
+    如果是sorted array  則a[left]< a[right] 
+    sorted rotated array, 則a[left] > a[right]
+    
+2. 我們都知道binary search 是 看middle value 來決定下一個搜尋的方向 是左邊或右邊
+    
+    那終止條件 我們就可以在 計算新的mid  與決定決定下一個搜尋的方向時檢查
+    
+    1.如果min 在右半邊 那剛好mid < mid+1 表示mid+1 為最小  (可用測資1驗證)
+    2.如果min 在左半邊 剛好mid>mid-1 表示 mid-1為最小 (可用測資2驗證)
 
 ##37 Find Minimum in sorted rotated array 2
 
