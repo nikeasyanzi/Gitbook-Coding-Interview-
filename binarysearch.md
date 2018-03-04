@@ -85,6 +85,8 @@ Q.為什麼 回傳right +1 就會是原本應該要被Insert的位子?
 
 
 ##36 Find Minimum in sorted rotated array
+http://zxi.mytechroad.com/blog/divide-and-conquer/leetcode-153-find-minimum-in-rotated-sorted-array/
+http://bangbingsyb.blogspot.tw/2014/11/leecode-find-minimum-in-rotated-sorted.html
 
 ```c
 int findMin(int* nums, int numsSize)
