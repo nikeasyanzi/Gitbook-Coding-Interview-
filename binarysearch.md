@@ -91,18 +91,14 @@ http://bangbingsyb.blogspot.tw/2014/11/leecode-find-minimum-in-rotated-sorted.ht
 ```c
 int findMin(int* nums, int numsSize)
 {
-
     int left=0;
     int right=numsSize-1;
-
     int mid;
     if(nums[left]<nums[right])
         return nums[left];
-
     while(left<right)
     {
         mid= (right-left)/2 + left;
-
         if(nums[mid]>nums[right])   // the min is at right half
         {
             left=mid;
