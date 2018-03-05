@@ -227,6 +227,11 @@ full path: 1->2->3
 [9,6,-3,null,null,-6,2,null,null,2,null,-6,-6,-6]
 [2,-1,-2]
 [-3]
+
+Reference:
+http://www.cnblogs.com/grandyang/p/4280120.html
+http://blog.csdn.net/wzy_1988/article/details/25290907
+
 ## 34 Binary Tree Upside Down
 
 
