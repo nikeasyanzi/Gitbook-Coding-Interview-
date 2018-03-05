@@ -1,7 +1,5 @@
 # 5.Binary Tree
 
-
-
 ## 27 Validate Binary Search Tree
 
 ```c
@@ -36,10 +34,9 @@ bool isValidBST(struct TreeNode* root)
 
 ### Explanation
 
-  
 The problem is tricky, be careful with the coner test cases such as \[1,1\] and  \[2,1,3,NULL,NULL,5\]
 
-Narrowing down the range between curr-&gt;key+1 ~ int\_MAX  and int\_MIN ~ curr-&gt;key+1 leads to a lethal bug, the program goes wrong when there are two INT\_MIN or INT\_MAX. 
+Narrowing down the range between curr-&gt;key+1 ~ int\_MAX  and int\_MIN ~ curr-&gt;key+1 leads to a lethal bug, the program goes wrong when there are two INT\_MIN or INT\_MAX.
 
 [https://leetcode.com/submissions/detail/140847741/](https://leetcode.com/submissions/detail/140847741/)
 
@@ -71,14 +68,13 @@ int maxDepth(struct TreeNode* root)
     return result;
 }
 ```
+
 This is A top down approach, the level is increased and passed down to the child node.
- 
+
 [https://leetcode.com/submissions/detail/140867659/](https://leetcode.com/submissions/detail/140867659/)
 
-這是另一個解法   原理差不多 但這是bottom up的解法  意即 
+這是另一個解法   原理差不多 但這是bottom up的解法  意即   
 返回上一層caller時才把depth+1
-
-
 
 ```c
 int maxDepth(struct TreeNode* root)
@@ -173,7 +169,58 @@ Minimum Depth of Binary Tree 和Minimum depth of binary tree 的 概念很像
 ## 32 Convert Sorted List to Balanced Binary Search Tree
 
 ## 33 Binary Tree Maximum Path Sum
+    Given a binary tree, find the maximum path sum.
+    
+    For this problem, a path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections. The path must contain at least one node and does not need to go through the root.
+    
+    For example:
+    Given the below binary tree,
+    
+           1
+          / \
+         2   3
+    Return 6.
 
+```c
+int maxPath(struct treeNode *root, int *max)
+{
+    inline MAX( int a, int  b)  { return (a)>(b)?(a):(b);}
+    if(root==NULL )
+    {
+        return 0;
+    }
+    int left;
+    int right;
+    left=MAX(maxPath(root->left,max),0);
+    right=MAX(maxPath(root->right,max),0);
+
+    if ( *max<left+right+root->val)
+    {
+       *max=left+right+root->val;
+    }
+    //printf("max=%d ,left=%d,right=%d\n",*max,left,right);
+    return left>right?left+root->val:right+root->val;
+}
+
+int maxPathSum(struct TreeNode* root) {
+    int max=INT_MIN;    // for the negative value test case
+    maxPath(root,&max);
+    return max;
+}
+```
+策略:
+
+考慮兩個狀態
+single path:  1 -> 2  or 1->3
+full path: 1->2->3 
+
+對某個node 而言  計算該node 以下的value
+    
+重點:
+1. max 要從INT_MIN 開始   因為有負數
+2.left & right為何要跟0比? 但跟INT_MIN 比 反而有錯??
+3.基本主軸是多了一個global max 當參數  另外return 回傳比較大的左右子樹
+  
 ## 34 Binary Tree Upside Down
 
 
