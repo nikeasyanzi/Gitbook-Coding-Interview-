@@ -218,9 +218,15 @@ full path: 1->2->3
     
 重點:
 1. max 要從INT_MIN 開始   因為有負數
-2.left & right為何要跟0比? 但跟INT_MIN 比 反而有錯??
+2.left & right為何要跟0比? 但跟INT_MIN 比 反而有錯??   // [2,-1] 會錯
+因為 接下來的if ( *max<left+right+root->val) 就會變成比較  left+root or right + root or root的狀態
+
 3.基本主軸是多了一個global max 當參數  另外return 回傳比較大的左右子樹
-  
+
+測資
+[9,6,-3,null,null,-6,2,null,null,2,null,-6,-6,-6]
+[2,-1,-2]
+[-3]
 ## 34 Binary Tree Upside Down
 
 
