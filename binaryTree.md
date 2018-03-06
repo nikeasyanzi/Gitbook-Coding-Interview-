@@ -223,7 +223,9 @@ full path: 1->2->3
 2. 為何回傳left & right 的max path sum 為何要跟0比? 但跟INT_MIN 比 反而有錯??   // [2,-1] 會錯
 因為這樣排除了left/right subtree 為負的狀態  接下來的if ( *max<left+right+root->val) 就會變成分別比較  left+root  right + root or root的狀態
 
-3.利用一個global max 當參數  另外return 回傳比較大的左右子樹
+3.利用一個global max 當參數  
+
+4.return 回傳左右子樹中比較大的
 
 測資
 [9,6,-3,null,null,-6,2,null,null,2,null,-6,-6,-6]
