@@ -5,7 +5,6 @@
 ```c
 bool isBST(struct TreeNode * curr, struct TreeNode* left, struct TreeNode* right)
 {
-
 //printf("val=%d\n", curr->val);
 // Base condition
     if (curr == NULL)
@@ -37,6 +36,14 @@ bool isValidBST(struct TreeNode* root)
 The problem is tricky, be careful with the coner test cases such as \[1,1\] and  \[2,1,3,NULL,NULL,5\]
 
 Narrowing down the range between curr-&gt;key+1 ~ int\_MAX  and int\_MIN ~ curr-&gt;key+1 leads to a lethal bug, the program goes wrong when there are two INT\_MIN or INT\_MAX.
+
+so just make sure 
+
+1. if it is a null node, return true
+
+2. check a node whether  left < node && node < right 
+
+3. check left sub tree and right sub tree
 
 [https://leetcode.com/submissions/detail/140847741/](https://leetcode.com/submissions/detail/140847741/)
 
