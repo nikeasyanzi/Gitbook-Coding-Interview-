@@ -16,14 +16,12 @@ int addNode(int val, int carryin)
     {
         newnode->val=val+carryin;
         carryout=0;
-
     }
     else
     {
         //printf(" in add nodeval=%d carryin=%d,",val, carryin);
         newnode->val=val+carryin-10;
         carryout=1;
-
     }
     if(curr==NULL)
     {
@@ -70,58 +68,81 @@ struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2)
     return head;
 }
 ```
+這題要考慮 
+
+1.有進位的問題 
+2.list 長短不一致的問題
+
+原本addTwoNumbers是寫成
 
 
-這題原本是寫成
-'''
+```c
+
 struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2)
 {
+    struct ListNode* currl1=l1;
+    struct ListNode* currl2=l2;
+    int carryin=0;
+    int carryout;
+    while(currl1!=NULL|| currl2!=NULL||carryin!=0){
+        if(currl1==NULL && currl2!=NULL){
+            ...
+        }
+        if(currl2==NULL&& currl1!=NULL){
+            ...
+        }
+        if(currl1!=NULL&& currl2!=NULL){
+            ... //move currl1 and currl2 points to the next one
+        }
 
-struct ListNode* currl1=l1;
-struct ListNode* currl2=l2;
-int carryin=0;
-int carryout;
-while(currl1!=NULL|| currl2!=NULL||carryin!=0)
-{
-if(currl1==NULL && currl2!=NULL)
-{
-carryout=addNode(currl2->val,carryin);
-currl2=currl2->next;
+        if(currl1==NULL&& currl2==NULL){
+            ... //now both curr1 and curr2 are null, 
+                //the program runs into a bug without reset carryin
+        }
+        carryin=carryout;
+    }
+    return head;
 }
-else
-{
-if(currl2==NULL&& currl1!=NULL)
-{
-carryout=addNode(currl1->val,carryin);
-currl1=currl1->next;
-}
-else
-{
-if(currl1!=NULL&& currl2!=NULL)
-{
-carryout=addNode(currl1->val+currl2->val,carryin);
-printf("currl1->val=%d,currl2->val=%d , carryin=%d, carryout=%d\n", currl1->val,currl2->val,carryin,carryout);
-currl1=currl1->next;
-currl2=currl2->next;
-}
-else
-{
-if(currl1==NULL&& currl2==NULL)
-{
-carryout=addNode(0,carryin);
-// printf("currl1->val+currl2->val=%d , carryin=%d\n", currl1->val+currl2->val,carryin);
-printf("carryin=%d, carryout=%d\n", carryin,carryout);
-}
-}
+```
 
+```c
+
+struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2)
+{
+    struct ListNode* currl1=l1;
+    struct ListNode* currl2=l2;
+    int carryin=0;
+    int carryout;
+    while(currl1!=NULL|| currl2!=NULL||carryin!=0){
+        if(currl1==NULL && currl2!=NULL){
+                ...
+        }
+        else{
+            if(currl2==NULL&& currl1!=NULL){
+                ...
+            }
+            else{
+                if(currl1!=NULL&& currl2!=NULL){
+                     ...
+                }
+                else{
+                    if(currl1==NULL&& currl2==NULL){
+                         ...
+                    }
+                }
+            }
+        }
+        carryin=carryout;
+    }
+    return head;
 }
-}
-//printf(" carryout=%d\n",carryout);
-carryin=carryout;
-}
-return head;
-}
-'''
+```
+但其實這兩種  寫法  太直覺  但 if-else 太複雜  
+
+尤其第一種會有bug  (一度卡很久)
+
+這題還有小bug 懶得修
+
 
 24 Swap Nodes in Pairs
 
