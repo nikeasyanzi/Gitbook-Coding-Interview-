@@ -214,14 +214,16 @@ int maxPathSum(struct TreeNode* root) {
 single path:  1 -> 2  or 1->3
 full path: 1->2->3 
 
-對某個node 而言  計算該node 以下的value
+所以對任一node 而言  計算該node 以下左右子樹的max path sum
     
 重點:
-1. max 要從INT_MIN 開始   因為有負數
-2.left & right為何要跟0比? 但跟INT_MIN 比 反而有錯??   // [2,-1] 會錯
-因為 接下來的if ( *max<left+right+root->val) 就會變成比較  left+root or right + root or root的狀態
 
-3.基本主軸是多了一個global max 當參數  另外return 回傳比較大的左右子樹
+1. 因為node有負數,max 要從INT_MIN 開始, 這樣即使max path sum 為負, 也會取代INT_MIN
+
+2. 為何回傳left & right 的max path sum 為何要跟0比? 但跟INT_MIN 比 反而有錯??   // [2,-1] 會錯
+因為這樣排除了left/right subtree 為負的狀態  接下來的if ( *max<left+right+root->val) 就會變成分別比較  left+root  right + root or root的狀態
+
+3.利用一個global max 當參數  另外return 回傳比較大的左右子樹
 
 測資
 [9,6,-3,null,null,-6,2,null,null,2,null,-6,-6,-6]
