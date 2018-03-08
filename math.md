@@ -3,8 +3,6 @@
 3 Reserve Integer
 
 ```c
-#include <math.h>
-#include <limits.h>
 int reverse(int x) {
         
     int count=0;
