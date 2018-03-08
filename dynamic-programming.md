@@ -23,6 +23,11 @@
  
  else return f(n-1) + f(n-2) 
 
+for(i=3;i<n+1;i++){
+    f[i]=f[i-1]+f[i-2];
+}
+return f[n];
+
 \#\# 48 Unique Paths
 
 path(i,j)= path(i,k) + path (k,j);
