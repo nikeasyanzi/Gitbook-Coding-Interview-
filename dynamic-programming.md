@@ -11,11 +11,12 @@
 
 arr[i,j]=maxsum{arr[i,k], arr[k,j]};
 
-
+https://leetcode.com/problems/maximum-subarray/description/
 
 \#\# 51 Maximum Product Subarray
 
 arr[i,j]=maxsum{arr[i,k], arr[k,j]};
+https://leetcode.com/problems/maximum-product-subarray/description/
 
 \#\# 52 Coins in a Line
 
