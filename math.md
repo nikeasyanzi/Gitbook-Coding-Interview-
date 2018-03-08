@@ -3,7 +3,9 @@
 3 Reserve Integer
 
 ```c
-int reverse(int x) {
+#include <math.h>
+#include <limits.h>
+    int reverse(int x) {
         
     int count=0;
     int result=0;
@@ -14,9 +16,8 @@ int reverse(int x) {
         x=x/10;
     } 
     return result;
-}
-
-```c
+    }
+```
 
 
 這題真的很妙  這解法是官方解法 有幾個地方可以注意
@@ -33,6 +34,11 @@ if(abs(result)>INT_MAX)  但寫這樣是查不出來的
 
 Reference:
 http://www.cnblogs.com/grandyang/p/4125588.html
+
+在贴出答案的同时，OJ还提了一个问题 To check for overflow/underflow, we could check if ret > 214748364 or ret < –214748364 before multiplying by 10. On the other hand, we do not need to check if ret == 214748364, why? （214748364 即为 INT_MAX / 10）
+
+为什么不用check是否等于214748364呢，因为输入的x也是一个整型数，所以x的范围也应该在 -2147483648～2147483647 之间，那么x的第一位只能是1或者2，翻转之后res的最后一位只能是1或2，所以res只能是 2147483641 或 2147483642 都在int的范围内。但是它们对应的x为 1463847412 和 2463847412，后者超出了数值范围。所以当过程中res等于 214748364 时， 输入的x只能为 1463847412， 翻转后的结果为 2147483641，都在正确的范围内，所以不用check。
+
 
 
 4 Plus one
