@@ -1,8 +1,34 @@
 # 10.Dynamic Programming
 
-\#\# 47 Climbling Stairs
+\#\# 47
+
+ if(n==1)
+ return 1
+ if(n==2)
+ return 2
+ 
+ n=3 = f(2) + f(1)=3 
+ 111
+ 12
+ 21
+ 
+ n=4 =f(2)+f(3)= 2+3=5
+ 1111
+ 121
+ 211
+ 112
+ 22
+ 
+ n=5 ...
+ 
+ else return f(n-1) + f(n-2) 
 
 \#\# 48 Unique Paths
+
+path(i,j)= path(i,k) + path (k,j);
+
+$$-b \pm \sqrt{b^2 - 4ac} \over 2a$$
+  
 
 \#\# 49 Unique Paths 2
 
