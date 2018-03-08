@@ -80,7 +80,7 @@ https://leetcode.com/problems/maximum-subarray/description/
 arr[i,j]=maxsum{arr[i,k], arr[k,j]};
 https://leetcode.com/problems/maximum-product-subarray/description/
 
-## 52 Coins in a Line
+## 52 Coins in a Line / Nim Game
 
   
     n=1 => first hand win
@@ -99,6 +99,6 @@ bool canWinNim(int n) {
         return false;
 }
 ```
-
-
+[LintCode] Coins in a Line II 一条线上的硬币之二
+http://www.cnblogs.com/grandyang/p/5864323.html
 Reference:
