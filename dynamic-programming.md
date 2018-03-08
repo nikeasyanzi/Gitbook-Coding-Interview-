@@ -19,7 +19,7 @@
  22
  一共五種
  
- 其實這題就是fibnacci series
+ 其實這題就是fibonacci series
  
 ```c
  int climbStairs(int n) {
@@ -38,6 +38,24 @@
     return f[n];
 }
 ```
+但其實有省記憶體的寫法
+```c
+int climbStairs(int n) {
+    
+int i;
+int f1=1;
+int f2=2;
+int final;
+    for(i=3;i<n+1;i++){
+    final=f1+f2;
+    f1=f2;
+    f2=final;
+    }
+    return n>2?final:n;
+}
+```
+
+
 
 ## 48 Unique Paths
 
