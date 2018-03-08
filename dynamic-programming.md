@@ -1,12 +1,15 @@
 # 10.Dynamic Programming
 
-\#\# 47 
-Climbling Stairs2
+## 47 Climbing Stairs
 
-  n=3 = f(2) + f(1)=3 
+考慮n=0~4的方法
+ n=1 -> 一種
+ n=2 -> 兩種
+ n=3 = f(2) + f(1)=3 
  111
  12
  21
+ 一共三種
  
  n=4 =f(2)+f(3)= 2+3=5
  1111
@@ -14,6 +17,9 @@ Climbling Stairs2
  211
  112
  22
+ 一共五種
+ 
+ 其實這題就是fibnacci series
  
 ```c
  int climbStairs(int n) {
@@ -33,16 +39,18 @@ Climbling Stairs2
 }
 ```
 
-\#\# 48 Unique Paths
+## 48 Unique Paths
 
 path(i,j)= path(i,k) + path (k,j);
 
-$$-b \pm \sqrt{b^2 - 4ac} \over 2a$$
-  
+$$ path_{i,j}=  \sum_{j>k>i}  (  path_{i,k} + path_{k,j}) $$
 
-\#\# 49 Unique Paths 2
 
-\#\# 50 Maximum Sum Subarray
+
+
+## 49 Unique Paths 2
+
+## 50 Maximum Sum Subarray
 
 
 arr[i,j]=maxsum{arr[i,k], arr[k,j]};
@@ -54,7 +62,7 @@ https://leetcode.com/problems/maximum-subarray/description/
 arr[i,j]=maxsum{arr[i,k], arr[k,j]};
 https://leetcode.com/problems/maximum-product-subarray/description/
 
-\#\# 52 Coins in a Line
+## 52 Coins in a Line
 
   
     n=1 => first hand win
