@@ -1,13 +1,9 @@
 # 10.Dynamic Programming
 
-\#\# 47
+\#\# 47 
+Climbling Stairs2
 
- if(n==1)
- return 1
- if(n==2)
- return 2
- 
- n=3 = f(2) + f(1)=3 
+  n=3 = f(2) + f(1)=3 
  111
  12
  21
@@ -19,14 +15,23 @@
  112
  22
  
- n=5 ...
- 
- else return f(n-1) + f(n-2) 
-
-for(i=3;i<n+1;i++){
-    f[i]=f[i-1]+f[i-2];
+```c
+ int climbStairs(int n) {
+    int i=0;
+    int *f=malloc(sizeof(int)*n+1);
+    
+    f[0]=0;
+    f[1]=1;
+    f[2]=2;
+    
+    if(n>=3){
+      for(i=3;i<n+1;i++){
+       f[i]=f[i-1]+f[i-2];
+      }
+    }
+    return f[n];
 }
-return f[n];
+```c
 
 \#\# 48 Unique Paths
 
@@ -59,14 +64,15 @@ https://leetcode.com/problems/maximum-product-subarray/description/
     
 所以 假設N個硬幣  如果能被4整除 則後手勝
 
-'''c
+```c
+
 bool canWinNim(int n) { 
         if (n % 4> 0) {
             return true;
         }
         return false;
 }
-'''
+```
 
 
 Reference:
