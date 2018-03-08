@@ -31,7 +31,7 @@ Climbling Stairs2
     }
     return f[n];
 }
-```c
+```
 
 \#\# 48 Unique Paths
 
