@@ -227,6 +227,31 @@ Macro 改成
 
 ## 31 Convert Sorted Array to Balanced Binary Search Tree
 
+```c
+struct TreeNode* myinsertTree(struct TreeNode **root, int *nums, int left,int right){
+    struct TreeNode *newnode=malloc(sizeof(struct TreeNode));
+    int midIdx=(right-left)+left/2;
+    newnode->left=NULL;
+    newnode->right=NULL;
+    if(left<=right){
+        newnode->val=nums[midIdx];
+
+        *root=newnode;
+        myinsertTree(&(*root)->left,nums, left,midIdx-1);
+        myinsertTree(&(*root)->right,nums, midIdx+1,right);
+        //printf("%d ", newnode->val);
+        return *root;
+    }
+    return ;
+}
+
+struct TreeNode* sortedArrayToBST(int* nums, int numsSize) {
+     struct TreeNode *root=NULL;
+     myinsertTree(&root, nums, 0,numsSize-1);
+    return root;
+}
+
+```
 ## 32 Convert Sorted List to Balanced Binary Search Tree
 
 ## 33 Binary Tree Maximum Path Sum
