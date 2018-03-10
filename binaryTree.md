@@ -228,32 +228,32 @@ Macro 改成
 ## 31 Convert Sorted Array to Balanced Binary Search Tree
 
 ```c
-struct TreeNode* myinsertTree(struct TreeNode **root, int *nums, int left,int right){
-    struct TreeNode *newnode=malloc(sizeof(struct TreeNode));
-    int midIdx=(right-left)+left/2;
-    newnode->left=NULL;
-    newnode->right=NULL;
-    if(left<=right){
+struct TreeNode* myinsertTree( int *nums, int left,int right)
+{
+    struct TreeNode *newnode;
+    if(left<=right)
+    {
+        newnode=malloc(sizeof(struct TreeNode));
+        int midIdx=(right+left)/2;
+        newnode->left=NULL;
+        newnode->right=NULL;
         newnode->val=nums[midIdx];
-
-        *root=newnode;
-        myinsertTree(&(*root)->left,nums, left,midIdx-1);
-        myinsertTree(&(*root)->right,nums, midIdx+1,right);
-        //printf("%d ", newnode->val);
-        return *root;
+        newnode->left=myinsertTree(nums, left,midIdx-1);
+        newnode->right=myinsertTree(nums, midIdx+1,right);
+        printf("%d ", newnode->val);
+        return newnode;
     }
-    return ;
+    return NULL;
 }
 
 struct TreeNode* sortedArrayToBST(int* nums, int numsSize) {
-     struct TreeNode *root=NULL;
-     myinsertTree(&root, nums, 0,numsSize-1);
+    struct TreeNode *root=NULL;
+    root=myinsertTree( nums, 0,numsSize-1);
     return root;
 }
 
 ```
 
-但怪怪的 = =  
 
 ```c
 class Solution(object):
@@ -279,9 +279,21 @@ if __name__ == "__main__":
     
 ```
     
+放這兩份code 表示  
 
+1.用於修改root的技巧  用回傳的
 
+回傳下一層的newnode 給上層 的left/right 甚至是原本sortedArrayToBST()
 
+2.
+<=的部分
+一個是檢查 <=
+
+一個是檢查 > 
+
+但 left>right 都會回傳null  表示子樹會被設成null
+
+3.
 
 
 ## 32 Convert Sorted List to Balanced Binary Search Tree
