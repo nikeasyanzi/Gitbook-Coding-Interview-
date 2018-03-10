@@ -1,6 +1,7 @@
 # 5.Binary Tree
 
 ## 27 Validate Binary Search Tree
+### 98. Validate Binary Search Tree
 
 ```c
 bool isBST(struct TreeNode * curr, struct TreeNode* left, struct TreeNode* right)
@@ -48,6 +49,7 @@ so just make sure
 [https://leetcode.com/submissions/detail/140847741/](https://leetcode.com/submissions/detail/140847741/)
 
 ## 28 Maximum Depth of Binary Tree
+### 104. Maximum Depth of Binary Tree
 
 ```c
 int getDepth(struct TreeNode* curr, int depth, int final)
