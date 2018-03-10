@@ -229,6 +229,10 @@ Macro 改成
 
 ## 31 Convert Sorted Array to Balanced Binary Search Tree
 
+![](https://i.imgur.com/4VfzfUn.png)
+
+
+
 ```c
 struct TreeNode* myinsertTree( int *nums, int left,int right)
 {
