@@ -373,6 +373,21 @@ http://www.cnblogs.com/grandyang/p/4280120.html
 http://blog.csdn.net/wzy_1988/article/details/25290907
 
 ## 34 Binary Tree Upside Down
+測資 {21,12,33,4,15}; 
+    
+            21
+        12    33
+    4    15        
+
+=====>
+
+            4
+        15    12
+            3    21
+    
+
+Reference:
+https://www.tangjikai.com/algorithms/leetcode-156-binary-tree-upside-down
 
 
 
