@@ -67,6 +67,48 @@ path(i,j)= path(i,k) + path (k,j);
 $$ path_{i,j}=  \sum_{j>k>i}  (  path_{i,k} + path_{k,j}) $$
 
 
+以m=4,n=3為例
+
+```c
+for i = 1 ~ m
+    for j = 1 ~ n
+        dp[i,j]=dp[i-1,j]+dp[i,j-1];        
+```
+
+dp[1,1]=**dp[0,1]**+dp[1,0];
+dp[1,2]=**dp[0,2]**+dp[1,1];
+dp[1,3]=**dp[0,3]**+dp[1,2];
+
+dp[2,1]=**dp[1,1]**+dp[2,0];
+dp[2,2]=**dp[1,2]**+dp[2,1];
+dp[2,3]=**dp[1,3]**+dp[2,2];
+    ... (僅寫到i=2的部分)
+    
+
+```c
+for i = 1 ~ m
+    for j = 1 ~ n
+        dp[j]=dp[j]+dp[j-1];
+        
+```
+
+dp[1]=dp[0]+**dp[1]**;
+dp[2]=dp[1]+**dp[2]**;
+dp[3]=dp[2]+**dp[3]**;
+
+
+所以可以發現
+原本2d 版本中  
+dp[0,1],dp[0,2],dp[0,3],dp[1,1],dp[1,2]dp[1,3] 是前一個row
+
+那看1d版本 會發現
+也是有參考到上一個row的元素 (dp[1], dp[2], dp[3])
+
+所以可以省略    
+
+Reference:
+[LeetCode] Unique Paths I, II https://bangbingsyb.blogspot.tw/2014/11/leetcode-unique-paths-i-ii.html
+
 
 
 ## 49 Unique Paths 2
