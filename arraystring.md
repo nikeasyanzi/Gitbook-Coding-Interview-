@@ -99,6 +99,28 @@ bool isPalindrome(char *s)
      char *sss="aA"; //true
      char *ssss="0P"; //false
 
+
+4.
+
+看到有人這樣寫  用if + continue  其實這樣比較好   我原本寫的多個while 很容易讓人誤會
+
+```c
+while(head<tail)
+{
+    //while(!isAlphbat(*head) && !isDigit(*head))//get the first alphbat or digit
+    //    head++;
+    if(!isAlphbat(*head) && !isDigit(*head))//get the first alphbat or digit
+        head++;
+        continue;
+        
+    //while(!isAlphbat(*tail) && !isDigit(*tail))//get the latest alphbat or digit
+    //    tail--;
+    if(!isAlphbat(*tail) && !isDigit(*tail))//get the latest alphbat or digit
+        head--;
+        continue;
+}
+```
+
 \#\# 10 STRSTR\(\)
 
 \#\# 11 Reverse words in a string
