@@ -165,5 +165,12 @@ val=val/10
 
 12210  -&gt;   012210
 
+Permutation Sequence
+
+https://leetcode.com/problems/permutation-sequence/description/
+http://bangbingsyb.blogspot.tw/2014/11/leetcode-permutation-sequence.html
+
+
+
 
 
