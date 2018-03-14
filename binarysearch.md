@@ -4,7 +4,7 @@
 https://leetcode.com/submissions/detail/143203586/
 https://leetcode.com/submissions/detail/143202966/
 
-
+### while loop版
 ```c
 
 int bisearchloop(int *nums,int leftidx,int rightidx, int key) {
@@ -34,7 +34,10 @@ int bisearchloop(int *nums,int leftidx,int rightidx, int key) {
     }
     return result; 
 }                                                                                                                                                                                                     
+```
+####  遞迴版
 
+```c
 int bisearch(int *nums,int left,int right, int key) {
 
     int mid;
@@ -54,13 +57,13 @@ int bisearch(int *nums,int left,int right, int key) {
 
 ```
 
-#### while loop版  跟 遞迴版
+
 
 Q.為什麼 回傳right +1 就會是原本應該要被Insert的位子?
 
 回傳right+1的時候 是left>right 代表這時候是mid > key (key 要放在右邊)
         
-    例如 對5elements 做binary search
+    例如 對5 elements 做binary search
     
     1st iteration:
     left=0, right=3, mid=2
