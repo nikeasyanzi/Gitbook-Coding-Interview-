@@ -77,7 +77,18 @@ int* twoSum(int* nums, int numsSize, int target)
 也就是說
 
     2.1假設n個數 其中的max & min 為hash table的大小
+
+    這個hash table 就很有學問
     
+        假設以一般的max & min  問題是  可能有負數
+        
+    所以 hashtable為  target-max ~ target-min    
+    
+    target-max 會得到一個最小值
+    
+    target-min 會得到一個最大值
+    
+
     
     2.2若對某數n  , 紀錄hash [target-n ]是被需要的
     
