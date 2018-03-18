@@ -91,8 +91,11 @@ int* twoSum(int* nums, int numsSize, int target)
     所以 hashtable為  max ~ min    
     
 
-    2.2若對某數n  , 紀錄hash [target-n ]是被需要的
+ 
     
+  2.2若對某數n  , 紀錄hash [target-n ]是被需要的
+ 
+       
     考慮紀錄index
     hash[target-n]=某數n 的index (ok)
     
