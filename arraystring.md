@@ -188,4 +188,10 @@ http://l4disgreat.blogspot.tw/2016/02/leet-code-pascals-triangle.html
 
 
 
+https://www.geeksforgeeks.org/heaps-algorithm-for-generating-permutations/
+http://hugedream.blogspot.tw/2009/07/permutation-to-iterate-is-human-to.html
+http://headfirstalgo.blogspot.tw/2016/07/permutation-algorithm.html
+
+
+
 
