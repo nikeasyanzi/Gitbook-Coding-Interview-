@@ -80,16 +80,17 @@ int* twoSum(int* nums, int numsSize, int target)
 
     這個hash table 就很有學問
     
-        假設以一般的max & min  問題是  可能有負數
-        
-    所以 hashtable為  target-max ~ target-min    
+    必須以一般的max & min作為hash table範圍
+
+        ex. target=30
+       最大數 max(n)=30
+       最小數 min(n)=-20    
     
-    target-max 會得到一個最小值
+    理論上hash 應該在-20 ~30 
     
-    target-min 會得到一個最大值
+    所以 hashtable為  max ~ min    
     
 
-    
     2.2若對某數n  , 紀錄hash [target-n ]是被需要的
     
     考慮紀錄index
