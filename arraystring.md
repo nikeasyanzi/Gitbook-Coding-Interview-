@@ -2,6 +2,103 @@
 
 \#\# 6 Two Sum
 
+Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+    Example:
+    Given nums = [2, 7, 11, 15], target = 9,
+    
+    Because nums[0] + nums[1] = 2 + 7 = 9,
+    return [0, 1].
+
+```c
+int  *result=NULL;
+
+
+int* twoSum(int* nums, int numsSize, int target)
+{
+    int *hash;
+
+    int i;
+    int min=INT_MAX;
+    int max=INT_MIN;
+    result=malloc(sizeof(int)*2); 
+
+    result[0]=-1;
+    result[1]=-1;
+
+
+    for (i=0; i<numsSize; i++)
+    {
+        if(nums[i]<min) min=nums[i];
+        if(nums[i]>max) max=nums[i];
+    }
+
+    hash=malloc(sizeof(int)*(max-min+1));
+    for (i=0; i<max-min+1; i++)
+    {
+        hash[i]=-1;
+    }
+
+    for(i=0; i<numsSize; i++)
+    {
+        //printf("i=%d target-nums=%d\n",i,target-nums[i]);
+
+        if( hash[nums[i]-min]!=-1 && i != hash[nums[i]-min])
+        {
+            result[0]=i;
+            result[1]=hash[nums[i]-min];
+        }else{
+            hash[target-nums[i]-min]=i;         //the ith element needs target-nums[i]
+        }
+
+    }
+
+    return result;
+}
+
+```
+
+這題  測資都過了  但 submit 過不了  好奇怪
+
+    int A[3]= {3,2,4};  //6
+
+    int B[2]= {3,3}; //6
+    int C[5]={-1,-2,-3,-4,-5}; //-8
+    int D[4]={-3,4,3,90}; //0
+    int E[4]={0,4,3,0};//0
+
+這題解法
+
+1.暴力法  兩個迴圈  O(N^2)
+
+2.用hash table
+也就是說
+
+    2.1假設n個數 其中的max & min 為hash table的大小
+    
+    
+    2.2若對某數n  , 紀錄hash [target-n ]是被需要的
+    
+    考慮紀錄index
+    hash[target-n]=某數n 的index (ok)
+    
+    考慮紀錄difference
+    hash[index]=target-n
+    表示位於index的數n  缺target-n  但這行不通 
+    
+    考慮紀錄
+    hash[target-n]=0/1;
+    表示target-n 有缺   但題目要回傳index 所以不行
+    
+    考慮紀錄
+    hash[n]  n有負的 不可能
+    target-n 也有可能負的
+    
+    
+
+
 \#\# 7 Two Sum 2
 
 \#\# 8 Two Sum 3
