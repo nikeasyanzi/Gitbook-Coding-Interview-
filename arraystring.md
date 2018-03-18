@@ -96,20 +96,30 @@ int* twoSum(int* nums, int numsSize, int target)
   2.2若對某數n  , 紀錄hash [target-n ]是被需要的
  
        
-    考慮紀錄index
-    hash[target-n]=某數n 的index (ok)
+       1.紀錄該數n的index
+       
+        hash[index] 這行不通
+        因為之後我們是用target-n 來檢查的
+        
+     2.只能紀錄
+     
+         hash[target-n] 
+  
     
-    考慮紀錄difference
-    hash[index]=target-n
-    表示位於index的數n  缺target-n  但這行不通 
-    
-    考慮紀錄
+    3.考慮紀錄
     hash[target-n]=0/1;
+    target-n 是否有被需要
+    
     表示target-n 有缺   但題目要回傳index 所以不行
     
-    考慮紀錄
-    hash[n]  n有負的 不可能
-    target-n 也有可能負的
+    
+    4.考慮紀錄index
+     hash[target-n]=某數n 的index (ok)
+    target-n被n需要
+    
+    5.之後檢查  兩數的index 必不相同
+    target=6 [3,4,0,3]
+    
     
     
 
