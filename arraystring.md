@@ -171,6 +171,21 @@ https://leetcode.com/problems/permutation-sequence/description/
 http://bangbingsyb.blogspot.tw/2014/11/leetcode-permutation-sequence.html
 
 
+## permutation
+
+程式語言建立自信系列-排列 part 1(
+https://home.gamer.com.tw/creationDetail.php?sn=3211869
+
+Why does Heap's algorithm work?
+http://ruslanledesma.com/2016/06/17/why-does-heap-work.html
+
+### interative
+http://zhouyichu.com/algorithm/Permutation-Generation-2/
+
+
+http://www.cnblogs.com/yangykaifa/p/7294929.html
+http://l4disgreat.blogspot.tw/2016/02/leet-code-pascals-triangle.html
+
 
 
 
