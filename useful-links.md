@@ -28,6 +28,7 @@ siddontang LeetCode题解 https://siddontang.gitbooks.io/leetcode-solution/conte
 
 # git hub 題庫
 
+[Pure C solution for LeetCode](https://github.com/lennylxx/leetcode)
 
 [aaronice LintCode & LeetCode 题解分析](https://aaronice.gitbooks.io/lintcode/content/knowledge/linked_list.html)
 [Coding interview 題目文獻整理 PTT 原文](https://www.ptt.cc/bbs/Prob_Solve/M.1461519302.A.BE2.html)
