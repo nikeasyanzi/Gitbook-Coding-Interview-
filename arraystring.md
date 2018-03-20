@@ -59,9 +59,31 @@ int* twoSum(int* nums, int numsSize, int target)
 }
 
 ```
+```c
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        vector <int> sol;
+        map<int,int> myhash;
+        map<int, int>::iterator iter;
+        for(int i=0; i<nums.size(); i++)
+        {
+            iter = myhash.find(target-nums[i]);
+            if(iter != myhash.end())
+            {
+                sol.push_back(iter->second);
+                sol.push_back(i);
+                return sol;
+            }
+            else 
+                myhash.insert(pair<int, int>(nums[i], i));
+        }
+        return sol;
+    }
+};
+```
 
-這題  測資都過了  但 submit 過不了  好奇怪
-
+測資
     int A[3]= {3,2,4};  //6
 
     int B[2]= {3,3}; //6
