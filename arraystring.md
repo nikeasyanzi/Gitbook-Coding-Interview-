@@ -59,7 +59,7 @@ int* twoSum(int* nums, int numsSize, int target)
 }
 
 ```
-```c
+```c++
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
