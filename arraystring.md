@@ -13,29 +13,30 @@ You may assume that each input would have exactly one solution, and you may not 
     return [0, 1].
 
 ```c
+
 int  *result=NULL;
-
-
+int *hash;
 int* twoSum(int* nums, int numsSize, int target)
 {
-    int *hash;
-
     int i;
     int min=INT_MAX;
     int max=INT_MIN;
     result=malloc(sizeof(int)*2); 
-
     result[0]=-1;
     result[1]=-1;
 
-
-    for (i=0; i<numsSize; i++)
+    for (i=0; i<numsSize; i++)  //get max and min to find the hash range
     {
         if(nums[i]<min) min=nums[i];
         if(nums[i]>max) max=nums[i];
     }
-
-    hash=malloc(sizeof(int)*(max-min+1));
+        
+    if(target-min < min) min=target-min; 
+    if(target-max < min) min=target-max;
+    if(target-min > max) max=target-min;
+    if(target-max > max) max=target-max;
+    
+   hash=malloc(sizeof(int)*(max-min+1)); 
     for (i=0; i<max-min+1; i++)
     {
         hash[i]=-1;
@@ -44,17 +45,16 @@ int* twoSum(int* nums, int numsSize, int target)
     for(i=0; i<numsSize; i++)
     {
         //printf("i=%d target-nums=%d\n",i,target-nums[i]);
-
+     
         if( hash[nums[i]-min]!=-1 && i != hash[nums[i]-min])
         {
             result[0]=i;
             result[1]=hash[nums[i]-min];
+            break;
         }else{
             hash[target-nums[i]-min]=i;         //the ith element needs target-nums[i]
         }
-
     }
-
     return result;
 }
 
@@ -68,12 +68,14 @@ int* twoSum(int* nums, int numsSize, int target)
     int C[5]={-1,-2,-3,-4,-5}; //-8
     int D[4]={-3,4,3,90}; //0
     int E[4]={0,4,3,0};//0
+    
+    
 
-這題解法
+## 這題解法
 
-1.暴力法  兩個迴圈  O(N^2)
+### 1.暴力法  兩個迴圈  O(N^2)
 
-2.用hash table
+### 2.用hash table
 也就是說
 
     2.1假設n個數 其中的max & min 為hash table的大小
@@ -120,8 +122,25 @@ int* twoSum(int* nums, int numsSize, int target)
     5.之後檢查  兩數的index 必不相同
     target=6 [3,4,0,3]
     
+### hash table size 的決定
+
+    要注意    
     
-    
+1.if(target-min < min) min=target-min;  
+2.if(target-max < min) min=target-max;
+3.if(target-min > max) max=target-min;
+4.if(target-max > max) max=target-max;
+
+int E[4]={0,4,3,0};//0  ->最小是 0-4 =-4
+找0 min= target-max
+
+{-1,-2,-3,-8};
+
+找-100 min=target-max
+找0 max=target-min
+
+{1,2,3,8};
+找1 min=target -min
 
 
 \#\# 7 Two Sum 2
