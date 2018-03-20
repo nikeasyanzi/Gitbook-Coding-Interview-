@@ -165,11 +165,11 @@ int E[4]={0,4,3,0};//0  ->最小是 0-4 =-4
 找1 min=target -min
 
 
-\#\# 7 Two Sum 2
+# 7 Two Sum 2
 
-\#\# 8 Two Sum 3
+# 8 Two Sum 3
 
-\#\# 9 Valid Palindrome
+# 9 Valid Palindrome
 
 ```c
 int isAlphbat(char a)
@@ -284,29 +284,29 @@ while(head<tail)
 }
 ```
 
-\#\# 10 STRSTR\(\)
+# 10 STRSTR\(\)
 
-\#\# 11 Reverse words in a string
+# 11 Reverse words in a string
 
-\#\# 12 Reverse words in a string 2
+# 12 Reverse words in a string 2
 
-\#\# 13 ATOI
+# 13 ATOI
 
-\#\# 14 Valid Number
+# 14 Valid Number
 
-\#\# 15 Longest Substring Without Repeating Characters
+# 15 Longest Substring Without Repeating Characters
 
-\#\# 16 Longest Substring with At Most Two Distinct Characters
+# 16 Longest Substring with At Most Two Distinct Characters
 
-\#\# 17 Missing Ranges
+# 17 Missing Ranges
 
-\#\# 18 Longest Palindromic Substring
+# 18 Longest Palindromic Substring
 
-\#\# 19 One Edit Distance
+# 19 One Edit Distance
 
-\#\# 20 Read N Characters Given Read4
+# 20 Read N Characters Given Read4
 
-\#\# 21 Read N Characters Given Read4 – Call multiple times
+# 21 Read N Characters Given Read4 – Call multiple times
 
 
 
@@ -328,7 +328,7 @@ val=val/10
 
 12210  -&gt;   012210
 
-Permutation Sequence
+### Permutation Sequence
 
 https://leetcode.com/problems/permutation-sequence/description/
 http://bangbingsyb.blogspot.tw/2014/11/leetcode-permutation-sequence.html
