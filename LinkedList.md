@@ -152,3 +152,36 @@ struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2)
 
 
 
+Misc:
+## Reverse a linked list
+```c
+static void reverse(struct Node** head_ref)
+{
+    struct Node* prev   = NULL;
+    struct Node* current = *head_ref;
+    struct Node* next = NULL;
+    while (current != NULL)
+    {
+        next  = current->next;  
+        current->next = prev;   
+        prev = current;
+        current = next;
+    }
+    *head_ref = prev;
+}
+```
+https://www.geeksforgeeks.org/reverse-a-linked-list/
+## Tortoise and Hare
+```c
+
+
+
+
+```
+
+loop detection
+http://codingfreak.blogspot.com/2012/09/detecting-loop-in-singly-linked-list_22.html
+
+find loop entry
+http://codingfreak.blogspot.com/2012/12/detecting-first-node-in-a-loop.html
+這個find loop entry ion完馬上找
