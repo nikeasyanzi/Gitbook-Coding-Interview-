@@ -173,9 +173,23 @@ static void reverse(struct Node** head_ref)
 https://www.geeksforgeeks.org/reverse-a-linked-list/
 ## Tortoise and Hare
 ```c
+void loopDetection(List *root){
+List *hare=root;
+List *tortoise=root;
 
+while(1){
+if(hare==tortise) return true;
+    if(hare==NULL) return false;
+    hare=hare->next;
+    if(hare==NULL) return false;
+    hare=hare->next;
+    tortise=tortise->next;
+    if(hare==tortise) return true;
+    }
+}
 
-
+hare=root;
+hare=
 
 ```
 
@@ -184,4 +198,14 @@ http://codingfreak.blogspot.com/2012/09/detecting-loop-in-singly-linked-list_22.
 
 find loop entry
 http://codingfreak.blogspot.com/2012/12/detecting-first-node-in-a-loop.html
-這個find loop entry ion完馬上找
+這個find loop entry
+必須在loop detection 完馬上找
+
+原理是hare 回到原點
+tortoise 留在原地
+兩者一次動一格
+再次相遇  即為 
+
+
+
+
