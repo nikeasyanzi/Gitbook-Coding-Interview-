@@ -337,8 +337,6 @@ http://bangbingsyb.blogspot.tw/2014/11/leetcode-permutation-sequence.html
 ## permutation
 
 
-
-
 ```c
 void permute(char *a, int left, int right)
 {
@@ -358,10 +356,7 @@ void permute(char *a, int left, int right)
 ```
 
 
-
 http://hugedream.blogspot.tw/2009/07/permutation-to-iterate-is-human-to.html
-
-
 https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/
 
 
