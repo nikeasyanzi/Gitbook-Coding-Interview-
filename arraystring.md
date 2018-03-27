@@ -336,11 +336,40 @@ http://bangbingsyb.blogspot.tw/2014/11/leetcode-permutation-sequence.html
 
 ## permutation
 
-程式語言建立自信系列-排列 part 1(
-https://home.gamer.com.tw/creationDetail.php?sn=3211869
 
+
+
+```c
+void permute(char *a, int left, int right)
+{
+   int i;
+   if (left == right)
+     printf("%s\n", a);
+   else
+   {
+       for (i = left; i <= right; i++)
+       {
+          swap((a+left), (a+i));
+          permute(a, left+1, right);
+          swap((a+left), (a+i)); //backtrack
+       }
+   }
+}
+```
+
+
+
+http://hugedream.blogspot.tw/2009/07/permutation-to-iterate-is-human-to.html
+
+
+https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/
+
+
+另一種解法是Heap's algorithm 
 Why does Heap's algorithm work?
 http://ruslanledesma.com/2016/06/17/why-does-heap-work.html
+https://www.geeksforgeeks.org/heaps-algorithm-for-generating-permutations/
+
 
 ### interative
 http://zhouyichu.com/algorithm/Permutation-Generation-2/
