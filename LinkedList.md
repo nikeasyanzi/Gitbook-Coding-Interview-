@@ -75,9 +75,7 @@ struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2)
 
 原本addTwoNumbers是寫成
 
-
 ```c
-
 struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2)
 {
     struct ListNode* currl1=l1;
@@ -137,7 +135,7 @@ struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2)
     return head;
 }
 ```
-但其實這兩種  寫法  太直覺  但 if-else 太複雜  
+但其實這兩種  寫法很直覺  但 if-else  巢狀迴圈會太複雜  
 
 尤其第一種會有bug  (一度卡很久)
 
@@ -173,39 +171,45 @@ static void reverse(struct Node** head_ref)
 https://www.geeksforgeeks.org/reverse-a-linked-list/
 ## Tortoise and Hare
 ```c
-void loopDetection(List *root){
+List * loopDetection(List *root){
 List *hare=root;
 List *tortoise=root;
 
-while(1){
-if(hare==tortise) return true;
-    if(hare==NULL) return false;
-    hare=hare->next;
-    if(hare==NULL) return false;
-    hare=hare->next;
-    tortise=tortise->next;
-    if(hare==tortise) return true;
+	while(1){	//loop check
+	if(hare==tortise) return true;
+    	if(hare==NULL) return false;
+    		hare=hare->next;
+    	if(hare==NULL) return false;
+    		hare=hare->next;
+    		tortise=tortise->next;
+    	if(hare==tortise) return true;
     }
+
+	hare=root;//find loop entry point
+	
+	while(hare!=NULL){
+		hare=hare->next;
+		tortise=tortise->next;
+		if(hare==tortise) break;	
+	}
+	return hare; 
 }
-
-hare=root;
-hare=
-
 ```
+
+這個find loop entry
+必須在loop detection 完馬上找loop entry point
+
+原理是
+hare 回到原點
+tortoise 留在原地
+兩者一次動一格
+再次相遇  即為 loop entry point
 
 loop detection
 http://codingfreak.blogspot.com/2012/09/detecting-loop-in-singly-linked-list_22.html
 
 find loop entry
 http://codingfreak.blogspot.com/2012/12/detecting-first-node-in-a-loop.html
-這個find loop entry
-必須在loop detection 完馬上找
-
-原理是hare 回到原點
-tortoise 留在原地
-兩者一次動一格
-再次相遇  即為 
-
 
 
 

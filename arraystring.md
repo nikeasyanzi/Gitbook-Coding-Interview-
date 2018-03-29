@@ -118,7 +118,6 @@ public:
  
     
   2.2若對某數n  , 紀錄hash [target-n ]是被需要的
- 
        
        1.紀錄該數n的index
        
@@ -355,6 +354,13 @@ void permute(char *a, int left, int right)
 }
 ```
 
+以{a,b,c}  可以想成  保留一個字元    先swap 剩下的   然後遞迴的做
+
+
+		a,{b,c}				b,{a,c}			c,{a,b}
+
+	{b,c}	 {c,b}		{a,c} 	{c,a}	{a,b}	 {b,a}
+					
 
 http://hugedream.blogspot.tw/2009/07/permutation-to-iterate-is-human-to.html
 https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/
