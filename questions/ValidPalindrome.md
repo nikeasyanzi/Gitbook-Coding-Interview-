@@ -1,3 +1,12 @@
+
+## [3. Array/String](arraystring.md)
+
+
+## Valid Palindrome
+
+
+
+
 ```c
 int isAlphbat(char a)
 {

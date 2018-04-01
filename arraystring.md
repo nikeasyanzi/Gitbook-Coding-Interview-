@@ -12,9 +12,9 @@
 
 # 10 STRSTR\(\)
 
-# [11 Reverse words in a string](questions/ReverseWordsInAString.md)
+# 11 Reverse words in a string
 
-
+[11 Reverse words in a string](questions/ReverseWordsInAString.md)
 
 # 12 Reverse words in a string 2
 
