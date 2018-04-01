@@ -1,6 +1,6 @@
 # Essential Leetcode Problems for Interview
 
-## 1. Big O
+## [1.Big O](/bigO.md)
 
 1 What is Big O \(1\)
 
