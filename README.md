@@ -6,7 +6,7 @@
 
 2 What is Big O \(2\)
 
-### 2. Math
+### [2. Math](/math.md)
 
 3 Reserve Integer
 
@@ -14,7 +14,7 @@
 
 5 Palindrome Number
 
-## 3. Array/String
+## [3. Array/String](arraystring.md)
 
 6 Two Sum
 
