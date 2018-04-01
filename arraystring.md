@@ -2,7 +2,7 @@
 
 ## 6 Two Sum
 
-[tw](//questions/twosum.md)
+[Two Sum](questions/twosum.md)
 # 7 Two Sum 2
 
 # 8 Two Sum 3
