@@ -7,7 +7,7 @@
 # 8 Two Sum 3
 
 # 9 Valid Palindrome
-[Valid Palindrome](questions/Valid Palindrome.md)
+[Valid Palindrome](questions/ValidPalindrome.md)
 
 # 10 STRSTR\(\)
 
