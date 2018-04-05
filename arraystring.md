@@ -29,13 +29,11 @@
 
 # 18 Longest Palindromic Substring
 
-# 19 One Edit Distance
+# 19 One Edit Distance (locked)
 
 # 20 Read N Characters Given Read4
 
 # 21 Read N Characters Given Read4 – Call multiple times
-
-
 
 
 ### Permutation Sequence
@@ -83,7 +81,7 @@ http://ruslanledesma.com/2016/06/17/why-does-heap-work.html
 https://www.geeksforgeeks.org/heaps-algorithm-for-generating-permutations/
 
 
-### interative
+#### interative
 http://zhouyichu.com/algorithm/Permutation-Generation-2/
 
 

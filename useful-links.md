@@ -26,6 +26,9 @@ http://bangbingsyb.blogspot.tw/2014/11/leetcode-binary-tree-maximum-path-sum.htm
 
 siddontang LeetCode题解 https://siddontang.gitbooks.io/leetcode-solution/content/
 
+Leetcode locked problems https://tonycao.gitbooks.io/leetcode-locked/content/LeetCode%20Locked/c1.9.html
+
+
 # git hub 題庫
 
 [Pure C solution for LeetCode](https://github.com/lennylxx/leetcode)
