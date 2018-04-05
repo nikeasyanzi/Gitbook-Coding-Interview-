@@ -1,12 +1,12 @@
 # Essential Leetcode Problems for Interview
 
-## 1. Big O
+## [1.Big O](/bigO.md)
 
 1 What is Big O \(1\)
 
 2 What is Big O \(2\)
 
-### 2. Math
+### [2. Math](/math.md)
 
 3 Reserve Integer
 
@@ -14,7 +14,7 @@
 
 5 Palindrome Number
 
-## 3. Array/String
+## [3. Array/String](arraystring.md)
 
 6 Two Sum
 

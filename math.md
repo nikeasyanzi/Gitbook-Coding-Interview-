@@ -23,7 +23,7 @@
 這題真的很妙  這解法是官方解法 有幾個地方可以注意
 
 1.不須考慮正負號 while 判斷式改成  x!=0
-因為不管x 正負,最後會歸零
+因為不管x 正負,一直除下去,最後餘數會歸零
 
 2.if判斷式 
 用於事先的overflow 檢查
@@ -44,6 +44,9 @@ http://www.cnblogs.com/grandyang/p/4125588.html
 4 Plus one
 
 5 Palindrome Number
+
+
+
 
 
 
