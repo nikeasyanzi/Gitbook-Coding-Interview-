@@ -28,6 +28,7 @@ siddontang LeetCode题解 https://siddontang.gitbooks.io/leetcode-solution/conte
 
 Leetcode locked problems https://tonycao.gitbooks.io/leetcode-locked/content/LeetCode%20Locked/c1.9.html
 
+http://tiancao.me/Leetcode-Unlocked/LeetCode%20Locked/c1.16.html
 
 # git hub 題庫
 
