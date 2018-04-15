@@ -219,3 +219,40 @@ Reference:
 
 [\[LeetCode\] Find Minimum in Rotated Sorted Array II 寻找旋转有序数组的最小值之二](http://www.cnblogs.com/grandyang/p/4040438.html)
 
+# 33. Search in Rotated Sorted Array
+```c
+int bisearch(int *a,int l,int r,int key){
+    printf("left=%d,right=%d\n",l,r); 
+    int mid;
+    if(l<r){
+        mid=(r-l)/2+l;
+        if(a[mid]==key){
+            
+          return mid;
+          
+        }else{
+          if(a[mid]<key) return bisearch(a,mid+1,r,key);
+            else return bisearch(a,l,mid-1,key);       
+        }
+    }
+    
+    if(l==r){
+      printf("left=%d,right=%d\n",l,r); 
+      if(a[l]==key) return l;
+    } 
+    return -1;
+}
+
+int search(int* nums, int numsSize, int target) {
+    int left=0;
+    int right=numsSize-1;
+    while(nums[left]>target) left++;
+    while(nums[right]<target) right--;
+    return bisearch(nums,left,right,target);
+    
+}
+```
+https://leetcode.com/submissions/detail/150060154/
+
+Search in Rotated Sorted Array II
+https://leetcode.com/submissions/detail/150063970/
