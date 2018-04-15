@@ -125,5 +125,10 @@ void moveZeroes(int* nums, int numsSize) {
 }
 ```
 
+tail 最後會指向一個zero element
+
+此時nums[i] 又只看non zero element
+
+因此得到把所有zero element往後移的效果
 
 
