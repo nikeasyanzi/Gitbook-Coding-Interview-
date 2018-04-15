@@ -37,6 +37,9 @@ http://tiancao.me/Leetcode-Unlocked/LeetCode%20Locked/c1.16.html
 [aaronice LintCode & LeetCode 题解分析](https://aaronice.gitbooks.io/lintcode/content/knowledge/linked_list.html)
 [Coding interview 題目文獻整理 PTT 原文](https://www.ptt.cc/bbs/Prob_Solve/M.1461519302.A.BE2.html)
 
-[Coding interview 題目文獻整理 repo](https://github.com/yuhanlyu/notes) 
+[Coding interview 題目文獻整理 repo](https://github.com/yuhanlyu/notes)
+
+ [LINTCODE / LEETCODE 参考答案查询](https://www.jiuzhang.com/solution/)
+   
 
 
