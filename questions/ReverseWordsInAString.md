@@ -1,4 +1,4 @@
-## [3. Array/String](arraystring.md)
+## [3. Array/String](/arraystring.md)
 
 ### Reverse words in a string
 
