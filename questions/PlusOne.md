@@ -1,3 +1,4 @@
+# [2. Math](math.md)
 
 ## 66. Plus One
 

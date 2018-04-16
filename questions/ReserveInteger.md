@@ -1,6 +1,7 @@
+# [2. Math](math.md)
+
+
 ## 7. Reverse Integer
-
-
 https://leetcode.com/problems/reverse-integer/description/
 
 Given a 32-bit signed integer, reverse digits of an integer.

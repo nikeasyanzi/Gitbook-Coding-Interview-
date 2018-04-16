@@ -1,9 +1,11 @@
+# [2. Math](math.md)
 
+## 371. Sum of Two Integers
+https://leetcode.com/problems/sum-of-two-integers/description/
 
-
-Calculate  the sum of two integersaandb, but you arenot allowedto use the operator+and-.
-Example:
-Given a= 1 and b= 2, return 3.
+    Calculate  the sum of two integersaandb, but you arenot allowedto use the operator+and-.
+    Example:
+    Given a= 1 and b= 2, return 3.
 
 
 ```c
