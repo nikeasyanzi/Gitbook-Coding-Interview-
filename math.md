@@ -43,6 +43,11 @@ http://www.cnblogs.com/grandyang/p/4125588.html
 
 4 Plus one
 
+[](/questions/PlusOne.md)
+
+
+
+
 5 Palindrome Number
 
 
