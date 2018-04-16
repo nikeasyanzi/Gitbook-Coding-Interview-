@@ -1,4 +1,4 @@
-# [2. Math](math.md)
+# [2. Math](/math.md)
 
 
 ## 7. Reverse Integer

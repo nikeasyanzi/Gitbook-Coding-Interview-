@@ -1,4 +1,4 @@
-# [2. Math](math.md)
+# [2. Math](/math.md)
 ## 9. Palindrome Number
 
 https://leetcode.com/problems/palindrome-number/description/

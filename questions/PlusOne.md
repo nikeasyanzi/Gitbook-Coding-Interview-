@@ -1,4 +1,4 @@
-# [2. Math](math.md)
+# [2. Math](/math.md)
 
 ## 66. Plus One
 
