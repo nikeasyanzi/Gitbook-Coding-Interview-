@@ -1,20 +1,14 @@
 # 2.Math
 
 3 Reserve Integer
-
-
 [7. Reserve Integer](/questions/ReserveInteger.md)
 
 
 4 Plus one
-
 [66. Plus one](/questions/PlusOne.md)
 
-
-
-
 5 Palindrome Number
-
+[9. Palindrome Number](/questions/PalindromeNumber.md)
 
 
 # Divide Two Integers
