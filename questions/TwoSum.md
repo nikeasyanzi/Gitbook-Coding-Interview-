@@ -1,17 +1,18 @@
 ## [3. Array/String](/arraystring.md)
 
 
-### Two Sum
+### 1. Two Sum
+https://leetcode.com/problems/two-sum/description/
 
-
-Given an array of integers, return indices of the two numbers such that they add up to a specific target.
-
-You may assume that each input would have exactly one solution, and you may not use the same element twice.
-
-Example:
-Given nums = [2, 7, 11, 15], target = 9,
-Because nums[0] + nums[1] = 2 + 7 = 9,
-return [0, 1].
+    Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+    
+    You may assume that each input would have exactly one solution, and you may not use the same element twice.
+    
+    Example:
+    Given nums = [2, 7, 11, 15], target = 9,
+    Because nums[0] + nums[1] = 2 + 7 = 9,
+    return [0, 1].
+    
 
 ```c
 
@@ -140,3 +141,65 @@ int E[4]={0,4,3,0};//0 ->最小是 0-4 =-4
 
 {1,2,3,8};
 找1 min=target -min
+
+
+## 167. Two Sum II - Input array is sorted
+https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
+
+    Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number.
+    
+    The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2. Please note that your returned answers (both index1 and index2) are not zero-based.
+    
+    You may assume that each input would have exactly one solution and you may not use the same element twice.
+    
+    Input: numbers={2, 7, 11, 15}, target=9
+    Output: index1=1, index2=2
+    
+    
+```c
+int* twoSum(int* numbers, int numbersSize, int target, int* returnSize) {
+    int left=0;
+    int right=numbersSize-1;
+    int val;
+    int *result=NULL;
+    result=(int *)malloc(sizeof(int)*2);
+    result[0]=-1;
+    result[1]=-1;
+    while(left<right){
+       val= numbers[left]+numbers[right];
+       //printf("1left=%d, right=%d\n", left,right);
+
+            if(val>target){         
+                right--;
+            }else{
+                if(val<target) left++;
+                else{
+                        result[0]=left+1;
+                        result[1]=right+1;
+                        *returnSize = 2;  
+                        //printf("2left=%d, right=%d\n", result[0], result[1]);
+                        break;
+                }       
+            }     
+    }
+    //printf("3left=%d, right=%d,size=%d\n", result[0], result[1],*returnSize);
+
+    return result;
+}
+```
+
+這個特性是
+最小和是最右的兩個element
+最大和是最左的兩個element
+
+所以用夾的  
+
+從最左 + 最右開始
+
+1. > target 最右往右移
+
+2. < target 最左往右移
+
+
+
+

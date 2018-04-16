@@ -5,8 +5,12 @@
 [Two Sum](questions/TwoSum.md)
 
 # 7 Two Sum 2
+[Two Sum](questions/TwoSum.md)
+
 
 # 8 Two Sum 3
+[Two Sum](questions/TwoSum.md)
+
 
 # 9 Valid Palindrome
 
