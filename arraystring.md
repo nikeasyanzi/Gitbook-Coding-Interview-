@@ -8,7 +8,7 @@
 [Two Sum](questions/TwoSum.md)
 
 
-# 8 Two Sum 3
+# 8 Two Sum 3 (locked)
 [Two Sum](questions/TwoSum.md)
 
 
