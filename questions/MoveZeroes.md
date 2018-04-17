@@ -40,3 +40,22 @@ tail 最後會指向一個zero element
 
 因此得到把所有zero element往後移的效果
 
+ex. 
+nums = [0, 1, 0, 3, 12]
+
+1.i=0
+tail=0
+
+2.i=1
+tail=0
+nums = [1, 0, 0, 3, 12]
+
+3.i=2
+tail=1
+
+4. i=3
+tail=1
+nums = [1, 3, 0, 0, 12]
+
+5. i=4
+tail=2
