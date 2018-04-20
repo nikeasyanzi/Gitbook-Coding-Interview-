@@ -29,8 +29,8 @@
 # 14 Valid Number
 
 # 15 Longest Substring Without Repeating Characters
-3. Longest Substring Without Repeating Characters
 
+[3. Longest Substring Without Repeating Characters](/questions/LongestSubstringWithoutRepeatingCharacters.md)
 
 # 16 Longest Substring with At Most Two Distinct Characters
 
