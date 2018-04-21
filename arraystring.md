@@ -5,18 +5,34 @@
 [Two Sum](questions/TwoSum.md)
 
 # 7 Two Sum 2
+
 [Two Sum](questions/TwoSum.md)
 
+# 8 Two Sum 3 \(locked\)
 
-# 8 Two Sum 3 (locked)
 [Two Sum](questions/TwoSum.md)
-
 
 # 9 Valid Palindrome
 
 [125. Valid Palindrome](questions/ValidPalindrome.md)
 
 # 10 STRSTR\(\)
+
+
+
+https://leetcode.com/submissions/detail/150990173/  報立法
+
+
+
+KMP
+
+http://www.evanlin.com/about-kmp/
+
+http://bangbingsyb.blogspot.tw/2014/11/leetcode-implement-strstr-kmp.html
+
+
+
+
 
 # 11 Reverse words in a string
 
@@ -80,7 +96,7 @@ void permute(char *a, int left, int right)
 [http://hugedream.blogspot.tw/2009/07/permutation-to-iterate-is-human-to.html](http://hugedream.blogspot.tw/2009/07/permutation-to-iterate-is-human-to.html)  
 [https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)
 
-另一種解法是Heap's algorithm   
+另一種解法是Heap's algorithm  
 Why does Heap's algorithm work?  
 [http://ruslanledesma.com/2016/06/17/why-does-heap-work.html](http://ruslanledesma.com/2016/06/17/why-does-heap-work.html)  
 [https://www.geeksforgeeks.org/heaps-algorithm-for-generating-permutations/](https://www.geeksforgeeks.org/heaps-algorithm-for-generating-permutations/)
@@ -96,26 +112,25 @@ Why does Heap's algorithm work?
 [http://hugedream.blogspot.tw/2009/07/permutation-to-iterate-is-human-to.html](http://hugedream.blogspot.tw/2009/07/permutation-to-iterate-is-human-to.html)  
 [http://headfirstalgo.blogspot.tw/2016/07/permutation-algorithm.html](http://headfirstalgo.blogspot.tw/2016/07/permutation-algorithm.html)
 
-
-
-
-
 #### [283 Move Zeroes](https://leetcode.com/problems/move-zeroes/)
+
 [Move Zeroes](/questions/MoveZeroes.md)
 
-
 # 3. Longest Substring Without Repeating Characters
-https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
 
-    Given a string, find the length of the longest substring without repeating characters.
-    
-    Examples:
-    
-    Given "abcabcbb", the answer is "abc", which the length is 3.
-    
-    Given "bbbbb", the answer is "b", with the length of 1.
-    
-    Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
-    
-    
+[https://leetcode.com/problems/longest-substring-without-repeating-characters/description/](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)
+
+```
+Given a string, find the length of the longest substring without repeating characters.
+
+Examples:
+
+Given "abcabcbb", the answer is "abc", which the length is 3.
+
+Given "bbbbb", the answer is "b", with the length of 1.
+
+Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
+```
+
+
 
