@@ -101,7 +101,7 @@ left=(hashtable[i]+1)| d(0)| d(0)|d(0)| **v(2)**|v(2)
 hashtable| d| d,v(1)|d,v(1)|**d(2)**,v|d(2),v,f
 len=i-left|||**len=2**|||
 
-
+ex.tmmzuxt
 
 
 
