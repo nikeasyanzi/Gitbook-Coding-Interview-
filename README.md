@@ -1,4 +1,4 @@
-# [Essential Leetcode Problems for Interview](https://legacy.gitbook.com/book/nikeasyanzi/essential-leetcode-problems-for-interview/details)
+# [Essential Leetcode Problems for Interview](https://nikeasyanzi.gitbooks.io/essential-leetcode-problems-for-interview/content/)
 
 ## [1.Big O](/bigO.md)
 * [卷 I](part1/README.md)
