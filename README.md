@@ -15,7 +15,7 @@
 
 ### [2. Math](/math.md)
 
-3 Reserve Integer
+3 Reserve Integer]
 
 4 Plus one
 
@@ -23,11 +23,11 @@
 
 ## [3. Array/String](arraystring.md)
 
-6 Two Sum
+[6 Two Sum](/questions/TwoSum.md)
 
-7 Two Sum 2
+[7 Two Sum 2](/questions/TwoSum.md)
 
-8 Two Sum 3
+[8 Two Sum 3](/questions/TwoSum.md)
 
 9 Valid Palindrome
 

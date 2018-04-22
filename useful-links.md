@@ -40,6 +40,7 @@ http://tiancao.me/Leetcode-Unlocked/LeetCode%20Locked/c1.16.html
 [Coding interview 題目文獻整理 repo](https://github.com/yuhanlyu/notes)
 
  [LINTCODE / LEETCODE 参考答案查询](https://www.jiuzhang.com/solution/)
-   
+  
+[leetcode-30days](https://github.com/xxhomey19/leetcode-30days) 
 
 
