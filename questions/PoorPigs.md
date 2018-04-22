@@ -15,14 +15,15 @@
 ```c
 #include <math.h>
 
-int poorPigs(int buckets, int minutesToDie, int minutesToTest) {
-int i=minutesToTest/minutesToDie +1;
-int pigs=1;
-if (buckets==1) return 0;
-while( pow(i,pigs) <buckets){
-pigs++;
-}
-return pigs;
+    int poorPigs(int buckets, int minutesToDie, int minutesToTest) {
+    int i=minutesToTest/minutesToDie +1;
+    int pigs=1;
+    
+    if (buckets==1) return 0;
+    while( pow(i,pigs) <buckets){
+        pigs++;
+    }
+    return pigs;
 }
 ```
 
