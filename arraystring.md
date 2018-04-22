@@ -20,7 +20,7 @@
 
 
 
-https://leetcode.com/submissions/detail/150990173/  報立法
+https://leetcode.com/submissions/detail/150990173/  暴力法
 
 
 
