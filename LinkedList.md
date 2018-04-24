@@ -14,7 +14,7 @@
 
 
 
-Misc:
+# Misc:
 ## Reverse a linked list
 ```c
 static void reverse(struct Node** head_ref)
