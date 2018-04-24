@@ -18,21 +18,33 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 https://leetcode.com/problems/add-two-numbers/description/
 
 ```c
-int addNode(int val, int carryin)
+
+struct ListNode* head=NULL;
+int showall(){
+    struct ListNode* curr=head;
+	while(curr->next!=NULL){
+        printf("%d ", curr->val);
+		curr=curr->next;
+	}
+    printf("\n======\n");
+    return 0;
+}
+
+int addNode(int val1,int val2, int carryin)
 {
     struct ListNode* curr=head;
     struct ListNode* newnode=malloc(sizeof(struct ListNode));
     newnode->next=NULL;
     int carryout=0;
-    if(val+carryin<10)
+    if(val1+val2+carryin<10)
     {
-        newnode->val=val+carryin;
+        newnode->val=val1+val2+carryin;
         carryout=0;
     }
     else
     {
         //printf(" in add nodeval=%d carryin=%d,",val, carryin);
-        newnode->val=val+carryin-10;
+        newnode->val=val1+val2+carryin-10;
         carryout=1;
     }
     if(curr==NULL)
@@ -61,20 +73,11 @@ struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2)
     int l1val=0;
     while(currl1!=NULL|| currl2!=NULL||carryin!=0)
     {
-        l2val=0;
-        l1val=0;
-
-        if(currl1!=NULL)
-        {
-            l1val=currl1->val;
-            currl1=currl1->next;
-        }
-        if(currl2!=NULL)
-        {
-            l2val=currl2->val;
-            currl2=currl2->next;
-        }
-        carryout=addNode(l1val+l2val,carryin);
+        l1val=(currl1!=NULL)?currl1->val:0;
+        l2val=(currl2!=NULL)?currl2->val:0;
+        currl1=currl1->next;
+        currl2=currl2->next;
+        carryout=addNode(l1val,l2val,carryin);
         carryin=carryout;
     }
     return head;
