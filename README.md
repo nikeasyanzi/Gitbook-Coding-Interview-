@@ -55,8 +55,7 @@
 
 21 Read N Characters Given Read4 – Call multiple times
 
-## 4. Linked List
-
+## [4. Linked List](/LinkedList.md)
 22 Merge Two Sorted Lists
 
 23 Add Two Numbers
@@ -67,8 +66,7 @@
 
 26 Copy List with Random Pointer
 
-## 5. Binary Tree
-
+## [5. Binary Tree](/binaryTree.md)
 27 Validate Binary Search Tree
 
 28 Maximum Depth of Binary Tree
@@ -85,22 +83,19 @@
 
 34 Binary Tree Upside Down
 
-## 6. Binary Search
-
+## [6. Binary Search](/binarysearch.md)
 35 Search Insert Position
 
 36 Find Minimum in sorted rotated array
 
 37 Find Minimum in sorted rotated array 2
 
-## 7. Bit Manipulation
-
+## [7. Bit Manipulation](/bit-manipulation.md)
 38 Single Number
 
 39 Single Number 2
 
-## 8. MISC
-
+## [8. MISC](/misc.md)
 40 Spirial Matrix
 
 41 Integer to Roman
@@ -109,16 +104,14 @@
 
 43 Clone Graph
 
-## 9. Stack
-
+## [9. Stack](/stack.md)
 44 Min Stack
 
 45 Evaluate Reverse Polish Notation
 
 46 Valid Parentheses
 
-## 10. Dynamic Programming
-
+## [10. Dynamic Programming](/dynamic-programming.md)
 47 Climbling Stairs
 
 48 Unique Paths
@@ -130,6 +123,8 @@
 51 Maximum Product Subarray
 
 52 Coins in a Line
+
+
 
 
 
