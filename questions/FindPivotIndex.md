@@ -1,3 +1,6 @@
+
+[# 3.Array/String](/arraystring.md)
+
 ===
 
 Given an array of integers nums, write a method that returns the "pivot" index of this array.
