@@ -1,6 +1,6 @@
 # [# 3.Array/String](/arraystring.md)
 
-# [41. First Missing Positive ](/questions/FindMissingPositive.md) ***
+# [ 41. First Missing Positive ](/questions/FindMissingPositive.md)
 
 https://leetcode.com/problems/first-missing-positive/description/
 
