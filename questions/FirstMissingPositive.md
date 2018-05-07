@@ -63,7 +63,8 @@ func firstMissingPositive(nums []int) int {
 
 1. 找最小正數  範圍為 1-n, index range = 0 - n-1
 
-2. 所以就是一直換就好   但注意  換不到位還是要繼續換  所以 只有if 不成立 i才會++
+2. 基本上是  遍巡每個element   並把  element 換到 element -1 的位置  
+一直換就好   但注意  換不到位還是要繼續換  所以 只有if 不成立 i才會++
 
 3. 注意nums[i] !=nums[nums[i]-1] 
 因為測資可能是[1,1]
