@@ -1,5 +1,6 @@
 # [# 3.Array/String](/arraystring.md) *
 
+題目
 https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/
 
 Given an array of integers where 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.
@@ -117,7 +118,7 @@ func findDisappearedNumbers(nums []int) []int {
 }
 ```
 
-總結:
+## 總結:
 1.
 func abs(n int) int {
     y := n >> 31
