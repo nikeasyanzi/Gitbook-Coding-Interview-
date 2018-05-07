@@ -20,6 +20,10 @@ Also, 3 is the first index where this occurs.
 1.計算total sum
 2.loop over the array 然後逐一減去  再比較左右兩邊
 
+當初一開始想說  直接由右往左移  
+後來發現 規定要回傳left most
+改直接由左往右移
+
 ```go
 func pivotIndex(nums []int) int {
     i := 0
@@ -44,3 +48,5 @@ func pivotIndex(nums []int) int {
     return -1
 }
 ```
+
+https://leetcode.com/submissions/detail/153135834/
