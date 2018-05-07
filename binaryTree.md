@@ -390,4 +390,4 @@ Reference:
 https://www.tangjikai.com/algorithms/leetcode-156-binary-tree-upside-down
 
 
-## 112. Path Sum[](/questions/PathSum.md)
+## [112. Path Sum](/questions/PathSum.md)
