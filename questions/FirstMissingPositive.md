@@ -1,8 +1,4 @@
-
-
-
-[# 3.Array/String](/arraystring.md)
-
+# [# 3.Array/String](/arraystring.md)
 
 # [41. First Missing Positive ](/questions/FindMissingPositive.md) ***
 
@@ -69,6 +65,7 @@ func firstMissingPositive(nums []int) int {
 3. 注意nums[i] !=nums[nums[i]-1] 
 因為測資可能是[1,1]
 
+4. 最後一行是  萬一大家都一樣  ex. [1,2,3,4] 則回傳5 
 圖解 
 
 |i | [3,4,-1,1]
