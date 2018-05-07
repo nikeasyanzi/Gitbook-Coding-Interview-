@@ -135,6 +135,7 @@ Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer 
 # 724. [Find Pivot Index](/questions/FindPivotIndex.md)
 
 # [448. Find All Numbers Disappeared in an Array](/questions/FindAllNumbersDisappearedinanArray.md)
-41. First Missing Positive [](//questions/FindMissingPositive.md)
+
+# [41. First Missing Positive ](//questions/FindMissingPositive.md)
 
 
