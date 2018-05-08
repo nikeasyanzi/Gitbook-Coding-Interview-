@@ -3,69 +3,72 @@
 ## [1.Big O](/bigO.md)
 * [卷 I](part1/README.md)
     * [写作很棒](part1/writing.md)
-    * [GitBook很酷](part1/gitbook.md)
+    * [GitBook很酷](part1/gitbook.md)    
+        * [GitBook很酷](part1/gitbook.md)
+    
+
 * [卷 II](part2/README.md)
     * [期待反馈](part2/feedback_please.md)
     * [更好的写作工具](part2/better_tools.md)
     
     
-1 What is Big O \(1\)
-
-2 What is Big O \(2\)
+   *  1 What is Big O \(1\)
+    
+   *  2 What is Big O \(2\)
 
 ### [2. Math](/math.md)
 
-3 Reserve Integer]
+    * 3 Reserve Integer]
 
-4 Plus one
+    * 4 Plus one
 
-5 Palindrome Number
+    * 5 Palindrome Number
 
 ## [3. Array/String](arraystring.md)
 
-[6 Two Sum](/questions/TwoSum.md)
-
-[7 Two Sum 2](/questions/TwoSum.md)
-
-[8 Two Sum 3](/questions/TwoSum.md)
-
-9 Valid Palindrome
-
-10 STRSTR\(\)
-
-11 Reverse words in a string
-
-12 Reverse words in a string 2
-
-13 ATOI
-
-14 Valid Number
-
-15 Longest Substring Without Repeating Characters
-
-16 Longest Substring with At Most Two Distinct Characters
-
-17 Missing Ranges
-
-18 Longest Palindromic Substring
-
-19 One Edit Distance
-
-20 Read N Characters Given Read4
-
-21 Read N Characters Given Read4 – Call multiple times
-
+    * [6 Two Sum](/questions/TwoSum.md)
+    
+    * [7 Two Sum 2](/questions/TwoSum.md)
+    
+    * [8 Two Sum 3](/questions/TwoSum.md)
+    
+    * 9 Valid Palindrome
+    
+    * 10 STRSTR\(\)
+    
+    * 11 Reverse words in a string
+    
+    * 12 Reverse words in a string 2
+    
+    * 13 ATOI
+    
+    * 14 Valid Number
+    
+    * 15 Longest Substring Without Repeating Characters
+    
+    * 16 Longest Substring with At Most Two Distinct Characters
+    
+    * 17 Missing Ranges
+    
+    * 18 Longest Palindromic Substring
+    
+    * 19 One Edit Distance
+    
+    * 20 Read N Characters Given Read4
+    
+    * 21 Read N Characters Given Read4 – Call multiple times
+    
 ## [4. Linked List](/LinkedList.md)
-22 Merge Two Sorted Lists
-
-23 Add Two Numbers
-
-24 Swap Nodes in Pairs
-
-25 Merge K Sorted Linked Lists
-
-26 Copy List with Random Pointer
-
+    * 22 Merge Two Sorted Lists
+    
+    * 23 Add Two Numbers
+    
+    * 24 Swap Nodes in Pairs
+    
+    * 25 Merge K Sorted Linked Lists
+    
+    * 26 Copy List with Random Pointer
+    
 ## [5. Binary Tree](/binaryTree.md)
 27 Validate Binary Search Tree
 
