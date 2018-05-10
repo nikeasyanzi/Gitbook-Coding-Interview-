@@ -292,8 +292,8 @@ if __name__ == "__main__":
 回傳下一層的newnode 給上層 的left/right 甚至是原本sortedArrayToBST()
 
 2.
-<=的部分
-一個是檢查 <=
+< = 的部分
+一個是檢查 < =
 
 一個是檢查 > 
 
@@ -327,4 +327,12 @@ https://www.tangjikai.com/algorithms/leetcode-156-binary-tree-upside-down
 
 ## [112. Path Sum](/questions/PathSum.md)
 
-## 113. Path Sum II
+## [113. Path Sum II](/questions/PathSum.md)
+
+
+
+[145. Binary Tree Postorder Traversal](/questions/TreeTraversal.md)
+[94. Binary Tree Inorder Traversal](/questions/TreeTraversal.md)
+
+[230. Kth Smallest Element in a BST](/questions/TreeTraversal.md)
+
