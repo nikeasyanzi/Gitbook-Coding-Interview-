@@ -56,7 +56,7 @@ Path Sum ||
 https://leetcode.com/problems/path-sum-ii/description/
 用go 寫 感覺怪怪的  哭哭
 卡在copy 很久      
-slice 預設是copy by reference
+slice append 預設是copy address 沒用copy 先重新複製一份出來  答案會是錯的
 https://leetcode.com/submissions/detail/153651293/
 
 ```go
