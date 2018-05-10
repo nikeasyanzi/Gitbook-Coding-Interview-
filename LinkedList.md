@@ -1,6 +1,6 @@
 # 4.Linked List
 
-22 Merge Two Sorted Lists
+22 Merge Two Sorted Lists [](/questions/MergeTwoSortedLists.md)
 
 23 Add Two Numbers
 [2. Add Two Numbers](/questions/AddTwoNumbers.md)
