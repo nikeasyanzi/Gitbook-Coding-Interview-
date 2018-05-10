@@ -55,25 +55,27 @@ func hasPathSum(root *TreeNode, sum int) bool {
 Path Sum || 
 https://leetcode.com/problems/path-sum-ii/description/
 用go 寫 感覺怪怪的  哭哭
+卡在copy 很久      
+slice 預設是copy by reference
+https://leetcode.com/submissions/detail/153651293/
 
-
-這code 不對  但de補出來
-import "fmt"
+```go
 
 func recursive(root *TreeNode, sum int, current []int, final [][]int)  [][]int{
-    if root ==nil{
-        return final
-    }else {
+    //var tmp []int
+    if root !=nil{
         current=append (current,root.Val)
         if root.Val==sum && root.Left==nil && root.Right==nil{
-            final=append(final,current)
+            tmp := make([]int, len(current))
+            copy(tmp,current)
+            //fmt.Println(tmp)
+            //fmt.Println(current)
+            final=append(final,tmp)
             return final
-
         }else{
-            final=recursive(root.Right,sum-root.Val,current, final)   
             final=recursive(root.Left,sum-root.Val,current,final)
-        }
-        
+            final=recursive(root.Right,sum-root.Val,current,final)   
+        } 
     }
     return final
 
@@ -87,3 +89,4 @@ func pathSum(root *TreeNode, sum int) [][]int {
     
     return final 
 }
+```
