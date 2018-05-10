@@ -1,4 +1,4 @@
-# 5.Binary Tree
+~~[](/questions/BinaryTreeMaximumPathSum.md)~~# 5.Binary Tree
 
 ## 27 Validate Binary Search Tree
 ### 98. Validate Binary Search Tree
@@ -305,7 +305,7 @@ if __name__ == "__main__":
 ## 32 Convert Sorted List to Balanced Binary Search Tree
 
 ## 33 Binary Tree Maximum Path Sum
-
+[124. Binary Tree Maximum Path Sum](/questions/BinaryTreeMaximumPathSum.md)
 
 ## 34 Binary Tree Upside Down
 測資 {21,12,33,4,15}; 
@@ -326,3 +326,5 @@ https://www.tangjikai.com/algorithms/leetcode-156-binary-tree-upside-down
 
 
 ## [112. Path Sum](/questions/PathSum.md)
+
+## 113. Path Sum II
