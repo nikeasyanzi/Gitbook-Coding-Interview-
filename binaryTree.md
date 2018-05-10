@@ -1,4 +1,6 @@
-~~[](/questions/BinaryTreeMaximumPathSum.md)~~# 5.Binary Tree
+# 5.Binary Tree
+
+## [124. Binary Tree Maximum Path Sum](/questions/BinaryTreeMaximumPathSum.md)
 
 ## 27 Validate Binary Search Tree
 ### 98. Validate Binary Search Tree
@@ -329,10 +331,7 @@ https://www.tangjikai.com/algorithms/leetcode-156-binary-tree-upside-down
 
 ## [113. Path Sum II](/questions/PathSum.md)
 
-
-
-[145. Binary Tree Postorder Traversal](/questions/TreeTraversal.md)
-[94. Binary Tree Inorder Traversal](/questions/TreeTraversal.md)
-
-[230. Kth Smallest Element in a BST](/questions/TreeTraversal.md)
+## [145. Binary Tree Postorder Traversal](/questions/TreeTraversal.md)
+## [94. Binary Tree Inorder Traversal](/questions/TreeTraversal.md)
+## [230. Kth Smallest Element in a BST](/questions/TreeTraversal.md)
 
