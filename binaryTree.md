@@ -36,11 +36,18 @@ bool isValidBST(struct TreeNode* root)
 
 ### Explanation
 
-The problem is tricky, be careful with the coner test cases such as \[1,1\] and  \[2,1,3,NULL,NULL,5\]
+Thre problem is tricky, be careful with the conrer test cases such as \[1,1\] and  \[2,1,3,NULL,NULL,5\]
 
+
+         2
+       1    3
+       
+           5
+           
+如果你想用限定範圍的方法 如           
 Narrowing down the range between curr-&gt;key+1 ~ int\_MAX  and int\_MIN ~ curr-&gt;key+1 leads to a lethal bug, the program goes wrong when there are two INT\_MIN or INT\_MAX.
 
-so just make sure 
+所以基本上 只要直接確定 
 
 1. if it is a null node, return true
 
