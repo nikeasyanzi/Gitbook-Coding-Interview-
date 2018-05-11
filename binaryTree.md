@@ -36,26 +36,44 @@ bool isValidBST(struct TreeNode* root)
 
 ### Explanation
 
-Thre problem is tricky, be careful with the conrer test cases such as \[1,1\] and  \[2,1,3,NULL,NULL,5\]
+Thre problem is tricky, be careful with the conrer test cases such as \[1,1\] and  \[2,1,3,NULL,NULL,5\] [10,5,15,null,null,6,20]
 
 
-         2
-       1    3
-       
-           5
+
+          2                      1                        
+       1      3                       1
+            5
            
-如果你想用限定範圍的方法 如           
-Narrowing down the range between curr-&gt;key+1 ~ int\_MAX  and int\_MIN ~ curr-&gt;key+1 leads to a lethal bug, the program goes wrong when there are two INT\_MIN or INT\_MAX.
+           
+          10 
+              
+       5      15   
+            
+            6    20
+           
+
 
 所以基本上 只要直接確定 
 
 1. if it is a null node, return true
 
 2. check a node whether  left < node && node < right 
-
+不能重複
 3. check left sub tree and right sub tree
 
 [https://leetcode.com/submissions/detail/140847741/](https://leetcode.com/submissions/detail/140847741/)
+
+
+1.用中序既然是binary search tree, 
+infix 應該是 monotenous increasing
+算是最好的解  但耗費記憶體
+
+2.範圍法  max and min
+但會有致命錯誤
+如果你想用限定範圍的方法 如           
+Narrowing down the range between curr-&gt;key+1 ~ int\_MAX  and int\_MIN ~ curr-&gt;key+1 leads to a lethal bug, the program goes wrong when there are two INT\_MIN or INT\_MAX.
+
+
 
 ## 28 Maximum Depth of Binary Tree
 ### 104. Maximum Depth of Binary Tree
