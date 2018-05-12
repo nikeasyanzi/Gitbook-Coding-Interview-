@@ -2,6 +2,7 @@
 
 3 Reserve Integer
 [7. Reserve Integer](/questions/ReserveInteger.md)
+[](/questions/ReserveInteger.md)
 
 
 4 Plus one
