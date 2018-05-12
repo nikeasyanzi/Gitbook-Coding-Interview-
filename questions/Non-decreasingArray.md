@@ -80,3 +80,7 @@ test case:
 [2,4,3,6]
 
 [3,2,4,6]
+
+
+http://nirajsdatabase.blogspot.tw/2017/08/given-array-with-n-integers-your-task.html
+
