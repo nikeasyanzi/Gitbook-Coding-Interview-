@@ -1,9 +1,7 @@
 # 2.Math
 
 3 Reserve Integer
-[7. Reserve Integer](/questions/ReserveInteger.md)
-[](/questions/ReserveInteger.md)
-
+[7. Reserve Integer](/questions/ReverseInteger.md)
 
 4 Plus one
 [66. Plus one](/questions/PlusOne.md)
