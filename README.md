@@ -1,5 +1,12 @@
 # [Essential Leetcode Problems for Interview](https://nikeasyanzi.gitbooks.io/essential-leetcode-problems-for-interview/content/)
+I am 
 
+ trying to writing down
+ 
+  ideas and steps I have 
+  
+   while solving Leetcode problems
+    
 ## [1.Big O](/bigO.md)
 * [卷 I](part1/README.md)
     * [写作很棒](part1/writing.md)
@@ -99,13 +106,13 @@
 39 Single Number 2
 
 ## [8. MISC](/misc.md)
-40 Spirial Matrix
-
-41 Integer to Roman
-
-42 Roman to Integer
-
-43 Clone Graph
+    40 Spirial Matrix
+    
+    41 Integer to Roman
+    
+    42 Roman to Integer
+    
+    43 Clone Graph
 
 ## [9. Stack](/stack.md)
 44 Min Stack
