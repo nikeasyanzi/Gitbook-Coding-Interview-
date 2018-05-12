@@ -1,9 +1,5 @@
 # [Essential Leetcode Problems for Interview](https://nikeasyanzi.gitbooks.io/essential-leetcode-problems-for-interview/content/)
-I am 
-
- trying to writing down
- 
-  ideas and steps I have 
+I am  trying to writing downideas and steps I have 
   
    while solving Leetcode problems
     
