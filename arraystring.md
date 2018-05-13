@@ -140,3 +140,16 @@ Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer 
 
 # 665. Non-decreasing Array
 [665. Non-decreasing Array](/questions/Non-decreasingArray.md)
+
+
+#26. Remove Duplicates from Sorted Array
+
+https://leetcode.com/submissions/detail/153996226/
+
+i, j, & target
+目標是  j loop over the whole array and 找 一個大於target的值
+tase:
+
+1 1 2 3
+
+1,1,1,2,2,2,3,3,4,4
