@@ -360,6 +360,5 @@ https://www.tangjikai.com/algorithms/leetcode-156-binary-tree-upside-down
 ## [94. Binary Tree Inorder Traversal](/questions/TreeTraversal.md)
 ## [230. Kth Smallest Element in a BST](/questions/TreeTraversal.md)
 
-
-
+## [101. Symmetric Tree](/questions/SymmetricTree.md)
 
