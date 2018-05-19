@@ -24,7 +24,7 @@ https://leetcode.com/problems/symmetric-tree/description/
         Bonus points if you could solve it both recursively and iteratively.
         
 
-
+```c
 bool isSym(struct TreeNode* left,struct TreeNode * right){
     if (left==NULL&&right!=NULL) return false;
     if (right==NULL&&left!=NULL) return false;
@@ -44,8 +44,15 @@ bool isSymmetric(struct TreeNode* root) {
     }
     return isSym(root->left,root->right);
 }
+```
 
 說明:
 
 1. iterative 的話 應該用queue 但還沒時間做
+
+
+Reference:
+
+fisherlei.blogspot.tw/2013/01/leetcode-symmetric-tree.html   內有loop 版
+
 
