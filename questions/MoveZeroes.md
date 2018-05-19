@@ -12,7 +12,7 @@ https://leetcode.com/problems/move-zeroes/description/
     You must do this in-place without making a copy of the array.
     Minimize the total number of operations.
 
-```
+```c
 void swap(int *i,int *j){
     if (*i!=*j){
         *i^=*j;
