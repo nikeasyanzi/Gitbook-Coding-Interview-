@@ -35,27 +35,27 @@ https://leetcode.com/submissions/detail/147994217/
 ```c
 int removeSpace(char *s, int i)
 {
-int spaceCount;
-int k;
-int j;
-spaceCount=1;
-while(s[i+spaceCount]==' ')
-{
-spaceCount++;
-}
-k=0;
-while(s[i+k+spaceCount]!='\0') //lets move forward
-{
-swap(s, i+k,i+k+spaceCount);
-k++;
-}
-s[i+k]='\0';
-j=i+k-1;
-return j;
+    int spaceCount;
+    int k;
+    int j;
+    spaceCount=1;
+    while(s[i+spaceCount]==' ')
+    {
+    spaceCount++;
+    }
+    k=0;
+    while(s[i+k+spaceCount]!='\0') //lets move forward
+    {
+    swap(s, i+k,i+k+spaceCount);
+    k++;
+    }
+    s[i+k]='\0';
+    j=i+k-1;
+    return j;
 }
 void reverseWords(char *s)
 {
-int len=0;
+    int len=0;
 int j;
 int i=0;
 int k=0;
