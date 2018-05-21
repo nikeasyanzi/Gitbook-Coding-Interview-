@@ -75,3 +75,95 @@ int maxDepth(struct TreeNode* root)
 ```
 
 但這題非遞迴的話   其實要用BFS 來解
+
+
+
+
+
+
+# 111. Minimum Depth of Binary Tree
+
+
+    Given a binary tree, find its minimum depth.
+    
+    The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
+    
+    Note: A leaf is a node with no children.
+    
+    Example:
+    
+    Given binary tree [3,9,20,null,null,15,7],
+    
+        3
+       / \
+      9  20
+        /  \
+       15   7
+    return its minimum depth = 2.
+
+https://leetcode.com/problems/minimum-depth-of-binary-tree/description/
+
+```c
+int getDepth(struct TreeNode* curr]
+{
+int depth;
+int left;
+int right;
+    if(curr==NULL){
+    return 0;
+    }
+
+    if(curr!=NULL && curr->right ==NULL && curr->left==NULL){
+        return 1;
+    }
+    if( curr->right !=NULL && curr->left!=NULL ){
+        left=getDepth(curr->left);
+        right=getDepth(curr->right);
+        depth= left<right?left:right;
+    }
+
+    if( curr->right ==NULL && curr->left!=NULL){
+        depth=getDepth(curr->left);
+    }
+
+    if( curr->right !=NULL && curr->left==NULL){
+        depth=getDepth(curr->right);
+    }
+    return depth+1;
+}
+
+int minDepth(struct TreeNode* root){
+    return getDepth(root);
+}
+```
+https://leetcode.com/submissions/detail/140981427/
+
+
+### Explanation
+
+Minimum Depth of Binary Tree
+[29 和Minimum depth of binary tree 的 概念很像
+
+1. 計算深度的方法可以top down or bottom up
+
+1. top-down: we consider the depth of root as 1, and gradually increase the depth when visiting the successors.
+
+2. bottom-up: we consider the depth of leaf as 1 and gradually increase the depth when visiting the predecessors
+
+2. 考慮node的狀態
+
+1. null node
+
+2. node with two child nodes
+
+3. node with either right or left child node
+
+3. The curr depth can be updated by consider the depth of left subtree and the depth of right subtree.
+
+4. Maximum Depth of Binary Tree 和Minimum depth of binary tree 的差別
+
+1](/questions/MinMaxDepthofBinaryTree. Max depth 從root node 計算起 較方便
+
+2. Min depth 從leaf node算起比較方便
+
+3. 比較一下兩者演算法,可以發現Minimum depth的算法須額外分辨只有左或右子樹的狀況, 否則只有空子樹的深度被回傳md)
