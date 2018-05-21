@@ -13,8 +13,9 @@
     
     Follow up:
     Could you solve it with constant space complexity? (The output array does not count as extra space for the purpose of space complexity analysis.)
-    
-    https://leetcode.com/problems/product-of-array-except-self/description/
+
+
+https://leetcode.com/problems/product-of-array-except-self/description/
     
     
     
@@ -35,7 +36,7 @@
     
     p=1;
     for(i=numsSize-2;i>=0;i--){
-        p=p*nums[i+1];
+        p=p*nums[i+1]; //use p to save the memory space
         result[i]=p*result[i];
     }
     
@@ -47,27 +48,30 @@
 }
     
 ```
+https://leetcode.com/submissions/detail/155201886/
+
+
 
 說明: 
-直觀的寫法其實是 $$ a[i]= \prod/a[i]$$
 
+1. 直觀的寫法其實是 $$ a[i]= \prod/a[i]$$
 但這題不能用除法
 
-所以
+2. 所以 假設一個陣列
  $$ [a0,a1,a2,a3] $$
-
-可以想成 
+ 可以想成 
 $$left=[1, a_0, a_0*a_1, a_0*a_1*a_2]$$
 $$right=[a_1*a_2*a_3, a_2*a_3, a_2, 1 ]$$
-一般的做法是直接left *right
 
-但如果這時候再考慮 利用常數p 來存 right的結果 可節省記憶體
+ 一般的做法是直接left *right
 
+3. 但如果這時候再考慮 利用常數p 來存 right的結果 可節省記憶體
 
-有個特殊狀況可考慮
+4. 有個特殊狀況可考慮
+   
+   1. 有一個element為0
+   則最後結果 只有該elemet有值
 
-1. 有一個element為0
-則最後結果 只有該
-
-2.有兩個element為0
-則最後結果全為0
+   2. 有兩個element為0
+   則最後結果全為0
+   
