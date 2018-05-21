@@ -76,3 +76,77 @@ int num[2]= {2,1};
         mums[1]<  nums[2] 
             right=1;
             檢查nums[1] < nums[0]    //hit
+
+
+# Q154. Find Minimum in Rotated Sorted Array II
+
+https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/description/
+
+    Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.
+    
+    (i.e.,  [0,1,2,4,5,6,7] might become  [4,5,6,7,0,1,2]).
+    
+    Find the minimum element.
+    
+    The array may contain duplicates.
+    
+    Example 1:
+    
+    Input: [1,3,5]
+    Output: 1
+    Example 2:
+    
+    Input: [2,2,2,0,1]
+    Output: 0
+    
+    Follow up for "Find Minimum in Rotated Sorted Array":
+    What if duplicates are allowed?
+    Would this affect the run-time complexity? How and why?
+
+```c
+int recursiveMin(int * nums, int left, int right)
+{
+    int mid;
+    int leftmin;
+    int rightmin;
+    
+    if(left==right|| left+1==right){
+    return nums[left]<nums[right]?nums[left]:nums[right];
+    }
+    else{
+
+    if(nums[left]==nums[right]){
+    right--;
+    }
+    mid=(right-left)/2+left;
+
+    leftmin=recursiveMin(nums,mid+1,right);
+    rightmin=recursiveMin(nums,left,mid);
+    //printf("leftmin=%d, rightmin=%d, mid=%d",leftmin,rightmin );
+    }
+    return leftmin<rightmin?leftmin:rightmin;
+}
+
+int findMin(int* nums, int numsSize) {
+    return recursiveMin(nums, 0, numsSize-1);;
+}
+```
+
+這作法其實很慢
+
+
+
+測資:
+int num3[12]= {2, 2, 2, 2, 2, 2, 2, 2, 0, 1, 1, 2};
+int num4[12]= {2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2};
+int num5[3]= {3,1,1};
+int num6[3]= {1,1,3};
+int num7[3]= {3,1,3};
+int num8[3]= {1,1,1};
+
+
+
+Reference:
+[\[解题报告\] LeetCode 154. Find Minimum in Rotated Sorted Array II](http://zxi.mytechroad.com/blog/divide-and-conquer/leetcode-154-find-minimum-in-rotated-sorted-array-ii/)
+
+[\[LeetCode\] Find Minimum in Rotated Sorted Array II 寻找旋转有序数组的最小值之二](http://www.cnblogs.com/grandyang/p/4040438.html)
