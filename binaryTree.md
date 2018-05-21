@@ -3,14 +3,11 @@
 ## [124. Binary Tree Maximum Path Sum](/questions/BinaryTreeMaximumPathSum.md)
 
 ## 27 Validate Binary Search Tree
-### 98. Validate Binary Search Tree
 
 [98. Validate Binary Search Tree](/questions/ValidateBinarySearchTree.md)
 
 
-
 ## 28 Maximum Depth of Binary Tree
-### 104. Maximum Depth of Binary Tree
 [104. Maximum Depth of Binary Tree](/questions/MinMaxDepthofBinaryTree.md)
 
 
