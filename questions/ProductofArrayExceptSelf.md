@@ -75,6 +75,7 @@ $$right=[a_1*a_2*a_3, a_2*a_3, a_2, 1 ]$$
    2. 有兩個element為0
    則最後結果全為0
    
+   
   ![](http://3.bp.blogspot.com/-6KWF3HCWUGc/ViyGdIJ_7mI/AAAAAAAAMQI/9HH9PZvBtvM/s1600/Picture4.png) 
 
 #reference

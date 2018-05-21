@@ -22,7 +22,8 @@ https://leetcode.com/problems/non-decreasing-array/description/
 
 https://leetcode.com/submissions/detail/153862262/
 
-'''go
+# 最速解
+```go   
 func checkPossibility(nums []int) bool {
  
     var count int;
@@ -46,8 +47,9 @@ func checkPossibility(nums []int) bool {
     }
     return true;
 }
-'''go
+```
 
+#第二種解法
 
 ```Go
 func checkPossibility(nums []int) bool {
@@ -70,16 +72,20 @@ func checkPossibility(nums []int) bool {
     return true;
 }
 ```
+說明:
+這題其實是要考慮 前一位, 當前位 跟後一位的關係 
+
+假設考慮當前 i=2   則
 
 test case:
 
-[2,4,2,6]
+[2,4,2,6] -> [2,2,4,6]
 
-[3,4,2,6]
+[3,4,2,6] -> [X]  無法替換 因為  num[i+1] < num[i-1]
 
-[2,4,3,6]
+[2,4,3,6] -> [2,3,4,6]
 
-[3,2,4,6]
+[3,2,4,6] -> [2,3,4,6]
 
 
 http://nirajsdatabase.blogspot.tw/2017/08/given-array-with-n-integers-your-task.html
