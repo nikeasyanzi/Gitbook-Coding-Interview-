@@ -1,7 +1,7 @@
 # [3. Array/String](/arraystring.md)
 
 ## [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/)
-
+相似: [](/questions/RemoveDuplicatesfromSortedArray.md)
 https://leetcode.com/problems/move-zeroes/description/
 
     Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
