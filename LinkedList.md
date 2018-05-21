@@ -60,5 +60,12 @@ http://codingfreak.blogspot.com/2012/09/detecting-loop-in-singly-linked-list_22.
 find loop entry
 http://codingfreak.blogspot.com/2012/12/detecting-first-node-in-a-loop.html
 
+https://leetcode.com/problems/linked-list-cycle/description/
 
+1,cycle detection 重點在交錯式
+要tortise 走一步hare 檢查是不是到終點
+再走第二部
+這是因為考慮   沒有cycle的狀況下
+
+2. 邊界條件就是 list is empty 直接return false  (no cycle)
 
