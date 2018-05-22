@@ -127,3 +127,8 @@ https://www.tangjikai.com/algorithms/leetcode-156-binary-tree-upside-down
 
 ## [101. Symmetric Tree](/questions/SymmetricTree.md)
 
+
+prefix tree
+
+segement tree
+
