@@ -16,6 +16,8 @@
 # Misc:
 
 [206. Reverse Linked List](/questions/ReverseLinkedList.md)
+[141. Linked List Cycle](/questions/LinkedListCycle.md)
+[142. Linked List Cycle II](/questions/LinkedListCycle.md)
 
 
 ## Tortoise and Hare
