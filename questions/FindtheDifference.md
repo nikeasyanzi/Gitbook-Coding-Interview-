@@ -28,6 +28,8 @@ https://leetcode.com/problems/find-the-difference/description/
     
     
     
+    
+    
 ```c
 
 
@@ -56,11 +58,18 @@ char findTheDifference(char* s, char* t) {
     return i+'a';
 }
 ```
+解說
 
-不能 先建 hash table for s  然後再去 look up every element of t
-因為這樣無法檢查重複的character
+1. 這題很簡單 就是用hash table
 
-後來改成用 hash counter 的方式
+2. 不能 先建 hash table for s  然後再去 look up every element of t
+因為這樣無法檢查重複的character (見test case)
+
+3. 後來改成用 hash counter 的方式
+假設 一個是加 一個是減
+則兩個string  分別跑完  
+hash table 會回歸為0  不為零就是added number
+
 
 test case:
 "a"
