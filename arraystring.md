@@ -144,7 +144,10 @@ Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer 
 
 #26. Remove Duplicates from Sorted Array
 
-[](/questions/RemoveDuplicatesfromSortedArray.md)
+[#26. Remove Duplicates from Sorted Array](/questions/RemoveDuplicatesfromSortedArray.md)
+
+# 80. Remove Duplicates from Sorted Array II
+[80. Remove Duplicates from Sorted Array II](/questions/RemoveDuplicatesfromSortedArray.md)
 
 #[238. Product of Array Except Self](/questions/ProductofArrayExceptSelf.md)  
 
