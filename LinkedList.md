@@ -20,6 +20,4 @@
 [142. Linked List Cycle II](/questions/LinkedListCycle.md)
 
 
-160. Intersection of Two Linked Lists
-
-
+[160. Intersection of Two Linked Lists](/questions/IntersectionofTwoLinkedLists.md)
