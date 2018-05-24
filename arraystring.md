@@ -151,3 +151,8 @@ Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer 
 
 #[238. Product of Array Except Self](/questions/ProductofArrayExceptSelf.md)  
 
+
+
+389. Find the Difference
+
+https://leetcode.com/problems/find-the-difference/description/
