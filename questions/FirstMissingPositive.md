@@ -1,4 +1,4 @@
-# [# 3.Array/String](/arraystring.md)
+# [3.Array/String](/arraystring.md)
 
 # [ 41. First Missing Positive ](/questions/FindMissingPositive.md)
 
