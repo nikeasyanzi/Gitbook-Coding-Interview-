@@ -54,15 +54,15 @@ int lengthOfLongestSubstring(char* s)
         j++;
     }
     tmp_length=j-left;
-    max_length=max_length>tmp_length?max_length:tmp_length;
+    max_length=max_length>tmp_length?max_length:tmp_length; // check the residual string
     return max_length;
 }
 ```
 解法:
 
-用set 的方式
+1. 用set 的方式
 
-1. 如果某char 出現 便加入set
+    1. 如果某char 出現 便加入set
 
     [https://www.youtube.com/watch?v=ZlCxw1VUYj0]   (https://www.youtube.com/watch?v=ZlCxw1VUYj0)
 
@@ -70,16 +70,16 @@ int lengthOfLongestSubstring(char* s)
 
 2. 用字串計算的方式
 
-3. 須注意  更新len的問題
+    1. 須注意  更新len的問題
 if(hashTable[s[j]]>=left)
 見 範例pwwkewp, i=6時,
 p已拜訪過,但 hashTable[s[j]]=0, left=3
 
-4. hash array
+    2. hash array
     
     ASCII 大小是256 所以宣告256 hash array size  
-    另外技巧是hash array 記錄某字元出現的的idx, so we initialize the array with -1
-5. 迴圈跑完後  再比較一次殘餘的字串有沒有超過目前substring長度
+    另外技巧是hash array 用於記錄某字元出現的的idx, so we initialize the array with -1
+    3. 迴圈跑完後  再比較一次殘餘的字串有沒有超過目前substring長度
 
 推導  
 
