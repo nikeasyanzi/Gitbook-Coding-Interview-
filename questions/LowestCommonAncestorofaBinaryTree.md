@@ -43,7 +43,7 @@ struct TreeNode* recursive(struct TreeNode* root, struct TreeNode* p, struct Tre
     struct TreeNode* right;
     if(root==NULL) return NULL;
     
-    if(root==p|| root==q) return root; //strange, it not pass if we check with the val  not the address
+    if(root==p|| root==q) return root; //strange!!, it not pass if we check with the val  not the address
     
     left= recursive(root->left,p,q);
     right= recursive(root->right,p,q);
@@ -80,4 +80,7 @@ struct TreeNode* lowestCommonAncestor(struct TreeNode* root, struct TreeNode* p,
         3.若只有right 有值  則回傳right
         
 
+    4.最後一個卡陰的地方是   如果單純比較value 是會fail
+    只能比較address
+    
 
