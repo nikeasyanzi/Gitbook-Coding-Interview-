@@ -1,7 +1,7 @@
 
-[# 5.Binary Tree](/binaryTree.md)
+# [# 5.Binary Tree](/binaryTree.md)
 
-236. Lowest Common Ancestor of a Binary Tree
+# 236. Lowest Common Ancestor of a Binary Tree
 
 https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/
 
@@ -62,4 +62,4 @@ struct TreeNode* lowestCommonAncestor(struct TreeNode* root, struct TreeNode* p,
 ```
 說明:
 
-1. 這題其實
+1. 這題其實  ????
