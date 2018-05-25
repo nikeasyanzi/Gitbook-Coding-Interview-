@@ -62,4 +62,22 @@ struct TreeNode* lowestCommonAncestor(struct TreeNode* root, struct TreeNode* p,
 ```
 說明:
 
-1. 這題其實  ????
+1. 這題其實 可以用 tree traverse 紀錄遍訪的節點 於陣列中
+最後比較 common 的部分
+
+2.但這邊我們用recursive的方法
+    
+    1. 假設有找到  就回傳root
+
+    2. 否則分別往左邊跟右邊找
+
+    3. 如果回傳的部分
+        
+        1.left & right都有值  表示目前即為root
+        
+        2.若只有left有值  則回傳left  
+        
+        3.若只有right 有值  則回傳right
+        
+
+
