@@ -137,3 +137,7 @@ segement tree
 
 
 ## [236. Lowest Common Ancestor of a Binary Tree](/questions/LowestCommonAncestorofaBinaryTree.md)
+
+
+## 671. Second Minimum Node In a Binary Tree
+[](/questions/SecondMinimumNodeInaBinaryTree.md)
