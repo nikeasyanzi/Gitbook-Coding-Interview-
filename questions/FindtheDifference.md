@@ -68,7 +68,7 @@ char findTheDifference(char* s, char* t) {
 3. 後來改成用 hash counter 的方式
 假設 一個是加 一個是減
 則兩個string  分別跑完  
-hash table 會回歸為0  不為零就是added number
+hash table 會回歸為0  不為零就是added character
 
 
 test case:
