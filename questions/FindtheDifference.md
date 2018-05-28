@@ -27,9 +27,6 @@ https://leetcode.com/problems/find-the-difference/description/
     'e' is the letter that was added.
     
     
-    
-    
-    
 ```c
 
 
