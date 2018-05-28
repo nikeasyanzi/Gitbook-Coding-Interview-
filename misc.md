@@ -13,5 +13,6 @@
 
 [371.Sum of Two Integers](/questions/SumofTwoIntegers.md)
 
+# [840. Magic Squares In Grid](/questions/MagicSquaresInGrid.md)
 
 
