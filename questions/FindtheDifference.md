@@ -74,4 +74,5 @@ hash table 會回歸為0  不為零就是added character
 test case:
 "a"
 "aa"
+## **心得: hash table 可以用來查 是否存在  也可以用來當counter 表**
 
