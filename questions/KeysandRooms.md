@@ -1,6 +1,6 @@
 # [9. Stack](/stack.md)
 
-# 841. Keys and Rooms
+## 841. Keys and Rooms
 
     There are N rooms and you start in room 0.  Each room has a distinct number in 0, 1, 2, ..., N-1, and each room may have some keys to access the next room. 
     
@@ -161,4 +161,6 @@ BFS 就用queue
 [[1,3],[3,0,1],[5],[0],[2]]  -> 2, 5 自成一圈
 [[1,3],[3,0,1],[2],[0]] -> 2 自成一圈
 
+心得: 
+stack & queue 應該是心中要有模板
 

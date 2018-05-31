@@ -1,18 +1,9 @@
 # [3. Array/String](/arraystring.md)
 
+## 160. Intersection of Two Linked Lists
 
 
-
-
-
-
-160. Intersection of Two Linked Lists
-
-
-
-'''c
-
-
+```c
 struct ListNode *getIntersectionNode(struct ListNode *headA, struct ListNode *headB) {
     struct ListNode *ptrA=headA;
     struct ListNode *ptrB=headB;
@@ -31,9 +22,7 @@ struct ListNode *getIntersectionNode(struct ListNode *headA, struct ListNode *he
     }
     return ptrA;
 }
-
-
-'''
+```
 
 
 基本原理是
@@ -42,7 +31,7 @@ struct ListNode *getIntersectionNode(struct ListNode *headA, struct ListNode *he
 list A =  XXX + common
 list B =  YY+ common
 
-則 
+則  見圖示
 
 list A + list B = XXX + common + YY + common
 list B + list A = YY + common + XXX + common
