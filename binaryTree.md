@@ -140,4 +140,4 @@ segement tree
 
 
 ## 671. Second Minimum Node In a Binary Tree
-[](/questions/SecondMinimumNodeInaBinaryTree.md)
+[671. Second Minimum Node In a Binary Tree](/questions/SecondMinimumNodeInaBinaryTree.md)

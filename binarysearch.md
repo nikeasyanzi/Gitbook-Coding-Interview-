@@ -6,7 +6,9 @@
 [Find Minimum in Rotated Sorted Array](/questions/FindMinimuminSortedRotatedArray.md)
 
 ##37 Find Minimum in sorted rotated array 2
-   
+ [Find Minimum in Rotated Sorted Array](/questions/FindMinimuminSortedRotatedArray.md)
+
+
 
 # 33. Search in Rotated Sorted Array
 ```c
