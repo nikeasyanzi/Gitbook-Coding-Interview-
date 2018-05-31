@@ -1,6 +1,6 @@
 
 
-# 671. Second Minimum Node In a Binary Tree
+# 671.  Second Minimum Node In a Binary Tree ()代處理
 
 https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/description/
 
