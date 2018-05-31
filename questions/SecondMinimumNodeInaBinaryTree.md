@@ -61,7 +61,6 @@ int findSecondMinimumValue(struct TreeNode* root) {
 }
 ```
 
-#  **tit fails into a 
 
 **心得: 這種題目 is must get, but if the method is value comparsion,**
 
