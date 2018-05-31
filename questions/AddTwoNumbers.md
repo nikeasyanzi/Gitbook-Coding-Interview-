@@ -107,28 +107,28 @@ test case:
 ```c
 struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2)
 {
-struct ListNode* currl1=l1;
-struct ListNode* currl2=l2;
-int carryin=0;
-int carryout;
-while(currl1!=NULL|| currl2!=NULL||carryin!=0){
-if(currl1==NULL && currl2!=NULL){
-...
-}
-if(currl2==NULL&& currl1!=NULL){
-...
-}
-if(currl1!=NULL&& currl2!=NULL){
-... //move currl1 and currl2 points to the next one
-}
+	struct ListNode* currl1=l1;
+	struct ListNode* currl2=l2;
+	int carryin=0;
+	int carryout;
+	while(currl1!=NULL|| currl2!=NULL||carryin!=0){
+		if(currl1==NULL && currl2!=NULL){
+			...
+		}
+		if(currl2==NULL&& currl1!=NULL){
+			...
+		}
+		if(currl1!=NULL&& currl2!=NULL){
+			... //move currl1 and currl2 points to the next one
+		}
 
-if(currl1==NULL&& currl2==NULL){
-... //now both curr1 and curr2 are null,
-//the program runs into a bug without reset carryin
-}
-carryin=carryout;
-}
-return head;
+		if(currl1==NULL&& currl2==NULL){
+			... //now both curr1 and curr2 are null,
+				//the program runs into a bug without reset carryin
+		}
+		carryin=carryout;
+	}
+	return head;
 }
 ```
 
@@ -136,32 +136,32 @@ return head;
 
 struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2)
 {
-struct ListNode* currl1=l1;
-struct ListNode* currl2=l2;
-int carryin=0;
-int carryout;
-    while(currl1!=NULL|| currl2!=NULL||carryin!=0){
-        if(currl1==NULL && currl2!=NULL){
-        ...
-        }
-        else{
-            if(currl2==NULL&& currl1!=NULL){
-            ...
-            }
-            else{
-                if(currl1!=NULL&& currl2!=NULL){
-                    ...
-                }
-                else{
-                if(currl1==NULL&& currl2==NULL){
-                ...
-                }
-            }
-        }
-    }
-    carryin=carryout;
-    }
-    return head;
+	struct ListNode* currl1=l1;
+	struct ListNode* currl2=l2;
+	int carryin=0;
+	int carryout;
+	while(currl1!=NULL|| currl2!=NULL||carryin!=0){
+		if(currl1==NULL && currl2!=NULL){
+			...
+		}
+		else{
+			if(currl2==NULL&& currl1!=NULL){
+				...
+			}
+			else{
+				if(currl1!=NULL&& currl2!=NULL){
+					...
+				}
+				else{
+					if(currl1==NULL&& currl2==NULL){
+						...
+					}
+				}
+			}
+		}
+		carryin=carryout;
+	}
+	return head;
 }
 ```
 
