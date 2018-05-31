@@ -72,7 +72,7 @@ a ^b.... ^x ^y ^z ^a ^b ... ^x ^y
 [https://www.hackerearth.com/practice/notes/bit-manipulation/](https://www.hackerearth.com/practice/notes/bit-manipulation/)
 
 
-190. Reverse Bits
+### 190. Reverse Bits
 
 ```c
 uint32_t reverseBits(uint32_t n) {
@@ -87,3 +87,6 @@ uint32_t reverseBits(uint32_t n) {
 ```
 https://leetcode.com/problems/reverse-bits/description/
 https://articles.leetcode.com/reverse-bits/
+
+
+
