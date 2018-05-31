@@ -15,16 +15,19 @@ https://leetcode.com/submissions/detail/147994217/
 步驟分成
 
 1. 空白要處理
-1.1移除spaces at tail
-1.2移除spaces at head
-1.3保留一個space in the text and remove the rest
+    
+    1. 移除spaces at tail
+
+    2. 移除spaces at head
+
+    3. 保留一個space in the text and remove the rest
+
 2. 先反轉每個單字
 
+3. 接著頭尾交換
 
-3. 接者頭尾交換
 
-舉例:
-" abc def "
+例子 " abc def "
 ->
 處理空白:"abc def"
 ->
