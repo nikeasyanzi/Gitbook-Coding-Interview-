@@ -62,7 +62,7 @@ int findSecondMinimumValue(struct TreeNode* root) {
 ```
 
 
-**心得: 這種題目 is must get, but if the method is value comparsion,**
+**心得: 這種題目 is must get!**
+But if the method is to do value comparsion, the element of tree node is equal to the limitation 
+it  fails into a trap, that if a node val is (INT_MIN, INT_MAX)
 
-equal to the limitation (INT_MIN, INT_MAX)
-it  fails into a trap, that if a node val is
