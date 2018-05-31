@@ -88,5 +88,29 @@ uint32_t reverseBits(uint32_t n) {
 https://leetcode.com/problems/reverse-bits/description/
 https://articles.leetcode.com/reverse-bits/
 
+### 693. Binary Number with Alternating Bits
+```c
+class Solution {
+    public boolean hasAlternatingBits(int n) {
+        int cur = n % 2;
+        n /= 2;
+        while (n > 0) {
+            if (cur == n % 2) return false;
+            cur = n % 2;
+            n /= 2;
+        }
+        return true;
+    }
+}
+```
+
+
+```c
+bool hasAlternatingBits(int n) {
+    
+int tmp = (n^(n>>1)); 
+        return (tmp&(tmp+1))==0; 
+}
+```
 
 
