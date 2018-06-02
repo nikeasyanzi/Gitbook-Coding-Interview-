@@ -81,7 +81,7 @@ class Solution:
             return 0.0
         if K == 0 or N >= K - 1 + W:
             return 1.0
-        dp = [1.0]
+        dp = [1.0]  // no matter how much points we get, we stop
         Wsum = dp[0]
         for i in range(1, N + 1):
             p = Wsum / W
