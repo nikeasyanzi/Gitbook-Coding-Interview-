@@ -158,12 +158,12 @@ Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer 
 ```c
 class Solution(object):
     def splitIntoFibonacci(self, S):
-        for i in range( len(S)):
+        for i in range( len(S)-2):
             x = S[:i+1]
             print(x)
             if x != '0' and x.startswith('0'): break
             a = int(x)
-            for j in range(i+1,len(S)):
+            for j in range(i+1,len(S)-1):
                 
                 y = S[i+1: j+1]
                 print("y="+y)
