@@ -1,4 +1,8 @@
+
+
 # [10.Dynamic Programming](/dynamic-programming.md)
+
+## 837. New 21 Game
 
     Alice plays the following game, loosely based on the card game "21".
     
