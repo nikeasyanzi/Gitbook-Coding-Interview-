@@ -88,7 +88,7 @@ class Solution:
             dp.append(p)
         if i < K:
             Wsum += p
-        if i - W >= 0:
+        if i - W >= 0:  ///
             Wsum -= dp[i - W]
     return sum(dp[K:])
 ```
