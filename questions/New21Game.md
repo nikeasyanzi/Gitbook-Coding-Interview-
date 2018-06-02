@@ -2,17 +2,18 @@
 
 https://leetcode.com/problems/new-21-game/description/
 
-Intuition:
-The same problems as "Climbing Stairs".
-
-Explanation:
-In a word,
-dp[i]: probability of get points i
-dp[i] = sum(last W dp values) / W
-
-Time Complexity:
-O(N)
-
+    Intuition:
+    The same problems as "Climbing Stairs".
+    
+    Explanation:
+    In a word,
+    dp[i]: probability of get points i
+    dp[i] = sum(last W dp values) / W
+    
+    Time Complexity:
+    O(N)
+    
+```c
 def new21Game(self, N, K, W):
 if K == 0 or N >= K + W: return 1
 dp = [1.0] + [0.0] * N
@@ -22,7 +23,7 @@ dp[i] = Wsum / W
 if i < K: Wsum += dp[i]
 if i - W >= 0: Wsum -= dp[i - W]
 return sum(dp[K:])
-
+```
 
 precisely, I wanted to understand the 3rd example of N=21, K=17, W=10
 For this case, could you help visualize, how the DP list builds up, so that the last 5 gives the result ?
@@ -39,20 +40,24 @@ i=3 (drawn card-3) : You win as you get 3(3<=N) and you stop as 2>=K, P(i=3)=1/1
 All events are independent: Total prob = 0.02+0.1+0.1 = 0.22
 In Python code instead of adding dp[i] += Wsum / W you can just assign value dp[i] = Wsum / W
 You can also start with only one item in the list dp = [1.0] and extend it by appending items as you go: dp.append(Wsum / W)
+
+```c
 class Solution:
-def new21Game(self, N, K, W):
-if N < K:
-return 0.0
-if K == 0 or N >= K - 1 + W:
-return 1.0
-dp = [1.0]
-Wsum = dp[0]
-for i in range(1, N + 1):
-p = Wsum / W
-dp.append(p)
-if i < K:
-Wsum += p
-if i - W >= 0:
-Wsum -= dp[i - W]
-return sum(dp[K:])
+    def new21Game(self, N, K, W):
+        if N < K:
+            return 0.0
+        if K == 0 or N >= K - 1 + W:
+            return 1.0
+        dp = [1.0]
+        Wsum = dp[0]
+        for i in range(1, N + 1):
+            p = Wsum / W
+            dp.append(p)
+        if i < K:
+            Wsum += p
+        if i - W >= 0:
+            Wsum -= dp[i - W]
+    return sum(dp[K:])
+```
+
 The solution can be further optimized in memory size as O(min(K, N, W)) by using a cyclic buffer for dp to keep no more than W last values.
