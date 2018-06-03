@@ -19,6 +19,12 @@
 846. Hand of Straights
 https://leetcode.com/problems/hand-of-straights/description/
 
+
+
+1. be careful with the index manipulation
+
+2.
+
 ```c
 
 class Solution:
@@ -42,16 +48,16 @@ class Solution:
         #print(dc_sort)
 
         #print(len(dc_sort)-W)
-        for i in range(len(dc_sort)-W+1):
+        for i in range(len(dc_sort)-W+1):   //here is the keypoint 1
             #print(i)
             #print(dc_sort)        
 
             if(dc_sort[i][1]!=0 ):
-                for j in range (W-1):
+                for j in range (W-1): // here is the keypoint 2, check if the number is consecutive
                     if( i+j+1 > len(dc_sort) or int (dc_sort[i+j][0])+1 !=int (dc_sort[i+j+1][0]) ): 
                         return False;
                 tmp=dc_sort[i][1];
-                for j in range (W):
+                for j in range (W): // anotehr keypoint, deduct the W
                         #print(j)
                         dc_sort[i+j]=list((str(dc_sort[i+j][0]),dc_sort[i+j][1]-tmp))
                         dc_sort[i]=list((str(dc_sort[i][0]),0))
