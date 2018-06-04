@@ -141,3 +141,8 @@ segement tree
 
 ## 671. Second Minimum Node In a Binary Tree
 [671. Second Minimum Node In a Binary Tree](/questions/SecondMinimumNodeInaBinaryTree.md)
+
+## 653. Two Sum IV - Input is a BST
+[Two Sum IV](/questions/TwoSumIV.md)
+
+
