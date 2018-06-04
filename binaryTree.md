@@ -127,16 +127,13 @@ https://www.tangjikai.com/algorithms/leetcode-156-binary-tree-upside-down
 
 ## [101. Symmetric Tree](/questions/SymmetricTree.md)
 
-
 prefix tree
 
 segement tree
 
 
-236. Lowest Common Ancestor of a Binary Tree
-
-
-## [236. Lowest Common Ancestor of a Binary Tree](/questions/LowestCommonAncestorofaBinaryTree.md)
+## 236. Lowest Common Ancestor of a Binary Tree
+[236. Lowest Common Ancestor of a Binary Tree](/questions/LowestCommonAncestorofaBinaryTree.md)
 
 
 ## 671. Second Minimum Node In a Binary Tree
