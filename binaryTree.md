@@ -58,6 +58,8 @@ https://www.tangjikai.com/algorithms/leetcode-156-binary-tree-upside-down
 
 ## 208. Implement Trie (Prefix Tree)
 https://leetcode.com/problems/implement-trie-prefix-tree/description/
+https://www.geeksforgeeks.org/trie-insert-and-search/
+
 
 segement tree
 https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/
