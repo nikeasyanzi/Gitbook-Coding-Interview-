@@ -1,5 +1,3 @@
-
-
 # 10.Dynamic Programming
 
 ## 47 Climbing Stairs
@@ -151,6 +149,7 @@ http://www.cnblogs.com/grandyang/p/5864323.html
 Reference:
 
 
-##837. New 21 Game
+##837. New 21 Game (to do
 [837. New 21 Game](/questions/New21Game.md)
 
+## 847. Shortest Path Visiting All Nodes (to do
