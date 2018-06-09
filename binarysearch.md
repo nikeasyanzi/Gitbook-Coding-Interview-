@@ -121,3 +121,7 @@ ex. 4 4 6 7 1 3 3 3 4 4
 
 if key = 0 變成單調搜尋
 
+
+
+# 4. Median of Two Sorted Arrays
+
