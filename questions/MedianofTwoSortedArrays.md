@@ -39,6 +39,9 @@ double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Si
         return (c1 + c2) *0.5;
     }
     
+1. 討論 新的 ck-1 ck  
+    
+    
 ```    
 https://leetcode.com/problems/median-of-two-sorted-arrays/submissions/1
 
