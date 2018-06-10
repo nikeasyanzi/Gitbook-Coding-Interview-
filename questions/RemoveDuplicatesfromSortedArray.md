@@ -66,9 +66,10 @@ i, j, & target
 目標是  j loop over the whole array and 找 一個大於target的值
 tast case:
 
-1 1 2 3
+[1, 1, 2, 3]
 
-1,1,1,2,2,2,3,3,4,4
+[1,1,1,2,2,2,3,3,4,4]
+
 
 
 
@@ -113,8 +114,8 @@ int removeDuplicates(int* nums, int numsSize) {
 
 https://leetcode.com/submissions/detail/155672597/
 
-100% sol:
-
+the fatest sol:
+'''c
 int removeDuplicates(int* nums, int numsSize) {
     if(numsSize<3)return numsSize;
     int cnt = 2;
@@ -128,7 +129,7 @@ int removeDuplicates(int* nums, int numsSize) {
     }
     return cnt;
 }
-
+```
 Reference: 
 https://shenjie1993.gitbooks.io/leetcode-python/080%20Remove%20Duplicates%20from%20Sorted%20Array%20II.html
 
