@@ -81,10 +81,6 @@ If $$\text{rev} < \frac{INTMIN}{10}$$ , then $$ temp = \text{rev} \cdot 10 + \te
 If $$ \text{rev} == \frac{INTMIN}{10} $$, then $$ temp = \text{rev} \cdot 10 + \text{pop}$$ will overflow if and only if $$ \text{pop} < -8$$
 
 
-
-
-
-
 所以pop 需分別檢查   7 or -8
 
 ```c++
