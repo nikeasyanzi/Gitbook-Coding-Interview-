@@ -61,24 +61,30 @@ http://www.cnblogs.com/grandyang/p/4125588.html
 這邊再講甚麼 不是很懂!!!!!
 
 
-$$
-\text{rev}rev *10 + pop
-$$
 
+Leet code 官方的解釋:
+因為
+$$ \text{INT_MIN} =	–2147483647 – 1 $$
+$$ \text{INT_MAX} =	2147483647 $$
 
 To explain, lets assume that  is positive.
 
 If $$temp = \text{rev} \cdot 10 + \text{pop} $$ causes overflow, then it must be that $$\text{rev} \geq \frac{INTMAX}{10}$$
 ​
-If $$\text{rev} > \frac{INTMAX}{10}rev> ​10$$ , then $$ temp = \text{rev} \cdot 10 + \text{pop}$$ is guaranteed to overflow.
-If $$ \text{rev} == \frac{INTMAX}{10}rev== ​10 $$, then $$ temp = \text{rev} \cdot 10 + \text{pop}$$ will overflow if and only if $$ \text{pop} > 7$$
+If $$\text{rev} > \frac{INTMAX}{10}$$ , then $$ temp = \text{rev} \cdot 10 + \text{pop}$$ is guaranteed to overflow.
+If $$ \text{rev} == \frac{INTMAX}{10} $$, then $$ temp = \text{rev} \cdot 10 + \text{pop}$$ will overflow if and only if $$ \text{pop} > 7$$
+
+Similar logic can be applied when $$ \text{rev}$$ is negative.
+
+when $$rev$$ is negative
+If $$\text{rev} < \frac{INTMIN}{10}$$ , then $$ temp = \text{rev} \cdot 10 + \text{pop}$$ is guaranteed to overflow.
+If $$ \text{rev} == \frac{INTMIN}{10} $$, then $$ temp = \text{rev} \cdot 10 + \text{pop}$$ will overflow if and only if $$ \text{pop} < -8$$
 
 
 
-Similar logic can be applied when $$ \text{rev}rev $$ is negative.
 
-INT_MIN	–2147483647 – 1
-INT_MAX	2147483647
+
+
 所以pop 需分別檢查   7 or -8
 
 ```c++
