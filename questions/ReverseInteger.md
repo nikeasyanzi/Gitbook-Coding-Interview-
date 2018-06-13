@@ -62,29 +62,20 @@ http://www.cnblogs.com/grandyang/p/4125588.html
 
 
 $$
-\text{rev}rev
+\text{rev}rev *10 + pop
 $$
 
 
 To explain, lets assume that  is positive.
 
-If temp = \text{rev} \cdot 10 + \text{pop}temp=rev⋅10+pop causes overflow, then it must be that \text{rev} \geq \frac{INTMAX}{10}rev≥
-​10
+If $$temp = \text{rev} \cdot 10 + \text{pop} $$ causes overflow, then it must be that $$\text{rev} \geq \frac{INTMAX}{10}$$
 ​
-​INTMAX
-​​ 
-If \text{rev} > \frac{INTMAX}{10}rev>
-​10
-​
-​INTMAX
-​​ , then temp = \text{rev} \cdot 10 + \text{pop}temp=rev⋅10+pop is guaranteed to overflow.
-If \text{rev} == \frac{INTMAX}{10}rev==
-​10
-​
-​INTMAX
-​​ , then temp = \text{rev} \cdot 10 + \text{pop}temp=rev⋅10+pop will overflow if and only if \text{pop} > 7pop>7
-Similar logic can be applied when \text{rev}rev is negative.
+If $$\text{rev} > \frac{INTMAX}{10}rev> ​10$$ , then $$ temp = \text{rev} \cdot 10 + \text{pop}$$ is guaranteed to overflow.
+If $$ \text{rev} == \frac{INTMAX}{10}rev== ​10 $$, then $$ temp = \text{rev} \cdot 10 + \text{pop}$$ will overflow if and only if $$ \text{pop} > 7$$
 
+
+
+Similar logic can be applied when $$ \text{rev}rev $$ is negative.
 
 INT_MIN	–2147483647 – 1
 INT_MAX	2147483647
