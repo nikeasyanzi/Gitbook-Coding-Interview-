@@ -84,6 +84,8 @@ If \text{rev} == \frac{INTMAX}{10}rev==
 ​INTMAX
 ​​ , then temp = \text{rev} \cdot 10 + \text{pop}temp=rev⋅10+pop will overflow if and only if \text{pop} > 7pop>7
 Similar logic can be applied when \text{rev}rev is negative.
+
+
 ```c++
 class Solution {
 public:
