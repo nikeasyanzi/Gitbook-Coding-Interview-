@@ -86,6 +86,10 @@ If \text{rev} == \frac{INTMAX}{10}rev==
 Similar logic can be applied when \text{rev}rev is negative.
 
 
+INT_MIN	–2147483647 – 1
+INT_MAX	2147483647
+所以pop 需分別檢查   7 or -8
+
 ```c++
 class Solution {
 public:
