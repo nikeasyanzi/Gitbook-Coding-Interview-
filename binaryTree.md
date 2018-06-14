@@ -1,5 +1,16 @@
 # 5.Binary Tree
 
+sgement tree
+
+
+heap
+
+prefix tree
+
+binary tree
+
+
+
 ## [124. Binary Tree Maximum Path Sum](/questions/BinaryTreeMaximumPathSum.md)
 
 ## 27 Validate Binary Search Tree
