@@ -124,4 +124,4 @@ if key = 0 變成單調搜尋
 
 
 # 4. Median of Two Sorted Arrays
-
+[4. Median of Two Sorted Arrays](/questions/MedianofTwoSortedArrays.md)
