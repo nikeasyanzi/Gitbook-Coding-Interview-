@@ -25,7 +25,7 @@
       
       
   
- 
+ [123](/questions/MoveZeroes.md)
  這題跟 [move zero](/questions/MoveZeroes.md) 很像 兩個指標就可以完成  
   
 ```c
