@@ -1,13 +1,15 @@
-# 5.Binary Tree
-
-sgement tree
+# [5.Binary Tree](/binaryTree.md)
 
 
-heap
 
-prefix tree
+## heap
+## binary tree
 
-binary tree
+
+## prefix tree
+208. Implement Trie (Prefix Tree)
+## sgement tree
+
 
 
 
