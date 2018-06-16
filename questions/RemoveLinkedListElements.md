@@ -1,8 +1,10 @@
+# [# 4.Linked List](/LinkedList.md)
 
-
-203. Remove Linked List Elements
+# 203. Remove Linked List Elements
 https://leetcode.com/problems/remove-linked-list-elements/description/
-'''c
+
+
+```c
 struct ListNode* removeElements(struct ListNode* head, int val) {
     struct ListNode* curr=head;
     struct ListNode* prev=head;
@@ -27,7 +29,7 @@ struct ListNode* removeElements(struct ListNode* head, int val) {
     }
     return head;
 }
-'''
+```
 
 
 test case:
