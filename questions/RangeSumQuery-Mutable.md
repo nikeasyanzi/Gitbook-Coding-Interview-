@@ -145,6 +145,12 @@ void showall(int *arr, int size){
 ```
 Reference:
 
+Leetcode article: 307. Range Sum Query - Mutable 
+https://leetcode.com/articles/range-sum-query-mutable/
+
+Lazy Propagation in Segment Tree
+https://www.geeksforgeeks.org/lazy-propagation-in-segment-tree/
+
 Segment Tree | Set 2 (Range Minimum Query)
 https://www.geeksforgeeks.org/segment-tree-set-1-range-minimum-query/
 Segment Tree | Set 1 (Sum of given range)
