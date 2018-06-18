@@ -145,6 +145,9 @@ void showall(int *arr, int size){
 ```
 Reference:
 
+### A Recursive approach to Segment Trees, range sum queries & lazy propagation
+https://leetcode.com/articles/a-recursive-approach-to-segment-trees-range-sum-queries-lazy-propagation/
+
 Leetcode article: 307. Range Sum Query - Mutable 
 https://leetcode.com/articles/range-sum-query-mutable/
 
