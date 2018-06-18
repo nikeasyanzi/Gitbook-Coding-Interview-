@@ -2,10 +2,6 @@
 I am trying to writing down ideas and steps I have while solving Leetcode problems
     
 ## [1.Big O](/bigO.md)
-* [卷 II](part2/README.md)
-    * [期待反馈](part2/feedback_please.md)
-    * [更好的写作工具](part2/better_tools.md)
-    
     
    *  1 What is Big O \(1\)
     
