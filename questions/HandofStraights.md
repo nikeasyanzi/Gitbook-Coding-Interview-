@@ -26,7 +26,13 @@ https://leetcode.com/problems/hand-of-straights/description/
     
     2.由小到大   取 w 個元素成一個group
       
-    3.
+    3.這裡用了一個小技巧  一次取足
+    
+      假設hand=[1,2,2,3,4], w=3 
+      這樣會出現[1,2,3] 但無法再組成[2,3,4]  
+      所以事後再檢查  是否元素因此變負的(表示有不足的問題)
+      
+    4.全部減完 也要掃描一次  是否每個元素都歸0了
             
 ```python
 class Solution:
@@ -64,12 +70,12 @@ class Solution:
                         dc_sort[i+j]=list((str(dc_sort[i+j][0]),dc_sort[i+j][1]-tmp))
                         dc_sort[i]=list((str(dc_sort[i][0]),0))
 
-                        if(int(dc_sort[i+j][1]) <0 ):
+                        if(int(dc_sort[i+j][1]) <0 ):# check if there is a insufficient problem
                             return False;
                         #print(dc_sort)        
 
             #print(dc_sort)     
-        for i in range(len(dc_sort)):   
+        for i in range(len(dc_sort)):   //check if all become zero
              if(dc_sort[i][1]!=0 ):
                     return False;
         return True;
