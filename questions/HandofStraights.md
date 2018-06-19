@@ -1,3 +1,5 @@
+# [8.Misc](/misc.md)
+
 # 846. Hand of Straights
 https://leetcode.com/problems/hand-of-straights/description/
 

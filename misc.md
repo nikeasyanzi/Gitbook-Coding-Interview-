@@ -17,8 +17,7 @@
 
 
 846. Hand of Straights
-https://leetcode.com/problems/hand-of-straights/description/
-
+[846. Hand of Straights](/questions/HandofStraights.md)
 
 
 1. be careful with the index manipulation
