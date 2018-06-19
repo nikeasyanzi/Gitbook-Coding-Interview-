@@ -63,3 +63,46 @@ tail=2
 
 相似: [26. Remove Duplicates from Sorted Array](/questions/RemoveDuplicatesfromSortedArray.md)
 
+## 27. Remove Element
+https://leetcode.com/problems/remove-element/description/
+
+```c
+class Solution:
+    def removeElement(self, nums, val):
+        """
+        :type nums: List[int]
+        :type val: int
+        :rtype: int
+        """
+        head=0;  # looking for the nums[i]==2
+        tail=len(nums)-1; # looking for the nums[i]!=2 
+        if len(nums)==0:
+            return 0;
+        if len(nums)==1:
+            if nums[tail]==val:
+                return 0;
+            else:
+                return 1;
+            
+        while(head<=tail):
+            if  nums[head]==val:
+                while tail>head and nums[tail]==val:
+                    tail=tail-1;
+                if nums[tail]==val:
+                    break;
+                nums[head]=nums[tail];
+                nums[tail]=val;
+            head=head+1;
+            
+        return head;
+    
+```
+
+
+test case:
+[3,2,2,3]
+3
+[2,2]
+2
+[3,3]
+2

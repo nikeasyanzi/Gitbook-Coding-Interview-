@@ -116,6 +116,8 @@ Why does Heap's algorithm work?
 ## [283 Move Zeroes](https://leetcode.com/problems/move-zeroes/)
 
 [Move Zeroes](/questions/MoveZeroes.md)
+## 27. Remove Element
+[Move Zeroes](/questions/MoveZeroes.md)
 
 # 3. Longest Substring Without Repeating Characters
 
@@ -215,70 +217,4 @@ bool isAnagram(char* s, char* t) {
 
 
 # 845. Longest Mountain in Array
-https://leetcode.com/submissions/detail/157178104/
-
-解法很直覺
-
-1.先找 遞增數列
-2.再找遞減數列
-這邊要注意一下
-山腳的idx=right+1
-
-3.兩個都有找到
-再用left & right做長度檢查
-
-
-```c
-int longestMountain(int* A, int ASize) {
-    
-    int i=0;
-    int left=0;
-    int right=0;
-    int max=0;
-    int len=0;
-    bool increase=false;
-    bool decrease=false;
-    for(i=0;i<ASize-1;i++){ //find the increasing array
-        left=i;
-        while(i+1<ASize-1 && A[i]<A[i+1]){
-            i++;
-            increase=true;
-        }
-        
-        //printf("left=%d i=%d ",left, i);
-            if(left!=i){ //find the decreasing array
-                while( i+1<ASize && A[i+1]<A[i]){
-               // printf("a[%d]=%d \n",i,A[i]);
-
-                right=i+1;  //here is the keypint, 
-                i++;
-                decrease=true;
-               // printf("a[%d]=%d,a[%d+1]=%d \n",i,A[i], i,A[i+1]);
-
-            }    
-        }
-                
-        //printf("right=%d ",right);
-
-        if(increase&&decrease){
-            len=right-left+1;
-            i=right-1; 
-            //printf("len=%d,",len);
-        } 
-        else{
-            i=left;    // here is another keypoint, move the i to left
-        }
-        
-        //printf("left=%d,right=%d,i=%d, increase=%d,decrease=%d\n", left, right,i,increase,decrease);
-        
-        increase=false;
-        decrease=false;
-        
-        max=max>len?max:len;
-        len=0;
-    }
-    return max;
-    
-}
-
-```
+[](/questions/LongestMountaininArray.md)

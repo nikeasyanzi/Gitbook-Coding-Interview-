@@ -7,7 +7,7 @@ I am trying to writing down ideas and steps I have while solving Leetcode proble
     
    *  2 What is Big O \(2\)
 
-### [2. Math](/math.md)
+## [2. Math](/math.md)
 
 
 
