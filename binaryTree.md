@@ -10,9 +10,8 @@
 [208. Implement Trie (Prefix Tree)](/questions/ImplementTrie.md)
 
 ## sgement tree
-Range Sum Query - Mutable
 
-
+[307. Range Sum Query - Mutable](/questions/RangeSumQuery-Mutable.md)
 
 
 ## [124. Binary Tree Maximum Path Sum](/questions/BinaryTreeMaximumPathSum.md)
