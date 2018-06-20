@@ -202,3 +202,7 @@ class Solution(object):
 ### 350. Intersection of Two Arrays II
 [Intersection of Two Arrays](/questions/IntersectionofTwoArrays.md)
 
+
+### 27. Remove Element
+
+

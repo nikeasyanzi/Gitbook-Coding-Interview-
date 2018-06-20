@@ -23,3 +23,11 @@
 
 
 [160. Intersection of Two Linked Lists](/questions/IntersectionofTwoLinkedLists.md)
+
+
+# 203. Remove Linked List Elements
+https://leetcode.com/problems/remove-linked-list-elements/description/
+
+# 237. Delete Node in a Linked List
+https://leetcode.com/problems/delete-node-in-a-linked-list/description/
+
