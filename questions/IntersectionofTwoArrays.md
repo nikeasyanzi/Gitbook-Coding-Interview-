@@ -1,3 +1,4 @@
+# [3. Array/String](/arraystring.md)
 
 ### 349. Intersection of Two Arrays
 https://leetcode.com/problems/intersection-of-two-arrays/description/
