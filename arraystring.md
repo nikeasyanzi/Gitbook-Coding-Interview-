@@ -196,3 +196,7 @@ class Solution(object):
 
 ### 845. Longest Mountain in Array
 [845. Longest Mountain in Array](/questions/LongestMountaininArray.md)
+
+
+### 350. Intersection of Two Arrays II
+
