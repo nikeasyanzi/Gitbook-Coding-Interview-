@@ -75,7 +75,7 @@ class Solution:
 
 # 853. Car Fleet
 
-```
+```python
 class Solution:
     def carFleet(self, target, position, speed):
         """
@@ -94,11 +94,25 @@ class Solution:
                 cur = t
         return res
     
-    '''
-    12
+
+```
+影片解說
+https://www.youtube.com/watch?v=H5w6doOXz10
+
+
+測資:
+case1:
+12
 [10,8,0,5,3,1]
 [2,4,1,1,3,4]
-    '''
-```
-    
+ans:3
+
+case2:
+12
+[10,8]
+[2,5]
+ans:1
+
+這題看似簡單   其實沒那麼好懂 
+        
 
