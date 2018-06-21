@@ -71,3 +71,34 @@ class Solution:
                     return False;
         return True;
 ```
+
+
+# 853. Car Fleet
+
+```
+class Solution:
+    def carFleet(self, target, position, speed):
+        """
+        :type target: int
+        :type position: List[int]
+        :type speed: List[int]
+        :rtype: int
+        """
+        time = [float(target - p) / s for p, s in sorted(zip(position, speed))]
+        res = cur = 0
+        #print ("time=",time);
+        for t in time[::-1]:
+            #print("res=",res,"cur=",cur);
+            if t > cur:
+                res += 1
+                cur = t
+        return res
+    
+    '''
+    12
+[10,8,0,5,3,1]
+[2,4,1,1,3,4]
+    '''
+```
+    
+
