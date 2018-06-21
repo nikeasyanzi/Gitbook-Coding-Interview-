@@ -93,7 +93,7 @@ class Solution:
         """
         time = [float(target - p) / s for p, s in sorted(zip(position, speed))]
         res = cur = 0
-        print ("time=",time);
+        print ("time=",time); 
         for t in time[::-1]:
             print("res=",res,"cur=",cur,"t=",t);
             if t > cur:
