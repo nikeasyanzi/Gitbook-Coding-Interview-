@@ -76,6 +76,13 @@ class Solution:
 # 853. Car Fleet
 
 ```python
+'''
+Calculate time needed to arrive the target, sort by the start position.
+Loop on each car from the end to the beginning. cur recorde the current biggest time (the slowest).
+If another car needs less or equal time than cur, it can catch up this car.
+Otherwise it will become the new slowest car, that is new lead of a car fleet.
+'''
+
 class Solution:
     def carFleet(self, target, position, speed):
         """
@@ -86,15 +93,13 @@ class Solution:
         """
         time = [float(target - p) / s for p, s in sorted(zip(position, speed))]
         res = cur = 0
-        #print ("time=",time);
+        print ("time=",time);
         for t in time[::-1]:
-            #print("res=",res,"cur=",cur);
+            print("res=",res,"cur=",cur,"t=",t);
             if t > cur:
-                res += 1
-                cur = t
+                res += 1;
+                cur = t;
         return res
-    
-
 ```
 影片解說
 https://www.youtube.com/watch?v=H5w6doOXz10
