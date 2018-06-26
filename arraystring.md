@@ -207,3 +207,7 @@ class Solution(object):
 
 
 ### 169. Majority Element
+[169. Majority Element](/questions/MajorityElement.md)
+### 229. Majority Element II
+[169. Majority Element](/questions/MajorityElement.md)
+

@@ -28,4 +28,7 @@ class Solution:
 所以 如果下個element == candidate  則count +1
         否則count-1   
         最後count=0   表示candiate該被取代
-        
+    
+    
+# 229. Majority Element II
+https://leetcode.com/problems/majority-element-ii/description/
