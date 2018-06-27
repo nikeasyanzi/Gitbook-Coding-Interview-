@@ -64,10 +64,10 @@ struct ListNode* reverseList(struct ListNode* head) {
     next= curr->next;   
     curr->next=NULL; // do forget to point the tail to null
     while(next!=NULL){
-        prev=curr;
-        curr=next;
-        next=curr->next;
-        curr->next=prev;
+        prev=curr;      
+        curr=next;        // now we move curr to curr ->next
+        next=curr->next;  // point to the next pter 
+        curr->next=prev;  //link back to the prev one
     }  
     
     head=curr; 
@@ -79,6 +79,11 @@ struct ListNode* reverseList(struct ListNode* head) {
     return head;
 }
 ```
+
+這個方法是利用 三個指標  prev, curr, next 來操作
+![](/assets/Untitled Diagram.jpg)
+
+
 
 https://leetcode.com/submissions/detail/154924585/
 
