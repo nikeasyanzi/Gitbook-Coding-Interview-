@@ -40,6 +40,8 @@ http://bangbingsyb.blogspot.tw/2014/11/leetcode-implement-strstr-kmp.html
 [11 Reverse words in a string](questions/ReverseWordsInAString.md)
 
 ### 12 Reverse words in a string 2
+[11 Reverse words in a string](questions/ReverseWordsInAString.md)
+
 
 ### 13 ATOI
 

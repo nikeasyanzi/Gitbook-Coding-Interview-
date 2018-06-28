@@ -3,9 +3,13 @@
 ### Reverse words in a string
 
 
+	Given an input string, reverse the string word by word.
+	
+	Example:  
+	
+	Input: "the sky is blue",
+	Output: "blue is sky the".
 
-
-https://leetcode.com/submissions/detail/147994217/
 
 超機車這題
 
@@ -105,6 +109,14 @@ void reverseWords(char *s)
 	printf("%s, len=%d, i=%d,j=%d\n\n",s,strlen(s),i,j);
 
 }
+
+https://leetcode.com/submissions/detail/147994217/
+
+
 ```
 Reference:https://www.geeksforgeeks.org/reverse-words-in-a-given-string/
 
+
+
+# 186 Reverse words in a string 2
+這題鎖起來了
