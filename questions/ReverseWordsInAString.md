@@ -119,4 +119,4 @@ Reference:https://www.geeksforgeeks.org/reverse-words-in-a-given-string/
 
 
 # 186 Reverse words in a string 2
-這題鎖起來了
+這題鎖起來了  但這題更簡單   所以跳過
