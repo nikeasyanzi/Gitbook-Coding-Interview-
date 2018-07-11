@@ -89,3 +89,6 @@ https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/
 [Two Sum IV](/questions/TwoSumIV.md)
 
 
+## 866. Smallest Subtree with all the Deepest Nodes
+[Smallest Subtree with all the Deepest Nodes](/questions/SmallestSubtreewithalltheDeepestNodes.md)
+
