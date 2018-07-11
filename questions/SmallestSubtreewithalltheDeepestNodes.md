@@ -1,6 +1,9 @@
 # [5.Binary Tree](/binaryTree.md)
 
 ## 866. Smallest Subtree with all the Deepest Nodes
+https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/description/
+
+
 Given a binary tree rooted at root, the depth of each node is the shortest distance to the root.
 
 A node is deepest if it has the largest depth possible among any node in the entire tree.
@@ -25,7 +28,6 @@ The input "[3, 5, 1, 6, 2, 0, 8, null, null, 7, 4]" is a serialization of the gi
 The output "[2, 7, 4]" is a serialization of the subtree rooted at the node with value 2.
 Both the input and output have TreeNode type.
 
-https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/description/
 
 
 解題心得
