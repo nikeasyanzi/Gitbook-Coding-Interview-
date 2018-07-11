@@ -48,8 +48,7 @@ vel of right !=level ofri
 
 
 
-'''c
-
+```python
 class Solution:
     def subtreeWithAllDeepest(self, root):
         if root != None :
@@ -80,7 +79,7 @@ class Solution:
             else:
                 return rightlevel,right;
 
-'''
+```
 
 Reference:
 https://www.youtube.com/watch?v=A-8ziQc_4pk
