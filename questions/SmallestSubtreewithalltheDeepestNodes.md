@@ -12,15 +12,19 @@ The subtree of a node is that node, plus the set of all descendants of that node
 
 Return the node with the largest depth such that it contains all the deepest nodes in it's subtree.
 
- 
-
 Example 1:
 
 Input: [3,5,1,6,2,0,8,null,null,7,4]
 Output: [2,7,4]
 Explanation:
 
-
+                3
+              /   \
+           5        1
+          / \      /  \
+        6    2    0    8
+            /  \
+           7    4
 
 We return the node with value 2, colored in yellow in the diagram.
 The nodes colored in blue are the deepest nodes of the tree.
@@ -41,7 +45,7 @@ return current
 
 3. 
 level of right !=level of left 
-回傳 低的那個
+return level 低的那個
 
 
 
