@@ -25,26 +25,18 @@ Both the input and output have TreeNode type.
 
 
 
-
-![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/01/sketch1.png)
-
-
 解題心得
 
 1.基本上 deepest node 一定是
 left = null, right =null 
 
-2.若level of right=level of left
+2.若level of right =level of left
 
 return current
 
 3. 
-vel of right !=level ofri
-
+level of right !=level of left 
 回傳 低的那個
-
-
-
 
 
 
