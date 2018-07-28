@@ -129,6 +129,10 @@ int hammingWeight(uint32_t n) {
 ```
 ### 338. Counting Bits
 
+
+
+這題需要加強了解
+
 https://leetcode.com/problems/counting-bits/description/
 ```python
 class Solution:
