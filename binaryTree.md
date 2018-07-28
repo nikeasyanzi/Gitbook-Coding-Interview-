@@ -95,3 +95,6 @@ https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/
 ## 866. Smallest Subtree with all the Deepest Nodes
 [Smallest Subtree with all the Deepest Nodes](/questions/SmallestSubtreewithalltheDeepestNodes.md)
 
+
+## 114. Flatten Binary Tree to Linked List
+
