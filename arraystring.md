@@ -213,3 +213,6 @@ class Solution(object):
 ### 229. Majority Element II
 [169. Majority Element](/questions/MajorityElement.md)
 
+### 868. Binary Gap
+
+
