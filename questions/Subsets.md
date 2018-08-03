@@ -82,6 +82,25 @@ class Solution:
 
 ```     
 
+##  loop version
+
+example 3
+
+counter=0~7
+
+
+Counter  | 0(000)  | 1(001) | 2(010) | 3(011) | 4(100) | 5 (101) | 6 (110) | 7 (111) |
+--------------|:-----:|-----:| ----:|------
+j=0    |  | a |    | a|   | a |  |a
+j=1    |  |   |  b | b|   |   |b |b
+j=2    |  |   |    |  | c | c |c |c    
+
+
+
+
+#reference
+https://www.geeksforgeeks.org/power-set/
+
 Another way to do that is adding element one by one
       https://www.jianshu.com/p/ac57b9d3d211  
         
