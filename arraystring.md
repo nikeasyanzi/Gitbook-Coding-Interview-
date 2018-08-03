@@ -214,6 +214,6 @@ class Solution(object):
 [169. Majority Element](/questions/MajorityElement.md)
 
 ### 868. Binary Gap
-
+[868. Binary Gap](/questions/BinaryGap.md)
 ### 78. Subsets
-
+[78. Subsets](/questions/Subsets.md)
