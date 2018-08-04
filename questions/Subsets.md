@@ -135,7 +135,7 @@ int** subsets(int* nums, int numsSize, int** columnSizes, int* returnSize) {
 
 3. 這題的原理可以看一下   table 即可推導出來
 
-#reference
+#Reference
 https://www.geeksforgeeks.org/power-set/
 
 Another way to do that is adding element one by one
