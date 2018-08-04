@@ -95,8 +95,41 @@ j=0    |  | a |    | a|   | a |  |a
 j=1    |  |   |  b | b|   |   |b |b
 j=2    |  |   |    |  | c | c |c |c    
 
+```c
+/**
+ * Return an array of arrays of size *returnSize.
+ * The sizes of the arrays are returned as *columnSizes array.
+ * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().
+ */
+int** subsets(int* nums, int numsSize, int** columnSizes, int* returnSize) {
+    int size = 1 << numsSize;
+	*returnSize = size;
+    int **result = (int**)calloc(*returnSize, sizeof(int*));
+    *columnSizes = malloc(sizeof(int **) * *returnSize);     // columnSizes output
+    int counter=0;
+    int j=0;
+    int k=0;
+    for (counter=0;counter<size;counter++){
+        
+          /* popcount is an x86 instruction which returns the number of 1 bits in a register */
+         /* GCC compiler supports a similar instruction, regardless of platform */
+        (*columnSizes)[counter] = __builtin_popcount(counter);              // Let client know length of array
+        result[counter] = calloc( (*columnSizes)[counter],sizeof(*(result[counter])) );   // Allocate array   
+        
+        k=0;
+        for (j=0;j<numsSize;j++){
 
+            if( counter & (1<<j)){
+              result[counter][k]=nums[j]; 
+              k++;  
+            }
+        }
+    } 
+    return result;
+}
+```
 
+真的不是很熟這種二維陣列的宣告
 
 #reference
 https://www.geeksforgeeks.org/power-set/
