@@ -25,7 +25,7 @@ https://leetcode.com/problems/subsets/description/
       []
     ]
 
-
+Explaination:
 This is inspired by bit mapping 
 
 we can do it in the way we use in prefix tree.
@@ -128,8 +128,12 @@ int** subsets(int* nums, int numsSize, int** columnSizes, int* returnSize) {
     return result;
 }
 ```
+解釋:
+1. 真的不是很熟這種二維陣列的宣告
 
-真的不是很熟這種二維陣列的宣告
+2. power set的size 也可以用bitwise operation 來達成
+
+3. 這題的原理可以看一下   table 即可推導出來
 
 #reference
 https://www.geeksforgeeks.org/power-set/
