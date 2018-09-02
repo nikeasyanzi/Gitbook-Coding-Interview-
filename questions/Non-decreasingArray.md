@@ -90,3 +90,25 @@ test case:
 
 http://nirajsdatabase.blogspot.tw/2017/08/given-array-with-n-integers-your-task.html
 
+
+### 896. Monotonic Array
+
+https://leetcode.com/contest/weekly-contest-100/problems/monotonic-array/
+
+```c
+bool isMonotonic(int* A, int ASize) {
+    int increase=1;
+    int decrease=1;
+    int i=0;
+    if (ASize <=2){
+        return true;    
+    }
+    
+    for (i=1;i<ASize;i++){
+        increase =increase &( A[i - 1] <= A[i]);
+        decrease &= (A[i - 1] >= A[i]);
+    }       
+    return increase||decrease;
+}
+```
+

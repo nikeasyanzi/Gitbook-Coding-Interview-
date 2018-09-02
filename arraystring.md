@@ -146,6 +146,9 @@ Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer 
 ### 665. Non-decreasing Array
 [665. Non-decreasing Array](/questions/Non-decreasingArray.md)
 
+### 896. Monotonic Array
+[665. Non-decreasing Array](/questions/Non-decreasingArray.md)
+
 
 ### 26. Remove Duplicates from Sorted Array
 [#26. Remove Duplicates from Sorted Array](/questions/RemoveDuplicatesfromSortedArray.md)
