@@ -44,4 +44,5 @@ sol:
 ## [914. X of a Kind in a Deck of Cards](/questions/XofaKindinaDeckofCards.md)
 
 
+## [400. Nth Digit](/questions/NthDigit.md)
 
