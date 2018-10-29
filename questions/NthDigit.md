@@ -40,5 +40,6 @@ we can conlude that	there are 9 numbers  -> 1 		-    9
 
 
 # Reference: Leetcode | 400 | Nth Digit | Java   https://www.youtube.com/watch?v=VKYnABegaEI
+https://leetcode.com/problems/nth-digit/discuss/182837/C%2B%2BCJava-5-line-O(1)-solution-no-strings-no-loopsrecursion-with-explanation
 
-
+https://leetcode.com/problems/nth-digit/
