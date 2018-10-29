@@ -27,11 +27,11 @@ class Solution:
 
 
 ```
-# ex. n=14
-# lenght=1          length=2
-# count=9     =>    count=90
-# start=1           start=10
-# n=14              n=5
+ex. n=14
+enght=1          length=2
+count=9     =>    count=90
+start=1           start=10
+n=14              n=5
 
 Becasue the sequence starts from 1, 
 we can conlude that	there are 9 numbers  -> 1 		-    9
