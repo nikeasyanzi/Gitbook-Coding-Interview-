@@ -28,18 +28,21 @@ class Solution:
 
 ```
 ex. n=14
-enght=1          length=2
+lenght=1          length=2
 count=9     =>    count=90
 start=1           start=10
 n=14              n=5
 
 Becasue the sequence starts from 1, 
-we can conlude that	there are 9 numbers  -> 1 		-    9
+we can conlude that there are 9 numbers  -> 1 		-    9
 		          			 90          -> 10		-    99
 		          			900          -> 100		-   999
 
+也可以把start 先建表
+    long s[] = {1, 10, 190, 2890, 38890, 488890, 5888890, 68888890, 788888890, 8888888890};
 
-# Reference: Leetcode | 400 | Nth Digit | Java   https://www.youtube.com/watch?v=VKYnABegaEI
+# Reference: 
+* Leetcode | 400 | Nth Digit | Java   https://www.youtube.com/watch?v=VKYnABegaEI
 https://leetcode.com/problems/nth-digit/discuss/182837/C%2B%2BCJava-5-line-O(1)-solution-no-strings-no-loopsrecursion-with-explanation
 
 https://leetcode.com/problems/nth-digit/
