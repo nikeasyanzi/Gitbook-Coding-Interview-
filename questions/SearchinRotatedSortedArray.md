@@ -1,8 +1,7 @@
  [# 6.Binary Search](/binarysearch.md)
 
  
-# 33. Search in Rotated Sorted Array
- https://leetcode.com/problems/search-in-rotated-sorted-array/
+#[33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
 ```c
 int bisearch(int *a,int l,int r,int key){
@@ -50,7 +49,7 @@ key=2 search sequence is 0 1 2 3
 
 
 
-# Search in Rotated Sorted Array II(https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)
+#[81. Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)
 
 https://leetcode.com/submissions/detail/150063970/
 ```c
