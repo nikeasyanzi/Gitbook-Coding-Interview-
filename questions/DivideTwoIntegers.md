@@ -3,8 +3,6 @@
 https://leetcode.com/problems/divide-two-integers/
 
 
-
-
 ```c=
 int divide(int dividend, int divisor) {
     

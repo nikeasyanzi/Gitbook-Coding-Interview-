@@ -186,5 +186,5 @@ i    bin       '1'    i&(i-1)
 
 """
 
-# 29 Divide Two Integers
-
+# [29 Divide Two Integers] (/questions/DivideTwoIntegers.md)
+https://prismoskills.appspot.com/lessons/Bitwise_Operators/Efficient_Divide.jsp
