@@ -1,5 +1,6 @@
 # [3. Array/String](/arraystring.md)
 
+# [900. RLE Iterator](https://leetcode.com/problems/rle-iterator/)
 
 ```python
 class RLEIterator:
