@@ -60,15 +60,15 @@ bool bisearch(int *a,int l,int r,int key){
     if(l<r){
         while(a[l]==a[r] && l!=r) r--; //remove the duplicate elements
 
-        while(a[l]>key ){
+        while(a[l]>key ){    // move to right
             l++;
             if(l==r) break;
         }
-        while(a[r]<key) {
+        while(a[r]<key) {    //move to left
             r--;
             if(l==r) break;
         }
-
+        
         mid=(r-l)/2+l;
 
         if(a[mid]==key){
@@ -93,11 +93,13 @@ bool search(int* nums, int numsSize, int target) {
 
 1.移除在頭尾的重複element
 2.中間兩個while 迴圈 來保證數列變成是左小右大(中間可能還有其他重複)
+
 ex. 4 4 6 7 1 3 3 3 4 4
 
 -> 4 4 6 7 1 3 3 3
 
 -> if key = 2
+
 1 3 3 3
 
 -> if key =5
