@@ -1,7 +1,6 @@
 
 # [2. Math](/math.md)
 
-
 # [400. Nth digit](https://leetcode.com/problems/nth-digit/)
 
 ```python
@@ -63,7 +62,8 @@ ex. 100
 |ans||10+45 = "5"5
 
 # Reference: 
-* Leetcode | 400 | Nth Digit | Java   https://www.youtube.com/watch?v=VKYnABegaEI
+* Leetcode | 400 | Nth Digit | Java   
+https://www.youtube.com/watch?v=VKYnABegaEI
+
 https://leetcode.com/problems/nth-digit/discuss/182837/C%2B%2BCJava-5-line-O(1)-solution-no-strings-no-loopsrecursion-with-explanation
 
-https://leetcode.com/problems/nth-digit/
