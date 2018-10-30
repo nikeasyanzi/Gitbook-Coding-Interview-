@@ -12,6 +12,9 @@
 
 # [33. Search in Rotated Sorted Array](/questions/SearchinRotatedSortedArray.md)
 
+# [81. Search in Rotated Sorted Array II](/questions/SearchinRotatedSortedArray.md)
+
+
 
 
 # 4. Median of Two Sorted Arrays

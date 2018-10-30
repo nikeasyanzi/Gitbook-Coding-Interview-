@@ -50,42 +50,42 @@ key=2 search sequence is 0 1 2 3
 
 
 
-# Search in Rotated Sorted Array II
+# Search in Rotated Sorted Array II(https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)
+
 https://leetcode.com/submissions/detail/150063970/
 ```c
 bool bisearch(int *a,int l,int r,int key){
-int mid;
+    int mid;
 
-if(l<r){
-while(a[l]==a[r] && l!=r) r--; //remove the duplicate elements
+    if(l<r){
+        while(a[l]==a[r] && l!=r) r--; //remove the duplicate elements
 
-while(a[l]>key ){
-l++;
-if(l==r) break;
-}
-while(a[r]<key) {
-r--;
-if(l==r) break;
-}
+        while(a[l]>key ){
+            l++;
+            if(l==r) break;
+        }
+        while(a[r]<key) {
+            r--;
+            if(l==r) break;
+        }
 
-mid=(r-l)/2+l;
+        mid=(r-l)/2+l;
 
-if(a[mid]==key){
-return true;
-}else{
-if(a[mid]<key) return bisearch(a,mid+1,r,key);
-else return bisearch(a,l,mid-1,key);
-}
-}
-if(l==r){
-if(a[l]==key) return true;
-}
-
-return false;
+        if(a[mid]==key){
+            return true;
+        }else{
+            if(a[mid]<key) return bisearch(a,mid+1,r,key);
+            else return bisearch(a,l,mid-1,key);
+        }
+    }
+    if(l==r){
+        if(a[l]==key) return true;
+    }
+    return false;
 }
 
 bool search(int* nums, int numsSize, int target) {
-return bisearch(nums,0,numsSize-1,target);
+    return bisearch(nums,0,numsSize-1,target);
 }
 ```
 
