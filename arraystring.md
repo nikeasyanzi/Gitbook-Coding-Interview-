@@ -224,3 +224,8 @@ class Solution(object):
 
 ### 900. RLE Iterator
 [900. RLE Iterator](/questions/RLEIterator.md)
+
+### 931. Minimum Falling Path Sum
+[931. Minimum Falling Path Sum](/questions/MinimumFallingPathSum.md)
+
+
