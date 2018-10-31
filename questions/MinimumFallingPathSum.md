@@ -20,19 +20,16 @@ Dynamic programming
 * 最後一個row 的min 即為所求 global min
 
 
-
-'''python=
+```python
 class Solution:
     def minFallingPathSum(self, A):
         """
         :type A: List[List[int]]
         :rtype: int
         """
-        global_min=sys.maxsize;
-        
         matrix= [[0 for x in range(len(A[0])+2)] for y in range(len(A[0]))];
     
-        for i in range(len(A[0])):
+        for i in range(len(A[0])):    #here we fill the append column with INT max.
             matrix[i][0]=sys.maxsize;
             matrix[i][len(A)+1]=sys.maxsize;
         
@@ -47,18 +44,19 @@ class Solution:
                     #print (matrix);
                     #print("i=",i,"j=",j,"matrix[i-1][j-1]=",matrix[i-1][j-1],"matrix[i-1][j]=",matrix[i-1][j],"matrix[i-1][j+1]=",matrix[i-1][j+1]);
                     matrix[i][j]=min(matrix[i-1][j-1], matrix[i-1][j],matrix[i-1][j+1])+matrix[i][j];
-     
         #print (matrix);
+        
+        #global min is the minimum of the last row
         #print(min( [matrix[len(A[0])-1][j] for j in range(1,len(A[0]) +1 )]));
         return min( [matrix[len(A[0])-1][j] for j in range(1,len(A[0]) +1 )]);  
 """
+test case
 [[51,24],[-50,82]]
-
 [[1,2,3],[4,5,6],[7,8,9]]
 
 """
 
-'''
+```
 
 #Reference:
 https://leetcode.com/problems/minimum-falling-path-sum/discuss/186689/Java-DP-solution-with-graph-illustrated-explanations
