@@ -115,10 +115,25 @@ Reference:
 
 ## 50 Maximum Sum Subarray
 
-
-arr[i,j]=maxsum{arr[i,k], arr[k,j]};
-
+class Solution:
+    def maxSubArray(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        A=nums;
+        for i in range(1,len(nums)):
+            if nums[i]>nums[i]+nums[i-1]:
+                A[i]=nums[i];  
+            else:
+                A[i]=nums[i]+nums[i-1];
+                
+        #print(A);
+        return max(A);
+        
+        
 https://leetcode.com/problems/maximum-subarray/description/
+https://www.youtube.com/watch?v=7J5rs56JBs8
 
 ## 51 Maximum Product Subarray
 
