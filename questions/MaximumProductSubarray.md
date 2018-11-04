@@ -1,3 +1,9 @@
+##[3. Array/String](/arraystring.md)
+
+
+
+##[152. Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
+
 ```python=
 class Solution:
     def maxProduct(self, nums):
@@ -22,7 +28,7 @@ class Solution:
     
       
           
-說明:
+####說明:
   因為 有負數  所以 max 的來源有兩種
   1. prev_max(最大正數)* curr ()  
   2. prev_min (最大負數)* curr 
@@ -35,9 +41,13 @@ class Solution:
 
  
  
- [-2,3,-4]  [2,3,-2,4]
+####Example:
+[-2,3,-4]  [2,3,-2,4]
 
- 以A[i]结尾的max product subarray同时取决于以A[i-1]结尾的max / min product subarray以及A[i]本身。因此，对每个i，需要记录min/max product两个状态：
+ 
+
+####補充說明quoted from reference:
+以A[i]结尾的max product subarray同时取决于以A[i-1]结尾的max / min product subarray以及A[i]本身。因此，对每个i，需要记录min/max product两个状态：
         
 ##Reference:
 http://bangbingsyb.blogspot.com/2014/11/leetcode-maximum-product-subarray.html
