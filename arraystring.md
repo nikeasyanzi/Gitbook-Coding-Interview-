@@ -200,7 +200,7 @@ Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer 
 [931. Minimum Falling Path Sum](/questions/MinimumFallingPathSum.md)
 
 
-### 560.Subarray Sum Equals K
-### 930. Binary Subarrays With Sum
-### 152. Maximum Product Subarray
-https://leetcode.com/problems/maximum-product-subarray/description/
+###[560.Subarray Sum Equals K](/questions/SubarraySumEqualsK.md)
+### [930. Binary Subarrays With Sum](/questions/SubarraySumEqualsK.md)
+
+### [152. Maximum Product Subarray](/questions/MaximumProductSubarray.md)
