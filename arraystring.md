@@ -161,37 +161,8 @@ Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer 
 ### [389. Find the Difference](/questions/FindtheDifference.md)
 ### 842. Split Array into Fibonacci Sequence
 
-```c
-class Solution(object):
-    def splitIntoFibonacci(self, S):
-        for i in range( len(S)-2):
-            x = S[:i+1]
-            print(x)
-            if x != '0' and x.startswith('0'): break
-            a = int(x)
-            for j in range(i+1,len(S)-1):
-                
-                y = S[i+1: j+1]
-                print("y="+y)
-                if y != '0' and y.startswith('0'): break
-                b = int(y)
-                fib = [a, b]
-                k = j + 1
-                while k < len(S):
-                    nxt = fib[-1] + fib[-2]
-                    print(fib[-1], fib[-2],nxt)
-                    nxtS = str(nxt)
-                    if nxt <= 2**31 - 1 and S[k:].startswith(nxtS):
-                        k += len(nxtS)
-                        fib.append(nxt)
-                    else:
-                        break
-                else:
-                    if len(fib) >= 3:
-                        return fib
-        return []
-```
-
+[](/questions/SplitArrayintoFibonacciSequence.md)
+這題 其實還沒做過
 
 
 
@@ -229,3 +200,5 @@ class Solution(object):
 [931. Minimum Falling Path Sum](/questions/MinimumFallingPathSum.md)
 
 
+### 560.Subarray Sum Equals K
+### 930. Binary Subarrays With Sum
