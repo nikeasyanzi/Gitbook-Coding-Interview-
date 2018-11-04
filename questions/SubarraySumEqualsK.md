@@ -1,6 +1,6 @@
-# [3. Array/String](/arraystring.md)
+## [3. Array/String](/arraystring.md)
 
-[# 560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
+[## 560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
 
 ```python
 class Solution:
@@ -60,6 +60,12 @@ $$
    * https://leetcode.com/problems/subarray-sum-equals-k/discuss/164431/Python-or-3-tm
    * https://zxi.mytechroad.com/blog/hashtable/leetcode-560-subarray-sum-equals-k/
     
+[## 930. Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum/)
+這題其實也可以用560. Subarray Sum Equals K 的概念去做 
+或者
+
+
+
 
 ## 类似题目：
 ### Two Sum

@@ -202,3 +202,5 @@ Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer 
 
 ### 560.Subarray Sum Equals K
 ### 930. Binary Subarrays With Sum
+### 152. Maximum Product Subarray
+https://leetcode.com/problems/maximum-product-subarray/description/
