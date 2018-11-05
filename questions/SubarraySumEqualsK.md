@@ -90,7 +90,38 @@ $$
 
 [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/)
 
-這題也是類似prefix的概念 外加sliding windo
+這題也是類似prefix的概念 外加sliding window
+
+
+
+
+```python
+class Solution:
+    def numSubarrayProductLessThanK(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        product=1;
+        j=0;
+        res=0;
+        if k==0:    # if k==0, the result is zero
+            return 0;
+        for i in range(len(nums)):
+            product=product*nums[i];
+            #print("product=",product);
+            while product>=k and j< len(nums):  # be careful with the condition j< len(nums)
+                product=product/nums[j];
+                j=j+1;
+
+            #print("j=",j,"i=",i,"i-j+1=",i-j+1);
+            if  product<k:
+                res= res+ i-j+1 ;
+        #print(res);
+        return res;
+```
+
 
 ##
 
