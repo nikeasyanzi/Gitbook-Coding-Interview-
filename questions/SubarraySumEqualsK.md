@@ -90,8 +90,12 @@ $$
 
 [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/)
 
+說明:
 這題也是類似prefix的概念 外加sliding window
 
+我們每次紀錄目前的product 與 index i
+
+如果product > k 則開始除去前面的數 index j
 
 
 
