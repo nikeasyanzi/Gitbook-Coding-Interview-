@@ -60,14 +60,19 @@ $$
    * https://leetcode.com/problems/subarray-sum-equals-k/discuss/164431/Python-or-3-tm
    * https://zxi.mytechroad.com/blog/hashtable/leetcode-560-subarray-sum-equals-k/
     
-[## 930. Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum/)
+## [930. Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum/)
 這題其實也可以用560. Subarray Sum Equals K 的概念去做 
-或者
+或者  帶說明
 
 
+[713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/)
+
+這題也是類似prefix的概念 外加sliding windo
+
+##
 
 
-## 类似题目：
+# 类似题目：
 ### Two Sum
 
 ### Continuous Subarray Sum
