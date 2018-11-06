@@ -64,6 +64,46 @@ $$
   這篇解釋了prefix sum的
 * https://leetcode.com/problems/binary-subarrays-with-sum/discuss/186647/Java-Clean-Solution-2-Sum-%2B-Prefix-Sum-Caching
 
+## [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/)
+
+說明:
+這題也是類似prefix的概念 外加sliding window
+
+我們每次紀錄目前的product 與 index i
+
+如果product > k 則開始除去前面的數 index j
+
+
+```python
+    class Solution:
+        def numSubarrayProductLessThanK(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        product=1;
+        j=0;
+        res=0;
+        if k==0: # if k==0, the result is zero
+            return 0;
+        for i in range(len(nums)):
+            product=product*nums[i];
+        #print("product=",product);
+        while product>=k and j< len(nums): # be careful with         the condition j< len(nums)
+            product=product/nums[j];
+            j=j+1;
+
+        #print("j=",j,"i=",i,"i-j+1=",i-j+1);
+        if product<k:
+            res= res+ i-j+1 ;
+        #print(res);
+        return res;
+```
+
+https://buptwc.github.io/2018/10/28/Leetcode-930-Binary-Subarrays-With-Sum/
+
+
 ## [930. Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum/)
 這題其實也可以用560. Subarray Sum Equals K 的概念去做 
  
@@ -136,45 +176,6 @@ https://blog.csdn.net/fuxuemingzhu/article/details/83478995
 http://hehejun.blogspot.com/2018/10/leetcodebinary-subarrays-with-sum.html
 https://buptwc.github.io/2018/10/28/Leetcode-930-Binary-Subarrays-With-Sum/
 https://www.youtube.com/watch?v=eRx56MI3Svo
-
-## [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/)
-
-說明:
-這題也是類似prefix的概念 外加sliding window
-
-我們每次紀錄目前的product 與 index i
-
-如果product > k 則開始除去前面的數 index j
-
-
-```python
-class Solution:
-    def numSubarrayProductLessThanK(self, nums, k):
-        """
-        :type nums: List[int]
-        :type k: int
-        :rtype: int
-        """
-        product=1;
-        j=0;
-        res=0;
-        if k==0:    # if k==0, the result is zero
-            return 0;
-        for i in range(len(nums)):
-            product=product*nums[i];
-            #print("product=",product);
-            while product>=k and j< len(nums):  # be careful with the condition j< len(nums)
-                product=product/nums[j];
-                j=j+1;
-
-            #print("j=",j,"i=",i,"i-j+1=",i-j+1);
-            if  product<k:
-                res= res+ i-j+1 ;
-        #print(res);
-        return res;
-```
-
-
 
 
 # 类似题目：
