@@ -1,5 +1,7 @@
 # [3. Array/String](/arraystring.md)
 
+Array的部分  常用的技巧就是prefix sum 與 hash map
+
 
 ### 6 Two Sum
 
@@ -20,20 +22,12 @@
 ### 10 STRSTR\(\)
 
 
-
 https://leetcode.com/submissions/detail/150990173/  暴力法
 
-
-
 KMP
-
 http://www.evanlin.com/about-kmp/
 
 http://bangbingsyb.blogspot.tw/2014/11/leetcode-implement-strstr-kmp.html
-
-
-
-
 
 ### 11 Reverse words in a string
 
