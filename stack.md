@@ -13,6 +13,4 @@
 
 
 
-## 844. Backspace String Compare
-
-[](/questions/BackspaceStringCompare.md)
+## [844. Backspace String Compare](/questions/BackspaceStringCompare.md)
