@@ -93,7 +93,7 @@ class Solution:
         
         return ans;
 ```    
-  或者
+  或者 利用一個index array 紀錄當前為1的element 的count
      
 ```python
 class Solution(object):
@@ -119,6 +119,18 @@ class Solution(object):
             i += 1
         return res
 ```
+
+
+Example:  [1,0,1,0,0,1]
+
+    index array=[-1,0,2,2,5,6]
+    
+i| j| expression      
+----|---------- 
+1| 3| 0-(-1)*(5-2)=3
+2| 4| (2-0)*(6-5)=2
+
+    
 Reference:
 https://blog.csdn.net/fuxuemingzhu/article/details/83478995
 http://hehejun.blogspot.com/2018/10/leetcodebinary-subarrays-with-sum.html
