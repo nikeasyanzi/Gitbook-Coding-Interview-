@@ -2,7 +2,7 @@
 
 [## 560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
 
-```python
+```python=
 class Solution:
     def subarraySum(self, nums, k):
         result, cur_sum = 0, 0
@@ -17,7 +17,9 @@ class Solution:
                 sum_dict[cur_sum] = 1
                 
         return result
-        
+```
+
+```python        
 class Solution:
     def subarraySum(self, nums, k):
 
@@ -58,19 +60,17 @@ $$
    * https://leetcode.com/problems/subarray-sum-equals-k/discuss/102106/Java-Solution-PreSum-%2B-HashMap
    * https://leetcode.com/problems/subarray-sum-equals-k/discuss/164431/Python-or-3-tm
    * https://zxi.mytechroad.com/blog/hashtable/leetcode-560-subarray-sum-equals-k/
-    
+  
+  這篇解釋了prefix sum的
+* https://leetcode.com/problems/binary-subarrays-with-sum/discuss/186647/Java-Clean-Solution-2-Sum-%2B-Prefix-Sum-Caching
+
 ## [930. Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum/)
 這題其實也可以用560. Subarray Sum Equals K 的概念去做 
-或者  
-
-
+ 
+```python=
 class Solution:
     def numSubarraysWithSum(self, A, S):
-        """
-        :type A: List[int]
-        :type S: int
-        :rtype: int
-        """
+
        # c = collections.Counter({0: 1})  #memoization dictionary and key '0' is valued at '1' as we count the case when psum==S, we can also add this with res
 
        # print(c);
@@ -93,15 +93,10 @@ class Solution:
         
         return ans;
     
-    
-```python
+  或者   
+```python=
 class Solution(object):
     def numSubarraysWithSum(self, A, S):
-        """
-        :type A: List[int]
-        :type S: int
-        :rtype: int
-        """
         if not A: return 0
         index = [-1]
         for i in range(len(A)):
@@ -122,7 +117,6 @@ class Solution(object):
             res += (index[i]-index[i-1]) * (index[j]-index[j-1])
             i += 1
         return res
-
 ```
 
 
@@ -163,6 +157,37 @@ class Solution:
         return res;
 ```
 
+
+
+```python
+class Solution(object):
+    def numSubarraysWithSum(self, A, S):
+        """
+        :type A: List[int]
+        :type S: int
+        :rtype: int
+        """
+        if not A: return 0
+        index = [-1]
+        for i in range(len(A)):
+            if A[i] == 1: index.append(i)
+        index.append(len(A))
+
+        res = 0
+        if S == 0: # 单独处理S = 0的情况
+            for i in range(1, len(index)):
+                num = index[i] - index[i-1] - 1
+                res += (num+1)*num // 2
+            return res
+        # 从index = 1开始遍历
+        i,j = 1,1
+        while i < len(index)-1:
+            j = i + S
+            if j >= len(index): break
+            res += (index[i]-index[i-1]) * (index[j]-index[j-1])
+            i += 1
+        return res
+```
 
 
 
