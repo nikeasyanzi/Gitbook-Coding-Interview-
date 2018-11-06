@@ -119,6 +119,11 @@ class Solution(object):
             i += 1
         return res
 ```
+Reference:
+https://blog.csdn.net/fuxuemingzhu/article/details/83478995
+http://hehejun.blogspot.com/2018/10/leetcodebinary-subarrays-with-sum.html
+https://buptwc.github.io/2018/10/28/Leetcode-930-Binary-Subarrays-With-Sum/
+https://www.youtube.com/watch?v=eRx56MI3Svo
 
 ## [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/)
 
