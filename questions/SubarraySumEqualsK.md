@@ -170,6 +170,8 @@ i| j| expression
 1| 3| 0-(-1)*(5-2)=3
 2| 4| (2-0)*(6-5)=2
 
+很明顯這演算法在S=0 是不能使用   
+所以只能另外計算
     
 Reference:
 https://blog.csdn.net/fuxuemingzhu/article/details/83478995
