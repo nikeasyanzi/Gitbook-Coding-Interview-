@@ -228,3 +228,38 @@ class ExamRoom:
 2.基本上距離的計算 就是  position [i] - position[i-1] /2 取 floor   找最大即可 
 3.但這裡有個問題在邊界的部分  如果position 為 0 或者n-1  就不需 /2
 4.接著要考慮就是 萬一如果剛好 邊界 的 gap   是最大  則表示 該學生要坐在邊界的位置上(0 or n-1) 所以要把 0 或者 n-1 加回
+
+
+##[922. Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii/)
+這題蠻妙的
+原本想用insertion sort 
+time complexity 是O(N^2)
+space complexity 是 O(1)
+後來看了別人的作法
+
+這樣其實更快  
+time complexity 是O(N)
+space complexity 是 O(N)
+
+```python
+int* sortArrayByParityII(int* A, int ASize, int* returnSize) {
+    int *res;
+    int i= 0, odd_index = 1, even_index = 0;
+    res = (int*)malloc(ASize * sizeof(int));
+    for (i = 0; i < ASize; ++i)
+    {
+        if (0 == A[i] % 2)
+        {
+            res[even_index] = A[i];
+            even_index += 2;
+        }
+        else
+        {
+            res[odd_index] = A[i];
+            odd_index += 2;
+        }
+    }
+    *returnSize = ASize;
+    return res;
+}
+```
