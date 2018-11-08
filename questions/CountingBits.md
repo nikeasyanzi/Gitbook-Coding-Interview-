@@ -2,8 +2,15 @@
 
 [338. Counting Bits](https://leetcode.com/problems/counting-bits/description/)
 
-這題需要加強了解
 
+這題有幾件事需要先理解
+
+* 偶數的話，二進為1的位數等於i/2 中1的位數    
+    ex. 2(10)和4(100)  4(100)和 8(1000)
+* 奇数的話，二進為1的位數等於i-1中1的位數 + 1
+    ex. 3(11)和2(10)
+所以我們可以用動態規劃來解決這個問題
+    
 https://leetcode.com/problems/counting-bits/description/
 ```python
 class Solution:
