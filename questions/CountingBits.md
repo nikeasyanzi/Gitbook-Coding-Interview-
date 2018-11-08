@@ -28,6 +28,7 @@ class Solution:
         #print (ans);
         return ans;
 ```
+
 因为 i&(i-1) 的结果是将i的二进制表示中最右边的‘1’消除掉，因此i中1的个数和i&(i-1)中1的个数相差1.
 
 ans[n] = ans[n & (n - 1)] + 1
