@@ -34,18 +34,7 @@ int tmp = (n^(n>>1));
 ```
 
 ### 191. Number of 1 Bits
-https://leetcode.com/problems/number-of-1-bits/submissions/1
 
-```c
-int hammingWeight(uint32_t n) {
-    int count=0;
-    while(n>0){
-        count=count+(n & 1);
-        n=n>>1;
-    }
-    return count;
-}
-```
 ### [338. Counting Bits](/questions/CountingBits.md)
 
 
@@ -65,5 +54,18 @@ int hammingWeight(uint32_t n) {
 
 [https://www.hackerearth.com/practice/notes/bit-manipulation/](https://www.hackerearth.com/practice/notes/bit-manipulation/)
 
+檢查power of 2
+the representation of a power of 2:
+x: 0…000…010…0 頂多一個為1
 
+the representation of not a power of 2:
+x: 0…000…011…0 至少兩個為1
+所以 用 x&(x-1) 一次去掉一個1 剛好可以用來檢查是否為偶數
+假設 x為偶數 則x&(x-1) 結果為0
+
+https://blog.kuoe0.tw/posts/2012/01/26/bitwise-operation-utlization/
+
+https://graphics.stanford.edu/~seander/bithacks.html#IntegerAbs
+
+http://puremonkey2010.blogspot.tw/2011/05/c-bitwise-operation.html
 
