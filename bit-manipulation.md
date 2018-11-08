@@ -33,7 +33,8 @@ int tmp = (n^(n>>1));
 }
 ```
 
-### 191. Number of 1 Bits
+### [191. Number of 1 Bits](/questions/Numberof1Bits.md)
+
 
 ### [338. Counting Bits](/questions/CountingBits.md)
 
