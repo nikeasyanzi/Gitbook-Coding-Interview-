@@ -16,5 +16,4 @@
 ## [844. Backspace String Compare](/questions/BackspaceStringCompare.md)
 
 
-## [946. Validate Stack Sequences](/)
-
+## [946. Validate Stack Sequences](/questions/ValidateStackSequences.md)
