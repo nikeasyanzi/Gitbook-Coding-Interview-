@@ -1,6 +1,5 @@
 # [3. Array/String](/arraystring.md)
 
-
 ##[945. Minimum Increment to Make Array Unique](https://leetcode.com/submissions/detail/191588202/)
 
 ```python
@@ -23,7 +22,7 @@ class Solution:
 ```
 **Observation:**
 
-i| arr||
+i| arr|
 ---|--:|
 0|[1,1,2,2,3,7]
 1|[1,2,2,2,3,7]
