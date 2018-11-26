@@ -1,8 +1,7 @@
 #[9.Stack](/stack.md)
 
 
-946. Validate Stack Sequences
-https://leetcode.com/problems/validate-stack-sequences/
+##[946. Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/)
 
 ```python
 class Solution:
@@ -30,8 +29,6 @@ class Solution:
                 mylist.append(pushed.pop(0));
             else:
                 return False;
-   
-        
         return True;
 ```    
 
