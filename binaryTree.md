@@ -104,3 +104,6 @@ https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/
 
 ### 872. Leaf-Similar Trees
 [Leaf-Similar Trees](/questions/Leaf-SimilarTrees.md)
+
+### 958. Check Completeness of a Binary Tree
+[Check Completeness of a Binary Tree]
