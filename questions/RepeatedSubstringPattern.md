@@ -37,6 +37,16 @@ ex.
 s=a ss=""
 s=abab ss=aa
 
+[Xianming.Chen網友解釋](https://leetcode.com/problems/repeated-substring-pattern/discuss/94360/My-one-line-c%2B%2B-solution)
+    If there is no pattern, both of the first copy and the second copy will be changed, so str will not be found in (str + str).substr(1, str.size() * 2 - 2).
+
+If t
+he
+re is a pattern, the first char of str 
+can still be found in the first half, 
+and the last char of str can also be found in the second half. 
+Here is an example: abcabc is the original string, and (bcabc abcab) includes abcabc.
+
 ## Reference:
 https://windsuzu.github.io/leetcode-459/
 
