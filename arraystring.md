@@ -21,11 +21,9 @@ Array的部分  常用的技巧就是prefix sum 與 hash map
 
 ### 10 STRSTR\(\)
 
-[28. Implement strStr()](/questions/ImplementStrStr)
+[28. Implement strStr()](/questions/ImplementStrStr.md)
 
-https://leetcode.com/submissions/detail/150990173/  暴力法
 
-KMP
 
 
 ### 11 Reverse words in a string
