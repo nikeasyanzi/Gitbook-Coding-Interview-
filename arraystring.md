@@ -199,5 +199,4 @@ Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer 
 
 ### [945. Minimum Increment to Make Array Unique]()
 
-### [459. Repeated Substring Pattern]
-
+### [459. Repeated Substring Pattern](/questions/RepeatedSubstringPattern.md)
