@@ -20,6 +20,7 @@ Array的部分  常用的技巧就是prefix sum 與 hash map
 [125. Valid Palindrome](questions/ValidPalindrome.md)
 
 ### 10 STRSTR\(\)
+28. Implement strStr()
 
 
 https://leetcode.com/submissions/detail/150990173/  暴力法
