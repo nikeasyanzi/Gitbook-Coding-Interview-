@@ -20,15 +20,13 @@ Array的部分  常用的技巧就是prefix sum 與 hash map
 [125. Valid Palindrome](questions/ValidPalindrome.md)
 
 ### 10 STRSTR\(\)
-28. Implement strStr()
 
+[28. Implement strStr()](/questions/ImplementStrStr)
 
 https://leetcode.com/submissions/detail/150990173/  暴力法
 
 KMP
-http://www.evanlin.com/about-kmp/
 
-http://bangbingsyb.blogspot.tw/2014/11/leetcode-implement-strstr-kmp.html
 
 ### 11 Reverse words in a string
 
