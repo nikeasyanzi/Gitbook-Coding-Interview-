@@ -63,3 +63,13 @@ Test case:
 
 "mississippi"
 "issip"
+
+
+這題就是用KMP (Knuth Morris Pratt) Pattern Searching 演算法
+
+詳情可參考 
+https://hackmd.io/YG4jW40RR0qCiqduTajRaw
+
+基本上是要先建立lps lookup table
+再去做kmp search
+
