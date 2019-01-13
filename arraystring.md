@@ -154,7 +154,6 @@ Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer 
 
 ### 842. Split Array into Fibonacci Sequence
 
-  
 這題 其實還沒做過
 
 ### 242. Valid Anagram
@@ -211,12 +210,7 @@ Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer 
 
 ### [459. Repeated Substring Pattern](/questions/RepeatedSubstringPattern.md)
 
+### [974.Subarray Sums Divisible by K ](/questions/SubarraySumsDivisiblebyK.md)
 
-
-### 974.Subarray Sums Divisible by K
-
-
-
-  
 
 
