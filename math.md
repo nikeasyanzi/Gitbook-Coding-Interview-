@@ -37,10 +37,7 @@ int LCM(int a, int b) {
 
 ## [400. Nth Digit](/questions/NthDigit.md)
 
-### 976.Largest Perimeter Triangle
+### [976.Largest Perimeter Triangle](/questions/LargestPerimeterTriangle.md)
 
-
-
-  
 
 
