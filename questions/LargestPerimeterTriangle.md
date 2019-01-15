@@ -41,13 +41,9 @@ class Solution:
 
 5, 4, 3不行 5,4,2就不用檢查了~
 
+網友[chachazero](https://leetcode.com/chachazero)  也有另外附註
 
-
-
-
-網友  也有另外附註
-
-https://leetcode.com/problems/largest-perimeter-triangle/discuss/218014/python-sort-and-check/221549
+[https://leetcode.com/problems/largest-perimeter-triangle/discuss/218014/python-sort-and-check/221549](https://leetcode.com/problems/largest-perimeter-triangle/discuss/218014/python-sort-and-check/221549)
 
 Hi,  
 You don't have to check all combinations if you've sorted them.  
@@ -72,6 +68,14 @@ Most of the time when the test case is more than 10000, you want to find a solut
 You used 3 loops and it will be O\(N^3\)
 
 Hope this help!
+
+
+
+這邊ujhuyz0110   有另一份說明
+
+https://leetcode.com/problems/largest-perimeter-triangle/discuss/219076/Python3-Beat-100.0
+
+
 
 
 
