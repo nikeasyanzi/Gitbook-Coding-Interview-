@@ -1,6 +1,6 @@
 # 4.Linked List
 
-### 22 Merge Two Sorted Lists 
+### 22 Merge Two Sorted Lists
 
 ### 
 
@@ -10,9 +10,7 @@
 
 ### 26 Copy List with Random Pointer
 
-### 19. Remove Nth Node From End of List
-
-[19. Remove Nth Node From End of List](/questions/RemoveNthNodeFromEndofList.md)
+### 
 
 # Misc:
 
